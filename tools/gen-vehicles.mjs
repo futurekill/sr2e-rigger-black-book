@@ -149,7 +149,7 @@ const VEHICLES = [
   { name: "Fiat-Fokker \"Cloud Nine\" Amphibian", vt: "aircraft", skill: "aircraft", h: 4, s: 300, sMax: 450, b: 3, a: 0, sig: 3, p: 2, cargo: 10, cost: 175000, seating: "Twin bucket + 6 bench", page: 47,
     desc: "A purpose-built reinforced-boat-hull amphibian — a classic European pleasure craft with STOL (water) / VSTOL (land) capability and a roomy cabin.", extra: "IC/250 liters; 3 km/liter. STOL (water), VSTOL (land)." },
   { name: "Embraer-Dassault Mistral", vt: "aircraft", skill: "aircraft", h: 4, s: 300, sMax: 450, b: 4, a: 0, sig: 3, p: 2, cargo: 10, cost: 375000, seating: "Twin bucket seats", page: 48,
-    desc: "A twin-turboprop VSTOL monoplane serving civilian, security and military needs — enhanced rough-field performance and easy engine access.", extra: "IC/2,000 liters; 2 km/liter; VSTOL. Variants: Commuter (15 seats), Cargo (60 CF), Security (Sensor +2.5M¥), Military (hardpoints/missiles, speed 225/350, +25,000¥)." },
+    desc: "A twin-turboprop VSTOL monoplane serving civilian, security and military needs — enhanced rough-field performance and easy engine access.", extra: "IC/2,000 liters; 2 km/liter; VSTOL. Body variants: Commuter (15 seats), Cargo (60 CF), Security (Sensor +2.5M¥). The Military (armed) variant is a separate actor." },
   { name: "Lear-Cessna Platinum II", vt: "aircraft", skill: "aircraft", h: 5, s: 800, sMax: 1600, b: 5, a: 1, sig: 3, p: 4, cargo: 5, cost: 1500000, seating: "Twin bucket seats", page: 50,
     desc: "A faster development of the Platinum I executive transport — twin rear-mounted turbofans for the exec in a hurry, STOL-capable.", extra: "IC/750 liters; 1.5 km/liter; STOL. Variants: Luxury/Standard Executive, Commuter (15 seats), Cargo." },
   { name: "Hawker-Siddley HS-895 Skytruck", vt: "aircraft", skill: "aircraft", h: 5, s: 400, sMax: 600, b: 5, a: 0, sig: 3, p: 2, cargo: 5, cost: 2500000, seating: "Twin bucket seats", page: 51,
@@ -158,7 +158,7 @@ const VEHICLES = [
   // --- Rotorcraft (book p.52-56). Heavy overlap — skipped (in system):
   // Federated-Boeing Commuter, Hughes WK-2 Stallion, Ares Dragon, Hughes Airstar.
   { name: "Agusta-Cierva \"Plutocrat\" Rotorcraft", vt: "rotor", skill: "rotorcraft", h: 4, s: 200, sMax: 450, b: 4, a: 1, sig: 4, p: 4, cargo: 15, cost: 950000, seating: "Twin bucket + 6 bench", page: 56,
-    desc: "A purpose-designed luxury transport chopper with real-leather upholstery, wood paneling and the finest onboard facilities — VTOL site-access for the corp exec.", extra: "IC/1,000 liters; 1.5 km/liter. Armed variant: chin turret (270° arc), 1 hardpoint + 1 firmpoint, speed 180/400, Armor 2, 1.25M¥." },
+    desc: "A purpose-designed luxury transport chopper with real-leather upholstery, wood paneling and the finest onboard facilities — VTOL site-access for the corp exec.", extra: "IC/1,000 liters; 1.5 km/liter. An armed variant is a separate actor." },
 
   // --- Lighter-Than-Air (book p.57-59). vehicleType aircraft (no LTA type).
   { name: "Luftschiffbau Zeppelin LZ-2049", vt: "aircraft", skill: "aircraft", h: 3, s: 100, sMax: 250, b: 12, a: 2, sig: 8, p: 3, cargo: 200, cost: 750000, seating: "2 + 2 bench", page: 57,
@@ -180,7 +180,7 @@ const VEHICLES = [
   { name: "Surfstar Marine Seacop (5M)", vt: "boat", skill: "boat", h: 3, s: 30, sMax: 90, b: 3, a: 2, sig: 3, p: 2, cargo: 12, cost: 50000, seating: "Single bucket + 3 bench", page: 67,
     desc: "The harbor equivalent of the Patrol-One — a marine patrol craft with EnviroSeal cabin, remote-controlled spotlight, siren and forward firmpoints.", extra: "IC/100 liters; 25 km/liter." },
   { name: "Blohm & Voss River Commander", vt: "boat", skill: "boat", h: 4, s: 25, sMax: 75, b: 6, a: 3, sig: 3, p: 3, cargo: 20, cost: 300000, seating: "Twin bucket + rear bench", page: 69,
-    desc: "A paramilitary river patrol boat used worldwide (Rhine, North/Central/South America) — modular fittings (Police, Security, Assault) and weapon mounts.", extra: "IC/1,000 liters; 15 km/liter. Military model Armor 4; seagoing variant 325,000¥." },
+    desc: "A paramilitary river patrol boat used worldwide (Rhine, North/Central/South America) — modular fittings (Police, Security, Assault) and weapon mounts.", extra: "IC/1,000 liters; 15 km/liter. A Military (uparmored) model is a separate actor; seagoing variant 325,000¥." },
   { name: "CASA J-239 Raven", vt: "aircraft", skill: "aircraft", h: 3, s: 200, sMax: 400, b: 3, a: 0, sig: 1, p: 1, cargo: 5, cost: 175000, seating: "Twin bucket seats", page: 72,
     desc: "A reinforced glider airframe with twin micro-turbofans, built for low-signature security and surveillance — STOL-capable with a powered/unpowered gliding mode.", extra: "IC/250 liters; 5 km/liter; STOL. Gliding: Handling 5, speed 50/100, Sig 0 (glide ratio 1.3)." },
   { name: "Moonlight Aerospace Avenger", vt: "aircraft", skill: "aircraft", h: 4, s: 100, sMax: 200, b: 3, a: 3, sig: 3, p: 2, cargo: 3, cost: 250000, seating: "Single bucket seat", page: 73,
@@ -197,7 +197,7 @@ const VEHICLES = [
   { name: "GAZ-Niki GNRD-71bis Snooper", vt: "drone", skill: "", h: 4, s: 25, sMax: 75, b: 1, a: 0, sig: 5, p: 1, sensor: 1, cargo: 1, cost: 1750, seating: "Drone (rigged)", page: 79,
     desc: "A six-wheeled surveillance drone on electric balloon tires — a Russo-Polish security favorite that climbs to 3 m, takes corners and slips through 5-cm openings.", extra: "Drone. Sensor Standard (1). 6 hours stationary operation; no set-up time." },
   { name: "Cyberspace Designs Dalmatian Recon Drone", vt: "drone", skill: "", h: 3, s: 35, sMax: 105, b: 2, a: 0, sig: 4, p: 2, sensor: 1, cargo: 6, cost: 15000, seating: "Drone (rigged)", page: 82,
-    desc: "A turbofan delta-airfoil surveillance drone with a capacious sensor pod, VTOL capability and a \"stealth\" mode.", extra: "Drone. Sensor Standard (1); VSTOL; 5-min setup. Armed variant: B/A 4/1, Sig 5, 2 firmpoints, Store 12, 30,000¥." },
+    desc: "A turbofan delta-airfoil surveillance drone with a capacious sensor pod, VTOL capability and a \"stealth\" mode.", extra: "Drone. Sensor Standard (1); VSTOL; 5-min setup. An armed variant is a separate actor." },
   { name: "Sikorsky-Bell Microskimmer", vt: "drone", skill: "", h: 5, s: 30, sMax: 90, b: 1, a: 0, sig: 5, p: 1, sensor: 1, cargo: 2, cost: 2750, seating: "Drone (rigged)", page: 83,
     desc: "A trash-can-sized ACV drone carrying a full sensor suite at high speed over any terrain — fully electric and floatable on water.", extra: "Drone. Sensor Standard (1). 8 hours stationary operation." },
   { name: "CAS \"Wandjina\" RPV", vt: "drone", skill: "", h: 3, s: 250, sMax: 500, b: 5, a: 2, sig: 4, p: 4, sensor: 3, cargo: 50, cost: 75000, seating: "Drone (rigged)", page: 84,
@@ -211,7 +211,18 @@ const VEHICLES = [
   { name: "Ferrari \"Appaloosa\" Light Scout Vehicle", h: 2, hOff: 3, s: 100, sMax: 200, b: 3, a: 3, sig: 5, p: 2, sensor: 4, cargo: 5, cost: 1000000, seating: "1 + 2 bucket + 1 folding bench", page: 90,
     desc: "A wheeled military Light Scout Vehicle that drives like a racing car on runflats — glassed-in fighting compartment with quick-deployment armored shutters, used by several Sovereign Tribal Council members.", extra: "250 liters; 5-7 km/liter. Sensors Military 1 (4); ECM/ECCM Military 1 (4). Variable armament: Vanquisher rotary 1,250-rd HMG + coaxial 2,500-rd LMG, firmpoints, missile launcher." },
   { name: "Aztechnology Aguilar-EX Attack Helicopter", vt: "rotor", skill: "rotorcraft", h: 4, s: 280, sMax: 560, b: 3, a: 2, sig: 4, p: 4, sensor: 4, cargo: 2, cost: 2600000, seating: "1 + 1 integrated bucket seats", page: 94,
-    desc: "Aztlan's premier VTOL weapons platform in an export configuration — a stealth electric-turbine attack helicopter with an internal signature-suppression suite, near-unsurpassed on the modern battlefield.", extra: "1,000 liters/100 PF; electric option. Sensors Military (read ~4-7); ECM/ECCM Military I (4)/II (5). Armament: wing/side mounts, 1,000-rd HMG, Bandit AGMs / 7.62 rocket ripples, underbelly rack (4 AAMs/AGMs)." }
+    desc: "Aztlan's premier VTOL weapons platform in an export configuration — a stealth electric-turbine attack helicopter with an internal signature-suppression suite, near-unsurpassed on the modern battlefield.", extra: "1,000 liters/100 PF; electric option. Sensors Military (read ~4-7); ECM/ECCM Military I (4)/II (5). Armament: wing/side mounts, 1,000-rd HMG, Bandit AGMs / 7.62 rocket ripples, underbelly rack (4 AAMs/AGMs)." },
+
+  // --- Armed / military variants split into their own combat-ready actors (the
+  // base, unarmed versions are above; only weapons/armor/sig differ).
+  { name: "Cyberspace Designs Dalmatian Recon Drone (Armed)", vt: "drone", skill: "", h: 3, s: 35, sMax: 105, b: 4, a: 1, sig: 5, p: 2, sensor: 1, cargo: 12, cost: 30000, seating: "Drone (rigged)", page: 82,
+    desc: "The armed configuration of the Dalmatian recon drone — uprated armor and a higher signature, fitted with two wing firmpoints for ordnance.", extra: "Drone. Sensor Standard (1); VSTOL. Armament: 2 wing firmpoints (2 CF ordnance)." },
+  { name: "Agusta-Cierva \"Plutocrat\" Rotorcraft (Armed)", vt: "rotor", skill: "rotorcraft", h: 4, s: 180, sMax: 400, b: 4, a: 2, sig: 4, p: 4, cargo: 15, cost: 1250000, seating: "Twin bucket + 6 bench", page: 56,
+    desc: "The armed Plutocrat — a chin turret with a 270° firing arc plus a hardpoint and firmpoint, uparmored and a touch slower than the luxury transport.", extra: "IC/1,000 liters; 1.5 km/liter. Chin turret (270° arc) + 1 hardpoint + 1 firmpoint." },
+  { name: "Blohm & Voss River Commander (Military)", vt: "boat", skill: "boat", h: 4, s: 25, sMax: 75, b: 6, a: 4, sig: 3, p: 3, cargo: 20, cost: 300000, seating: "Twin bucket + rear bench", page: 69,
+    desc: "The Military configuration of the River Commander river patrol boat — uparmored (Armor 4) and fitted for weapon mounts.", extra: "IC/1,000 liters; 15 km/liter. Weapon mounts. Seagoing variant +25,000¥." },
+  { name: "Embraer-Dassault Mistral (Military)", vt: "aircraft", skill: "aircraft", h: 4, s: 225, sMax: 350, b: 4, a: 0, sig: 3, p: 2, cargo: 10, cost: 400000, seating: "Twin bucket seats", page: 48,
+    desc: "The military Mistral — the VSTOL turboprop airframe fitted with hardpoints and missiles, trading some top speed for a weapons load.", extra: "IC/2,000 liters; 2 km/liter; VSTOL. Armament: hardpoints + missiles." }
 ];
 
 let n = 0;

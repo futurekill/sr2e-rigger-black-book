@@ -1,33 +1,33 @@
 {
-  "_id": "5ff4894ba3b0fe51",
-  "name": "Agusta-Cierva \"Plutocrat\" Rotorcraft",
+  "_id": "132b71230a8a2f49",
+  "name": "Embraer-Dassault Mistral (Military)",
   "type": "vehicle",
   "img": "icons/svg/explosion.svg",
   "system": {
-    "vehicleType": "rotor",
-    "skill": "rotorcraft",
+    "vehicleType": "aircraft",
+    "skill": "aircraft",
     "handling": 4,
-    "speed": 200,
+    "speed": 225,
     "acceleration": 0,
     "body": 4,
-    "armor": 1,
-    "signature": 4,
-    "pilot": 4,
+    "armor": 0,
+    "signature": 3,
+    "pilot": 2,
     "sensor": 0,
-    "cargo": 15,
+    "cargo": 10,
     "load": 0,
-    "seating": "Twin bucket + 6 bench",
-    "cost": 950000,
+    "seating": "Twin bucket seats",
+    "cost": 400000,
     "availability": "",
     "conditionMonitor": {
       "value": 0,
       "max": 10
     },
-    "autonav": 4,
-    "notes": "<p>A purpose-designed luxury transport chopper with real-leather upholstery, wood paneling and the finest onboard facilities — VTOL site-access for the corp exec.</p><p><em>Max speed 450 m/CT (cruising 200 used for tests). IC/1,000 liters; 1.5 km/liter. An armed variant is a separate actor. Rigger Black Book p.56.</em></p>"
+    "autonav": 2,
+    "notes": "<p>The military Mistral — the VSTOL turboprop airframe fitted with hardpoints and missiles, trading some top speed for a weapons load.</p><p><em>Max speed 350 m/CT (cruising 225 used for tests). IC/2,000 liters; 2 km/liter; VSTOL. Armament: hardpoints + missiles. Rigger Black Book p.48.</em></p>"
   },
   "prototypeToken": {
-    "name": "Agusta-Cierva \"Plutocrat\" Rotorcraft",
+    "name": "Embraer-Dassault Mistral (Military)",
     "displayName": 20,
     "actorLink": false,
     "width": 2,
@@ -58,5 +58,5 @@
   "ownership": {
     "default": 0
   },
-  "_key": "!actors!5ff4894ba3b0fe51"
+  "_key": "!actors!132b71230a8a2f49"
 }

@@ -1,33 +1,33 @@
 {
-  "_id": "5ff4894ba3b0fe51",
-  "name": "Agusta-Cierva \"Plutocrat\" Rotorcraft",
+  "_id": "5981c7eda5ca4933",
+  "name": "Cyberspace Designs Dalmatian Recon Drone (Armed)",
   "type": "vehicle",
   "img": "icons/svg/explosion.svg",
   "system": {
-    "vehicleType": "rotor",
-    "skill": "rotorcraft",
-    "handling": 4,
-    "speed": 200,
+    "vehicleType": "drone",
+    "skill": "",
+    "handling": 3,
+    "speed": 35,
     "acceleration": 0,
     "body": 4,
     "armor": 1,
-    "signature": 4,
-    "pilot": 4,
-    "sensor": 0,
-    "cargo": 15,
+    "signature": 5,
+    "pilot": 2,
+    "sensor": 1,
+    "cargo": 12,
     "load": 0,
-    "seating": "Twin bucket + 6 bench",
-    "cost": 950000,
+    "seating": "Drone (rigged)",
+    "cost": 30000,
     "availability": "",
     "conditionMonitor": {
       "value": 0,
       "max": 10
     },
-    "autonav": 4,
-    "notes": "<p>A purpose-designed luxury transport chopper with real-leather upholstery, wood paneling and the finest onboard facilities — VTOL site-access for the corp exec.</p><p><em>Max speed 450 m/CT (cruising 200 used for tests). IC/1,000 liters; 1.5 km/liter. An armed variant is a separate actor. Rigger Black Book p.56.</em></p>"
+    "autonav": 2,
+    "notes": "<p>The armed configuration of the Dalmatian recon drone — uprated armor and a higher signature, fitted with two wing firmpoints for ordnance.</p><p><em>Max speed 105 m/CT (cruising 35 used for tests). Drone. Sensor Standard (1); VSTOL. Armament: 2 wing firmpoints (2 CF ordnance). Rigger Black Book p.82.</em></p>"
   },
   "prototypeToken": {
-    "name": "Agusta-Cierva \"Plutocrat\" Rotorcraft",
+    "name": "Cyberspace Designs Dalmatian Recon Drone (Armed)",
     "displayName": 20,
     "actorLink": false,
     "width": 2,
@@ -58,5 +58,5 @@
   "ownership": {
     "default": 0
   },
-  "_key": "!actors!5ff4894ba3b0fe51"
+  "_key": "!actors!5981c7eda5ca4933"
 }

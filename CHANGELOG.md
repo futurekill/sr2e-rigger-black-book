@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.1.1
+
+- Split the four genuine **combat variants** into their own drag-and-drop actors
+  (base notes point to them): Cyberspace Dalmatian Recon (Armed), Agusta-Cierva
+  Plutocrat (Armed), Blohm & Voss River Commander (Military), Embraer-Dassault
+  Mistral (Military). Body/cargo-only variants (Roadmaster, GMC 4201, Eurovan,
+  Nomad) stay as one actor — set them by editing the cargo/cost on the sheet.
+  69 vehicles total.
+
 ## 0.1.0 — Vehicle catalog
 
 The complete *Rigger Black Book* (FASA 7108, SR1) vehicle & drone catalog as

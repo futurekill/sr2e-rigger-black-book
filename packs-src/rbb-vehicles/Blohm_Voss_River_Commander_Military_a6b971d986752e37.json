@@ -1,33 +1,33 @@
 {
-  "_id": "5ff4894ba3b0fe51",
-  "name": "Agusta-Cierva \"Plutocrat\" Rotorcraft",
+  "_id": "a6b971d986752e37",
+  "name": "Blohm & Voss River Commander (Military)",
   "type": "vehicle",
   "img": "icons/svg/explosion.svg",
   "system": {
-    "vehicleType": "rotor",
-    "skill": "rotorcraft",
+    "vehicleType": "boat",
+    "skill": "boat",
     "handling": 4,
-    "speed": 200,
+    "speed": 25,
     "acceleration": 0,
-    "body": 4,
-    "armor": 1,
-    "signature": 4,
-    "pilot": 4,
+    "body": 6,
+    "armor": 4,
+    "signature": 3,
+    "pilot": 3,
     "sensor": 0,
-    "cargo": 15,
+    "cargo": 20,
     "load": 0,
-    "seating": "Twin bucket + 6 bench",
-    "cost": 950000,
+    "seating": "Twin bucket + rear bench",
+    "cost": 300000,
     "availability": "",
     "conditionMonitor": {
       "value": 0,
       "max": 10
     },
-    "autonav": 4,
-    "notes": "<p>A purpose-designed luxury transport chopper with real-leather upholstery, wood paneling and the finest onboard facilities — VTOL site-access for the corp exec.</p><p><em>Max speed 450 m/CT (cruising 200 used for tests). IC/1,000 liters; 1.5 km/liter. An armed variant is a separate actor. Rigger Black Book p.56.</em></p>"
+    "autonav": 3,
+    "notes": "<p>The Military configuration of the River Commander river patrol boat — uparmored (Armor 4) and fitted for weapon mounts.</p><p><em>Max speed 75 m/CT (cruising 25 used for tests). IC/1,000 liters; 15 km/liter. Weapon mounts. Seagoing variant +25,000¥. Rigger Black Book p.69.</em></p>"
   },
   "prototypeToken": {
-    "name": "Agusta-Cierva \"Plutocrat\" Rotorcraft",
+    "name": "Blohm & Voss River Commander (Military)",
     "displayName": 20,
     "actorLink": false,
     "width": 2,
@@ -58,5 +58,5 @@
   "ownership": {
     "default": 0
   },
-  "_key": "!actors!5ff4894ba3b0fe51"
+  "_key": "!actors!a6b971d986752e37"
 }

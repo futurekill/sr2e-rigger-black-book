@@ -24,7 +24,7 @@
       "max": 10
     },
     "autonav": 2,
-    "notes": "<p>A twin-turboprop VSTOL monoplane serving civilian, security and military needs — enhanced rough-field performance and easy engine access.</p><p><em>Max speed 450 m/CT (cruising 300 used for tests). IC/2,000 liters; 2 km/liter; VSTOL. Variants: Commuter (15 seats), Cargo (60 CF), Security (Sensor +2.5M¥), Military (hardpoints/missiles, speed 225/350, +25,000¥). Rigger Black Book p.48.</em></p>"
+    "notes": "<p>A twin-turboprop VSTOL monoplane serving civilian, security and military needs — enhanced rough-field performance and easy engine access.</p><p><em>Max speed 450 m/CT (cruising 300 used for tests). IC/2,000 liters; 2 km/liter; VSTOL. Body variants: Commuter (15 seats), Cargo (60 CF), Security (Sensor +2.5M¥). The Military (armed) variant is a separate actor. Rigger Black Book p.48.</em></p>"
   },
   "prototypeToken": {
     "name": "Embraer-Dassault Mistral",

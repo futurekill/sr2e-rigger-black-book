@@ -24,7 +24,7 @@
       "max": 10
     },
     "autonav": 3,
-    "notes": "<p>A paramilitary river patrol boat used worldwide (Rhine, North/Central/South America) — modular fittings (Police, Security, Assault) and weapon mounts.</p><p><em>Max speed 75 m/CT (cruising 25 used for tests). IC/1,000 liters; 15 km/liter. Military model Armor 4; seagoing variant 325,000¥. Rigger Black Book p.69.</em></p>"
+    "notes": "<p>A paramilitary river patrol boat used worldwide (Rhine, North/Central/South America) — modular fittings (Police, Security, Assault) and weapon mounts.</p><p><em>Max speed 75 m/CT (cruising 25 used for tests). IC/1,000 liters; 15 km/liter. A Military (uparmored) model is a separate actor; seagoing variant 325,000¥. Rigger Black Book p.69.</em></p>"
   },
   "prototypeToken": {
     "name": "Blohm & Voss River Commander",
