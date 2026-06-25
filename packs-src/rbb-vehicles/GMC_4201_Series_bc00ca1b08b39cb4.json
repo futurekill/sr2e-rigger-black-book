@@ -1,0 +1,62 @@
+{
+  "_id": "bc00ca1b08b39cb4",
+  "name": "GMC 4201 Series",
+  "type": "vehicle",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "vehicleType": "ground",
+    "skill": "car",
+    "handling": 3,
+    "speed": 35,
+    "acceleration": 0,
+    "body": 5,
+    "armor": 1,
+    "signature": 2,
+    "pilot": 2,
+    "sensor": 0,
+    "cargo": 750,
+    "load": 0,
+    "seating": "Twin bucket + 1 folding bench",
+    "cost": 75000,
+    "availability": "",
+    "conditionMonitor": {
+      "value": 0,
+      "max": 10
+    },
+    "autonav": 2,
+    "notes": "<p>A classic heavy truck — the \"Mechanical Mule\" — that has kept industry and commerce supplied through war and revolution.</p><p><em>Off-road handling 6. Max speed 85 m/CT (cruising 35 used for tests). Multifuel/750 liters; 12 km/liter; standard load 750 CF. Bodies: Rear-Tray (+38,000¥), Van (1,000 CF, +120,000¥), Tanker (37.5 kl, +100,000¥), SURT Citycoach bus (+125,000¥). Rigger Black Book p.34.</em></p>"
+  },
+  "prototypeToken": {
+    "name": "GMC 4201 Series",
+    "displayName": 20,
+    "actorLink": false,
+    "width": 2,
+    "height": 1,
+    "texture": {
+      "src": "icons/svg/explosion.svg",
+      "scaleX": 1,
+      "scaleY": 1
+    },
+    "disposition": 0,
+    "displayBars": 0
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.1.0",
+    "createdTime": 1782200000000,
+    "modifiedTime": 1782200000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!actors!bc00ca1b08b39cb4"
+}

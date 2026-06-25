@@ -1,0 +1,62 @@
+{
+  "_id": "e0c6db91055d4e08",
+  "name": "Ares Roadmaster",
+  "type": "vehicle",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "vehicleType": "ground",
+    "skill": "car",
+    "handling": 4,
+    "speed": 30,
+    "acceleration": 0,
+    "body": 4,
+    "armor": 0,
+    "signature": 2,
+    "pilot": 2,
+    "sensor": 0,
+    "cargo": 500,
+    "load": 0,
+    "seating": "Twin bucket + 1 folding bench",
+    "cost": 45000,
+    "availability": "",
+    "conditionMonitor": {
+      "value": 0,
+      "max": 10
+    },
+    "autonav": 2,
+    "notes": "<p>The medium-cargo variant of the Ares Master series — interchangeable body types make it a sensible buy for cost-conscious corps and governments.</p><p><em>Off-road handling 10. Max speed 90 m/CT (cruising 30 used for tests). IC/500 liters; 15 km/liter; standard load 500 CF. Bodies: Rear-Tray (1,000 CF, +25,000¥), Van (1,000 CF, +80,000¥), Tanker (25 kl, +80,000¥). Rigger Black Book p.32.</em></p>"
+  },
+  "prototypeToken": {
+    "name": "Ares Roadmaster",
+    "displayName": 20,
+    "actorLink": false,
+    "width": 2,
+    "height": 1,
+    "texture": {
+      "src": "icons/svg/explosion.svg",
+      "scaleX": 1,
+      "scaleY": 1
+    },
+    "disposition": 0,
+    "displayBars": 0
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.1.0",
+    "createdTime": 1782200000000,
+    "modifiedTime": 1782200000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!actors!e0c6db91055d4e08"
+}

@@ -98,7 +98,24 @@ const VEHICLES = [
   { name: "Renault-Fiat Eurovan", h: 4, hOff: 10, s: 35, sMax: 105, b: 3, a: 0, sig: 2, p: 1, cargo: 20, cost: 25000, seating: "Twin bucket seats", page: 30,
     desc: "Renault-Fiat's automated-plant van — classic European styling, independent cab and a wide range of rear-chassis bodies.", extra: "IC/50 liters; 25 km/liter. Bodies: Camper-van (+25,000¥), Enclosed-Cargo (+18,000¥, 100 CF), Rear-Tray (+15,000¥, 150 CF)." },
   { name: "Volkswagen Superkombi III (Enclosed-Van)", h: 4, hOff: 8, s: 35, sMax: 105, b: 4, a: 1, sig: 2, p: 3, cargo: 150, cost: 45000, seating: "Single bucket + 2 folding bench", page: 31,
-    desc: "The latest of VW's popular imported van line — reliable and rugged. Shown as the Enclosed-Van; other bodies are available.", extra: "IC/120 liters; 18 km/liter. Models: Commuter (55,000¥), RV (90,000¥), Flatbed (200 CF, 37,000¥), Pickup (120 CF, 40,000¥)." }
+    desc: "The latest of VW's popular imported van line — reliable and rugged. Shown as the Enclosed-Van; other bodies are available.", extra: "IC/120 liters; 18 km/liter. Models: Commuter (55,000¥), RV (90,000¥), Flatbed (200 CF, 37,000¥), Pickup (120 CF, 40,000¥)." },
+
+  // --- Heavy Trucks (book p.32-36). Ares Master security variants (Citymaster/
+  // Mobmaster) are already in the system; the Roadmaster cargo variant is new.
+  { name: "Ares Roadmaster", h: 4, hOff: 10, s: 30, sMax: 90, b: 4, a: 0, sig: 2, p: 2, cargo: 500, cost: 45000, seating: "Twin bucket + 1 folding bench", page: 32,
+    desc: "The medium-cargo variant of the Ares Master series — interchangeable body types make it a sensible buy for cost-conscious corps and governments.", extra: "IC/500 liters; 15 km/liter; standard load 500 CF. Bodies: Rear-Tray (1,000 CF, +25,000¥), Van (1,000 CF, +80,000¥), Tanker (25 kl, +80,000¥)." },
+  { name: "GMC Bulldog Step-Van (Multifuel)", h: 4, hOff: 8, s: 35, sMax: 85, b: 4, a: 1, sig: 2, p: 2, cargo: 200, cost: 35000, seating: "Single bucket + 1 folding bench", page: 33,
+    desc: "A standard, reliable delivery truck found in most North American sprawls — UCAS Express and Parcel Service use them.", extra: "Multifuel/150 liters; 16 km/liter." },
+  { name: "GMC Bulldog Step-Van (Bonded-Courier)", h: 4, hOff: 6, s: 35, sMax: 105, b: 4, a: 2, sig: 2, p: 2, cargo: 200, cost: 60000, seating: "Single bucket + 1 folding bench", page: 33,
+    desc: "The Bonded-Courier Bulldog — off-road suspension, runflat dual-purpose tires and turbocharging as standard. Popular with independent couriers.", extra: "Multifuel/150 liters; 14 km/liter; off-road speed 30/80." },
+  { name: "GMC 4201 Series", h: 3, hOff: 6, s: 35, sMax: 85, b: 5, a: 1, sig: 2, p: 2, cargo: 750, cost: 75000, seating: "Twin bucket + 1 folding bench", page: 34,
+    desc: "A classic heavy truck — the \"Mechanical Mule\" — that has kept industry and commerce supplied through war and revolution.", extra: "Multifuel/750 liters; 12 km/liter; standard load 750 CF. Bodies: Rear-Tray (+38,000¥), Van (1,000 CF, +120,000¥), Tanker (37.5 kl, +100,000¥), SURT Citycoach bus (+125,000¥)." },
+  { name: "Conestoga Trailblazer Prime Mover", h: 4, hOff: 8, s: 30, sMax: 90, b: 5, a: 0, sig: 2, p: 2, cargo: 1000, cost: 150000, seating: "Twin bucket + 1 folding bench", page: 35,
+    desc: "The most reliable tractor on the market — built to a price but dependable, with a twin-bunk sleeper mini-cab for long hauls.", extra: "IC/750 liters; 8 km/liter; standard load 1,000 CF." },
+  { name: "Nordkapp-Conestoga \"Bergen\" (Command Module)", h: 3, hOff: 6, s: 30, sMax: 90, b: 6, a: 2, sig: 3, p: 4, cargo: 5, cost: 600000, seating: "2×2 twin bucket seats", page: 36,
+    desc: "The command module of the Bergen articulated \"road train\" (N-CAV concept), built for railless wilderness — can chain to up to five self-powered cargo modules.", extra: "Multifuel/2,000 liters; 4 km/liter. Command module can mount a turret/weapons; +1 Handling above the rated speed." },
+  { name: "Nordkapp-Conestoga \"Bergen\" (Cargo Module)", h: 3, hOff: 6, s: 30, sMax: 90, b: 5, a: 0, sig: 2, p: 2, cargo: 1000, cost: 200000, seating: "2 bucket seats", page: 36,
+    desc: "A self-powered cargo module for the Bergen road train — 500-CF and 1,000-CF versions chain behind the command module to make a single train.", extra: "Multifuel/2,000 liters. 1,000 CF cargo module shown; 500-CF version also available." }
 ];
 
 let n = 0;
