@@ -86,7 +86,19 @@ const VEHICLES = [
   { name: "Landrover Model 2046 (Short Wheelbase)", h: 3, hOff: 3, s: 30, sMax: 90, b: 2, a: 0, sig: 2, p: 1, cargo: 25, cost: 35000, seating: "Twin bucket + 4 folding bench", page: 27,
     desc: "A general-purpose 4WD in the long Landrover tradition — improved and active suspension make rough, hilly terrain easy going.", extra: "Multifuel/50 liters; 75 km/liter; off-road speed 25/75." },
   { name: "Landrover Model 2046 (Long Wheelbase)", h: 3, hOff: 3, s: 30, sMax: 90, b: 3, a: 0, sig: 2, p: 1, cargo: 45, cost: 45000, seating: "Twin bucket + 6 folding bench", page: 27,
-    desc: "The long-wheelbase Landrover 2046 — more seating and cargo, same rugged go-anywhere drivetrain.", extra: "Multifuel/75 liters; 80 km/liter; off-road speed 25/75." }
+    desc: "The long-wheelbase Landrover 2046 — more seating and cargo, same rugged go-anywhere drivetrain.", extra: "Multifuel/75 liters; 80 km/liter; off-road speed 25/75." },
+
+  // --- Light Trucks & Vans (book p.28-31). No system dups.
+  { name: "Toyotacorp Gopher Pickup", h: 4, hOff: 4, s: 35, sMax: 105, b: 2, a: 0, sig: 2, p: 2, cargo: 60, cost: 25000, seating: "Twin bucket seats", page: 28,
+    desc: "Classic pickup styling with integral roll bars, an optional power-take-off winch and a built-in gun safe.", extra: "IC/60 liters; 40 km/liter; off-road speed 30/90. Active suspension, roll bars." },
+  { name: "Leyland-Rover Transport (Electric)", h: 4, hOff: 8, s: 25, sMax: 75, b: 3, a: 0, sig: 5, p: 2, cargo: 90, cost: 40000, seating: "Single + 1 folding bench (Enclosed-Box cab)", page: 29,
+    desc: "A medium-size delivery van, electric chassis — built around a common base that accepts several body types. Shown with the Enclosed-Box cab.", extra: "Electric, 200 PF; 2 PF/km. Cabs: Minibus (+20,000¥), Enclosed-Box (+15,000¥, 90 CF), Open-Tray (+10,000¥). Chassis 25,000¥." },
+  { name: "Leyland-Rover Transport (Internal Combustion)", h: 4, hOff: 8, s: 35, sMax: 105, b: 3, a: 0, sig: 2, p: 2, cargo: 90, cost: 45000, seating: "Single + 1 folding bench (Enclosed-Box cab)", page: 29,
+    desc: "The internal-combustion Leyland-Rover Transport van — same body options, longer legs. Shown with the Enclosed-Box cab.", extra: "IC/120 liters; 25 km/liter. Cabs: Minibus (+20,000¥), Enclosed-Box (+15,000¥, 90 CF), Open-Tray (+10,000¥). Chassis 30,000¥." },
+  { name: "Renault-Fiat Eurovan", h: 4, hOff: 10, s: 35, sMax: 105, b: 3, a: 0, sig: 2, p: 1, cargo: 20, cost: 25000, seating: "Twin bucket seats", page: 30,
+    desc: "Renault-Fiat's automated-plant van — classic European styling, independent cab and a wide range of rear-chassis bodies.", extra: "IC/50 liters; 25 km/liter. Bodies: Camper-van (+25,000¥), Enclosed-Cargo (+18,000¥, 100 CF), Rear-Tray (+15,000¥, 150 CF)." },
+  { name: "Volkswagen Superkombi III (Enclosed-Van)", h: 4, hOff: 8, s: 35, sMax: 105, b: 4, a: 1, sig: 2, p: 3, cargo: 150, cost: 45000, seating: "Single bucket + 2 folding bench", page: 31,
+    desc: "The latest of VW's popular imported van line — reliable and rugged. Shown as the Enclosed-Van; other bodies are available.", extra: "IC/120 liters; 18 km/liter. Models: Commuter (55,000¥), RV (90,000¥), Flatbed (200 CF, 37,000¥), Pickup (120 CF, 40,000¥)." }
 ];
 
 let n = 0;

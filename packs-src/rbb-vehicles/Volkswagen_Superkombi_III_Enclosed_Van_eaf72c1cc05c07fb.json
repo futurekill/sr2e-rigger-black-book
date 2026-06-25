@@ -1,0 +1,62 @@
+{
+  "_id": "eaf72c1cc05c07fb",
+  "name": "Volkswagen Superkombi III (Enclosed-Van)",
+  "type": "vehicle",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "vehicleType": "ground",
+    "skill": "car",
+    "handling": 4,
+    "speed": 35,
+    "acceleration": 0,
+    "body": 4,
+    "armor": 1,
+    "signature": 2,
+    "pilot": 3,
+    "sensor": 0,
+    "cargo": 150,
+    "load": 0,
+    "seating": "Single bucket + 2 folding bench",
+    "cost": 45000,
+    "availability": "",
+    "conditionMonitor": {
+      "value": 0,
+      "max": 10
+    },
+    "autonav": 3,
+    "notes": "<p>The latest of VW's popular imported van line — reliable and rugged. Shown as the Enclosed-Van; other bodies are available.</p><p><em>Off-road handling 8. Max speed 105 m/CT (cruising 35 used for tests). IC/120 liters; 18 km/liter. Models: Commuter (55,000¥), RV (90,000¥), Flatbed (200 CF, 37,000¥), Pickup (120 CF, 40,000¥). Rigger Black Book p.31.</em></p>"
+  },
+  "prototypeToken": {
+    "name": "Volkswagen Superkombi III (Enclosed-Van)",
+    "displayName": 20,
+    "actorLink": false,
+    "width": 2,
+    "height": 1,
+    "texture": {
+      "src": "icons/svg/explosion.svg",
+      "scaleX": 1,
+      "scaleY": 1
+    },
+    "disposition": 0,
+    "displayBars": 0
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.1.0",
+    "createdTime": 1782200000000,
+    "modifiedTime": 1782200000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!actors!eaf72c1cc05c07fb"
+}

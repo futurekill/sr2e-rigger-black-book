@@ -1,0 +1,62 @@
+{
+  "_id": "729bb94cc42aa698",
+  "name": "Leyland-Rover Transport (Internal Combustion)",
+  "type": "vehicle",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "vehicleType": "ground",
+    "skill": "car",
+    "handling": 4,
+    "speed": 35,
+    "acceleration": 0,
+    "body": 3,
+    "armor": 0,
+    "signature": 2,
+    "pilot": 2,
+    "sensor": 0,
+    "cargo": 90,
+    "load": 0,
+    "seating": "Single + 1 folding bench (Enclosed-Box cab)",
+    "cost": 45000,
+    "availability": "",
+    "conditionMonitor": {
+      "value": 0,
+      "max": 10
+    },
+    "autonav": 2,
+    "notes": "<p>The internal-combustion Leyland-Rover Transport van — same body options, longer legs. Shown with the Enclosed-Box cab.</p><p><em>Off-road handling 8. Max speed 105 m/CT (cruising 35 used for tests). IC/120 liters; 25 km/liter. Cabs: Minibus (+20,000¥), Enclosed-Box (+15,000¥, 90 CF), Open-Tray (+10,000¥). Chassis 30,000¥. Rigger Black Book p.29.</em></p>"
+  },
+  "prototypeToken": {
+    "name": "Leyland-Rover Transport (Internal Combustion)",
+    "displayName": 20,
+    "actorLink": false,
+    "width": 2,
+    "height": 1,
+    "texture": {
+      "src": "icons/svg/explosion.svg",
+      "scaleX": 1,
+      "scaleY": 1
+    },
+    "disposition": 0,
+    "displayBars": 0
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.1.0",
+    "createdTime": 1782200000000,
+    "modifiedTime": 1782200000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!actors!729bb94cc42aa698"
+}
