@@ -1,0 +1,62 @@
+{
+  "_id": "57e0a0276093b1fc",
+  "name": "Lear-Cessna Platinum II",
+  "type": "vehicle",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "vehicleType": "aircraft",
+    "skill": "aircraft",
+    "handling": 5,
+    "speed": 800,
+    "acceleration": 0,
+    "body": 5,
+    "armor": 1,
+    "signature": 3,
+    "pilot": 4,
+    "sensor": 0,
+    "cargo": 5,
+    "load": 0,
+    "seating": "Twin bucket seats",
+    "cost": 1500000,
+    "availability": "",
+    "conditionMonitor": {
+      "value": 0,
+      "max": 10
+    },
+    "autonav": 4,
+    "notes": "<p>A faster development of the Platinum I executive transport — twin rear-mounted turbofans for the exec in a hurry, STOL-capable.</p><p><em>Max speed 1600 m/CT (cruising 800 used for tests). IC/750 liters; 1.5 km/liter; STOL. Variants: Luxury/Standard Executive, Commuter (15 seats), Cargo. Rigger Black Book p.50.</em></p>"
+  },
+  "prototypeToken": {
+    "name": "Lear-Cessna Platinum II",
+    "displayName": 20,
+    "actorLink": false,
+    "width": 2,
+    "height": 1,
+    "texture": {
+      "src": "icons/svg/explosion.svg",
+      "scaleX": 1,
+      "scaleY": 1
+    },
+    "disposition": 0,
+    "displayBars": 0
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.1.0",
+    "createdTime": 1782200000000,
+    "modifiedTime": 1782200000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!actors!57e0a0276093b1fc"
+}

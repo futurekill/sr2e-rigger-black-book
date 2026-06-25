@@ -142,7 +142,18 @@ const VEHICLES = [
   { name: "Marine Technologies \"Dolphin II\" Motor Yacht", vt: "boat", skill: "boat", h: 3, s: 15, sMax: 45, b: 3, a: 0, sig: 3, p: 2, cargo: 10, cost: 50000, seating: "5 on deck + cabins", page: 44,
     desc: "A 10-meter state-of-the-art pleasure craft for the corp exec on the way up — lounge/kitchen below decks, a semi-enclosed bridge with flying bridge.", extra: "IC/100 liters; 35 km/liter." },
   { name: "Harland & Wolff \"Classique\" Motor Yacht", vt: "boat", skill: "boat", h: 5, s: 15, sMax: 45, b: 3, a: 0, sig: 2, p: 4, cargo: 25, cost: 3500000, seating: "12 passengers + crew", page: 45,
-    desc: "The ultimate corp-exec status symbol — a 27-meter luxury yacht with individual cabins for twelve, full galley, owner's suite and a deckhouse with launch davits.", extra: "IC/2,500 liters; 30 km/liter." }
+    desc: "The ultimate corp-exec status symbol — a 27-meter luxury yacht with individual cabins for twelve, full galley, owner's suite and a deckhouse with launch davits.", extra: "IC/2,500 liters; 30 km/liter." },
+
+  // --- Aircraft (book p.46-51). Skipped (in system): Cessna C750, Lear-Cessna
+  // Platinum I. vehicleType aircraft, single handling.
+  { name: "Fiat-Fokker \"Cloud Nine\" Amphibian", vt: "aircraft", skill: "aircraft", h: 4, s: 300, sMax: 450, b: 3, a: 0, sig: 3, p: 2, cargo: 10, cost: 175000, seating: "Twin bucket + 6 bench", page: 47,
+    desc: "A purpose-built reinforced-boat-hull amphibian — a classic European pleasure craft with STOL (water) / VSTOL (land) capability and a roomy cabin.", extra: "IC/250 liters; 3 km/liter. STOL (water), VSTOL (land)." },
+  { name: "Embraer-Dassault Mistral", vt: "aircraft", skill: "aircraft", h: 4, s: 300, sMax: 450, b: 4, a: 0, sig: 3, p: 2, cargo: 10, cost: 375000, seating: "Twin bucket seats", page: 48,
+    desc: "A twin-turboprop VSTOL monoplane serving civilian, security and military needs — enhanced rough-field performance and easy engine access.", extra: "IC/2,000 liters; 2 km/liter; VSTOL. Variants: Commuter (15 seats), Cargo (60 CF), Security (Sensor +2.5M¥), Military (hardpoints/missiles, speed 225/350, +25,000¥)." },
+  { name: "Lear-Cessna Platinum II", vt: "aircraft", skill: "aircraft", h: 5, s: 800, sMax: 1600, b: 5, a: 1, sig: 3, p: 4, cargo: 5, cost: 1500000, seating: "Twin bucket seats", page: 50,
+    desc: "A faster development of the Platinum I executive transport — twin rear-mounted turbofans for the exec in a hurry, STOL-capable.", extra: "IC/750 liters; 1.5 km/liter; STOL. Variants: Luxury/Standard Executive, Commuter (15 seats), Cargo." },
+  { name: "Hawker-Siddley HS-895 Skytruck", vt: "aircraft", skill: "aircraft", h: 5, s: 400, sMax: 600, b: 5, a: 0, sig: 3, p: 2, cargo: 5, cost: 2500000, seating: "Twin bucket seats", page: 51,
+    desc: "The 21st century's DC-3 — a rugged twin-turboprop VSTOL workhorse in worldwide use with airlines, police, security and paramilitary outfits.", extra: "IC/2,500 liters; 2.5 km/liter; VSTOL. Variants: Standard (40 bench), Commuter (36 seats), Cargo (10+100 CF), Amphibious." }
 ];
 
 let n = 0;
