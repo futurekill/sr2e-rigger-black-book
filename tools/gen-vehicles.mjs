@@ -153,7 +153,12 @@ const VEHICLES = [
   { name: "Lear-Cessna Platinum II", vt: "aircraft", skill: "aircraft", h: 5, s: 800, sMax: 1600, b: 5, a: 1, sig: 3, p: 4, cargo: 5, cost: 1500000, seating: "Twin bucket seats", page: 50,
     desc: "A faster development of the Platinum I executive transport — twin rear-mounted turbofans for the exec in a hurry, STOL-capable.", extra: "IC/750 liters; 1.5 km/liter; STOL. Variants: Luxury/Standard Executive, Commuter (15 seats), Cargo." },
   { name: "Hawker-Siddley HS-895 Skytruck", vt: "aircraft", skill: "aircraft", h: 5, s: 400, sMax: 600, b: 5, a: 0, sig: 3, p: 2, cargo: 5, cost: 2500000, seating: "Twin bucket seats", page: 51,
-    desc: "The 21st century's DC-3 — a rugged twin-turboprop VSTOL workhorse in worldwide use with airlines, police, security and paramilitary outfits.", extra: "IC/2,500 liters; 2.5 km/liter; VSTOL. Variants: Standard (40 bench), Commuter (36 seats), Cargo (10+100 CF), Amphibious." }
+    desc: "The 21st century's DC-3 — a rugged twin-turboprop VSTOL workhorse in worldwide use with airlines, police, security and paramilitary outfits.", extra: "IC/2,500 liters; 2.5 km/liter; VSTOL. Variants: Standard (40 bench), Commuter (36 seats), Cargo (10+100 CF), Amphibious." },
+
+  // --- Rotorcraft (book p.52-56). Heavy overlap — skipped (in system):
+  // Federated-Boeing Commuter, Hughes WK-2 Stallion, Ares Dragon, Hughes Airstar.
+  { name: "Agusta-Cierva \"Plutocrat\" Rotorcraft", vt: "rotor", skill: "rotorcraft", h: 4, s: 200, sMax: 450, b: 4, a: 1, sig: 4, p: 4, cargo: 15, cost: 950000, seating: "Twin bucket + 6 bench", page: 56,
+    desc: "A purpose-designed luxury transport chopper with real-leather upholstery, wood paneling and the finest onboard facilities — VTOL site-access for the corp exec.", extra: "IC/1,000 liters; 1.5 km/liter. Armed variant: chin turret (270° arc), 1 hardpoint + 1 firmpoint, speed 180/400, Armor 2, 1.25M¥." }
 ];
 
 let n = 0;
