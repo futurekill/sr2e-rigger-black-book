@@ -1,0 +1,62 @@
+{
+  "_id": "408e1a27e6148cb4",
+  "name": "Luftschiffbau Zeppelin LZ-2049",
+  "type": "vehicle",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "vehicleType": "aircraft",
+    "skill": "aircraft",
+    "handling": 3,
+    "speed": 100,
+    "acceleration": 0,
+    "body": 12,
+    "armor": 2,
+    "signature": 8,
+    "pilot": 3,
+    "sensor": 0,
+    "cargo": 200,
+    "load": 0,
+    "seating": "2 + 2 bench",
+    "cost": 750000,
+    "availability": "",
+    "conditionMonitor": {
+      "value": 0,
+      "max": 10
+    },
+    "autonav": 3,
+    "notes": "<p>The latest SHAPLL (Shaped Airfoil Positive Enhanced Lift) airship from Zeppelinwerke — a modular lifting-body craft, 26 m long with a 65 m wingspan.</p><p><em>Max speed 250 m/CT (cruising 100 used for tests). LTA. IC/2,500 liters; 5 km/liter. Modules: passenger (32 seats), cargo (150 CF), assault (80 troops, +50,000¥). Rigger Black Book p.57.</em></p>"
+  },
+  "prototypeToken": {
+    "name": "Luftschiffbau Zeppelin LZ-2049",
+    "displayName": 20,
+    "actorLink": false,
+    "width": 2,
+    "height": 1,
+    "texture": {
+      "src": "icons/svg/explosion.svg",
+      "scaleX": 1,
+      "scaleY": 1
+    },
+    "disposition": 0,
+    "displayBars": 0
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.1.0",
+    "createdTime": 1782200000000,
+    "modifiedTime": 1782200000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!actors!408e1a27e6148cb4"
+}

@@ -158,7 +158,15 @@ const VEHICLES = [
   // --- Rotorcraft (book p.52-56). Heavy overlap — skipped (in system):
   // Federated-Boeing Commuter, Hughes WK-2 Stallion, Ares Dragon, Hughes Airstar.
   { name: "Agusta-Cierva \"Plutocrat\" Rotorcraft", vt: "rotor", skill: "rotorcraft", h: 4, s: 200, sMax: 450, b: 4, a: 1, sig: 4, p: 4, cargo: 15, cost: 950000, seating: "Twin bucket + 6 bench", page: 56,
-    desc: "A purpose-designed luxury transport chopper with real-leather upholstery, wood paneling and the finest onboard facilities — VTOL site-access for the corp exec.", extra: "IC/1,000 liters; 1.5 km/liter. Armed variant: chin turret (270° arc), 1 hardpoint + 1 firmpoint, speed 180/400, Armor 2, 1.25M¥." }
+    desc: "A purpose-designed luxury transport chopper with real-leather upholstery, wood paneling and the finest onboard facilities — VTOL site-access for the corp exec.", extra: "IC/1,000 liters; 1.5 km/liter. Armed variant: chin turret (270° arc), 1 hardpoint + 1 firmpoint, speed 180/400, Armor 2, 1.25M¥." },
+
+  // --- Lighter-Than-Air (book p.57-59). vehicleType aircraft (no LTA type).
+  { name: "Luftschiffbau Zeppelin LZ-2049", vt: "aircraft", skill: "aircraft", h: 3, s: 100, sMax: 250, b: 12, a: 2, sig: 8, p: 3, cargo: 200, cost: 750000, seating: "2 + 2 bench", page: 57,
+    desc: "The latest SHAPLL (Shaped Airfoil Positive Enhanced Lift) airship from Zeppelinwerke — a modular lifting-body craft, 26 m long with a 65 m wingspan.", extra: "LTA. IC/2,500 liters; 5 km/liter. Modules: passenger (32 seats), cargo (150 CF), assault (80 troops, +50,000¥)." },
+  { name: "Goodyear Commuter-47 LTA", vt: "aircraft", skill: "aircraft", h: 3, s: 150, sMax: 300, b: 8, a: 1, sig: 8, p: 2, cargo: 75, cost: 225000, seating: "2 + 1 bench", page: 58,
+    desc: "A small SHAPLL airship for personal or executive use — a 25×10 m triangular lifting-body craft with the flight deck and passenger cabin enclosed in the nose.", extra: "LTA. IC/625 liters; 8 km/liter. Passenger bay 50 CF / six bucket seats." },
+  { name: "Airship Industries Skyswimmer", vt: "aircraft", skill: "aircraft", h: 3, s: 90, sMax: 180, b: 6, a: 1, sig: 8, p: 2, cargo: 30, cost: 100000, seating: "2 + 4 bench", page: 59,
+    desc: "A purely recreational SHAPLL airship — solar-electric, gimbaled ducted fans and a folding wingtip design give it (weather permitting) unlimited flying time.", extra: "LTA. Solar-electric (zero economy in sun); optional turbofans speed 110/220. Each 30 CF of cargo cuts speed by ~5/15." }
 ];
 
 let n = 0;
