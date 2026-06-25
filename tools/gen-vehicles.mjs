@@ -14,6 +14,9 @@ const idFor = (s) => createHash("sha1").update("rbb:" + s).digest("hex").slice(0
 
 function vehicle(v) {
   const _id = idFor(v.name);
+  // Off-road handling only applies to ground vehicles (on/off-road pair); ACVs,
+  // boats and aircraft have a single handling value, so omit the note for them.
+  const offRoad = (v.hOff != null && v.hOff !== v.h) ? `Off-road handling ${v.hOff}. ` : "";
   return {
     _id, name: v.name, type: "vehicle", img: "icons/svg/explosion.svg",
     system: {
@@ -23,7 +26,7 @@ function vehicle(v) {
       cargo: v.cargo ?? 0, load: v.load ?? 0, seating: v.seating ?? "",
       cost: v.cost ?? 0, availability: v.avail ?? "",
       conditionMonitor: { value: 0, max: 10 }, autonav: v.p,
-      notes: `<p>${v.desc}</p><p><em>Off-road handling ${v.hOff}. Max speed ${v.sMax} m/CT (cruising ${v.s} used for tests).${v.extra ? " " + v.extra : ""} Rigger Black Book p.${v.page}.</em></p>`
+      notes: `<p>${v.desc}</p><p><em>${offRoad}Max speed ${v.sMax} m/CT (cruising ${v.s} used for tests).${v.extra ? " " + v.extra : ""} Rigger Black Book p.${v.page}.</em></p>`
     },
     prototypeToken: {
       name: v.name, displayName: 20, actorLink: false, width: 2, height: 1,
@@ -115,7 +118,16 @@ const VEHICLES = [
   { name: "Nordkapp-Conestoga \"Bergen\" (Command Module)", h: 3, hOff: 6, s: 30, sMax: 90, b: 6, a: 2, sig: 3, p: 4, cargo: 5, cost: 600000, seating: "2×2 twin bucket seats", page: 36,
     desc: "The command module of the Bergen articulated \"road train\" (N-CAV concept), built for railless wilderness — can chain to up to five self-powered cargo modules.", extra: "Multifuel/2,000 liters; 4 km/liter. Command module can mount a turret/weapons; +1 Handling above the rated speed." },
   { name: "Nordkapp-Conestoga \"Bergen\" (Cargo Module)", h: 3, hOff: 6, s: 30, sMax: 90, b: 5, a: 0, sig: 2, p: 2, cargo: 1000, cost: 200000, seating: "2 bucket seats", page: 36,
-    desc: "A self-powered cargo module for the Bergen road train — 500-CF and 1,000-CF versions chain behind the command module to make a single train.", extra: "Multifuel/2,000 liters. 1,000 CF cargo module shown; 500-CF version also available." }
+    desc: "A self-powered cargo module for the Bergen road train — 500-CF and 1,000-CF versions chain behind the command module to make a single train.", extra: "Multifuel/2,000 liters. 1,000 CF cargo module shown; 500-CF version also available." },
+
+  // --- Air-Cushion Vehicles (book p.37-40). Skipped (in system): Chrysler-Nissan
+  // G12A. Single handling value (no off-road).
+  { name: "Mostrans \"Ivan the Terrible\" KVP-14T", vt: "hovercraft", skill: "hovercraft", h: 4, s: 60, sMax: 180, b: 4, a: 0, sig: 3, p: 1, cargo: 20, cost: 250000, seating: "Twin bucket seats", page: 38,
+    desc: "A light utility ACV from MosTrans of Moscow, built for severe winter weather and popular across Eastern Europe — a watertight boat-hull model is available.", extra: "Multifuel/250 liters; 2 km/liter. Modules: Passenger (9 seats, +20,000¥), Cargo (500 CF)." },
+  { name: "GMC-Beachcraft \"Vacationer\" ACV", vt: "hovercraft", skill: "hovercraft", h: 4, s: 35, sMax: 105, b: 4, a: 0, sig: 3, p: 3, cargo: 30, cost: 100000, seating: "2 + 4-6 bucket seats", page: 39,
+    desc: "The most popular civilian ACV in North America — a recreational hovercraft on the Beachcraft Patroller chassis with built-in camping gear (bunks, mini-kitchen, shower).", extra: "IC/250 liters; 2 km/liter. Boat-hull and winterized variants available." },
+  { name: "GMC-Nissan Hovertruck", vt: "hovercraft", skill: "hovercraft", h: 4, s: 40, sMax: 120, b: 4, a: 0, sig: 5, p: 1, cargo: 500, cost: 100000, seating: "Twin bucket + 1 folding bench", page: 40,
+    desc: "A decade-old cargo hauler for roadless terrain with a water-planing boat hull — popular in Africa and South America where rivers are the only \"highways.\"", extra: "Multifuel/500 liters; 2.5 km/liter. Rear flat accepts a standard 500-CF container." }
 ];
 
 let n = 0;

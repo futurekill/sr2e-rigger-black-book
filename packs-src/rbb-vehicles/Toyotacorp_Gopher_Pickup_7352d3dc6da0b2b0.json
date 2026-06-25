@@ -24,7 +24,7 @@
       "max": 10
     },
     "autonav": 2,
-    "notes": "<p>Classic pickup styling with integral roll bars, an optional power-take-off winch and a built-in gun safe.</p><p><em>Off-road handling 4. Max speed 105 m/CT (cruising 35 used for tests). IC/60 liters; 40 km/liter; off-road speed 30/90. Active suspension, roll bars. Rigger Black Book p.28.</em></p>"
+    "notes": "<p>Classic pickup styling with integral roll bars, an optional power-take-off winch and a built-in gun safe.</p><p><em>Max speed 105 m/CT (cruising 35 used for tests). IC/60 liters; 40 km/liter; off-road speed 30/90. Active suspension, roll bars. Rigger Black Book p.28.</em></p>"
   },
   "prototypeToken": {
     "name": "Toyotacorp Gopher Pickup",

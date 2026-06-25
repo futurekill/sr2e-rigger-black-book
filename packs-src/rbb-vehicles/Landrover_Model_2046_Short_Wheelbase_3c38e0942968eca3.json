@@ -24,7 +24,7 @@
       "max": 10
     },
     "autonav": 1,
-    "notes": "<p>A general-purpose 4WD in the long Landrover tradition — improved and active suspension make rough, hilly terrain easy going.</p><p><em>Off-road handling 3. Max speed 90 m/CT (cruising 30 used for tests). Multifuel/50 liters; 75 km/liter; off-road speed 25/75. Rigger Black Book p.27.</em></p>"
+    "notes": "<p>A general-purpose 4WD in the long Landrover tradition — improved and active suspension make rough, hilly terrain easy going.</p><p><em>Max speed 90 m/CT (cruising 30 used for tests). Multifuel/50 liters; 75 km/liter; off-road speed 25/75. Rigger Black Book p.27.</em></p>"
   },
   "prototypeToken": {
     "name": "Landrover Model 2046 (Short Wheelbase)",

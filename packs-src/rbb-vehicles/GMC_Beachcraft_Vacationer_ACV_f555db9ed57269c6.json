@@ -1,33 +1,33 @@
 {
-  "_id": "db482c34f4a42c00",
-  "name": "Landrover Model 2046 (Long Wheelbase)",
+  "_id": "f555db9ed57269c6",
+  "name": "GMC-Beachcraft \"Vacationer\" ACV",
   "type": "vehicle",
   "img": "icons/svg/explosion.svg",
   "system": {
-    "vehicleType": "ground",
-    "skill": "car",
-    "handling": 3,
-    "speed": 30,
+    "vehicleType": "hovercraft",
+    "skill": "hovercraft",
+    "handling": 4,
+    "speed": 35,
     "acceleration": 0,
-    "body": 3,
+    "body": 4,
     "armor": 0,
-    "signature": 2,
-    "pilot": 1,
+    "signature": 3,
+    "pilot": 3,
     "sensor": 0,
-    "cargo": 45,
+    "cargo": 30,
     "load": 0,
-    "seating": "Twin bucket + 6 folding bench",
-    "cost": 45000,
+    "seating": "2 + 4-6 bucket seats",
+    "cost": 100000,
     "availability": "",
     "conditionMonitor": {
       "value": 0,
       "max": 10
     },
-    "autonav": 1,
-    "notes": "<p>The long-wheelbase Landrover 2046 — more seating and cargo, same rugged go-anywhere drivetrain.</p><p><em>Max speed 90 m/CT (cruising 30 used for tests). Multifuel/75 liters; 80 km/liter; off-road speed 25/75. Rigger Black Book p.27.</em></p>"
+    "autonav": 3,
+    "notes": "<p>The most popular civilian ACV in North America — a recreational hovercraft on the Beachcraft Patroller chassis with built-in camping gear (bunks, mini-kitchen, shower).</p><p><em>Max speed 105 m/CT (cruising 35 used for tests). IC/250 liters; 2 km/liter. Boat-hull and winterized variants available. Rigger Black Book p.39.</em></p>"
   },
   "prototypeToken": {
-    "name": "Landrover Model 2046 (Long Wheelbase)",
+    "name": "GMC-Beachcraft \"Vacationer\" ACV",
     "displayName": 20,
     "actorLink": false,
     "width": 2,
@@ -58,5 +58,5 @@
   "ownership": {
     "default": 0
   },
-  "_key": "!actors!db482c34f4a42c00"
+  "_key": "!actors!f555db9ed57269c6"
 }
