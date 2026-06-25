@@ -74,7 +74,21 @@ const VEHICLES = [
   { name: "BMW Blitzen 2050", vt: "ground", skill: "bike", h: 3, hOff: 4, s: 95, sMax: 285, b: 3, a: 2, sig: 1, p: 2, cargo: 4, cost: 25000, seating: "1 front + 1 rear", page: 22,
     desc: "The latest of the classic Blitzen high-performance combat bikes — armored with metallo-ceramic alloys for heavy-duty security work.", extra: "IC/35 liters; 35 km/liter. Above 210 kph handling becomes 4/5. Mounts 3 firepoints, or 2 + 1 hardpoint." },
   { name: "Honda \"Viking\" Supercycle", vt: "ground", skill: "bike", h: 3, hOff: 5, s: 50, sMax: 150, b: 4, a: 1, sig: 1, p: 2, cargo: 4, cost: 17000, seating: "1 front + 1 rear", page: 23,
-    desc: "A supercycle with reinforced seating for troll-sized riders as standard, and extra-heavy construction that boosts durability and rider protection.", extra: "IC/35 liters; 30 km/liter." }
+    desc: "A supercycle with reinforced seating for troll-sized riders as standard, and extra-heavy construction that boosts durability and rider protection.", extra: "IC/35 liters; 30 km/liter." },
+
+  // --- Four-Wheel Drive (book p.24-27). No system dups in this section.
+  { name: "Ford-Canada Bison", h: 4, hOff: 3, s: 45, sMax: 135, b: 5, a: 2, sig: 4, p: 3, cargo: 55, cost: 150000, seating: "Twin bucket + folding bench", page: 24,
+    desc: "A working 4WD with room for passengers and cargo, off-road suspension and large balloon tires — the best-selling vehicle in the Athabascan, Salish-Shidhe and Algonkian councils.", extra: "Multifuel/250 liters; 18 km/liter; off-road speed 35/105. 5 CF underseat + 50 CF rear. Enclosed rear-bay model 165,000¥." },
+  { name: "Rolls Royce Prairie Cat", h: 2, hOff: 3, s: 40, sMax: 120, b: 3, a: 1, sig: 2, p: 3, cargo: 10, cost: 275000, seating: "2 + 2 bucket seats", page: 24,
+    desc: "A luxury, amphibious 4WD with the Chevalier Hi-Speed Scout engine — APPS, heavy-duty leather, full comm/stereo with satellite uplink and a mini-bar.", extra: "Multifuel/75 liters; 30 km/liter; off-road speed 35/105; amphibious. APPS, roll bars." },
+  { name: "GAZ-Willys Nomad", h: 3, hOff: 3, s: 30, sMax: 90, b: 3, a: 0, sig: 2, p: 2, cargo: 30, cost: 50000, seating: "Twin bucket + 2×2 folding bench", page: 25,
+    desc: "A popular mid-size 4WD (General Purpose model) marrying Russian design simplicity with Western reliability — active suspension and roll bars standard.", extra: "Multifuel/90 liters; 45 km/liter; off-road speed 35/105. Variants: Rear Tray (35,000¥), King Cab (40,000¥)." },
+  { name: "Nissan-Holden Brumby", h: 4, hOff: 3, s: 30, sMax: 90, b: 2, a: 0, sig: 2, p: 2, cargo: 10, cost: 25000, seating: "2 bucket + 2 folding bench", page: 26,
+    desc: "An Australian import — a smaller-than-usual 4WD with off-road suspension, at home in the wooded backwoods.", extra: "Multifuel/50 liters; 75 km/liter; off-road speed 25/75." },
+  { name: "Landrover Model 2046 (Short Wheelbase)", h: 3, hOff: 3, s: 30, sMax: 90, b: 2, a: 0, sig: 2, p: 1, cargo: 25, cost: 35000, seating: "Twin bucket + 4 folding bench", page: 27,
+    desc: "A general-purpose 4WD in the long Landrover tradition — improved and active suspension make rough, hilly terrain easy going.", extra: "Multifuel/50 liters; 75 km/liter; off-road speed 25/75." },
+  { name: "Landrover Model 2046 (Long Wheelbase)", h: 3, hOff: 3, s: 30, sMax: 90, b: 3, a: 0, sig: 2, p: 1, cargo: 45, cost: 45000, seating: "Twin bucket + 6 folding bench", page: 27,
+    desc: "The long-wheelbase Landrover 2046 — more seating and cargo, same rugged go-anywhere drivetrain.", extra: "Multifuel/75 liters; 80 km/liter; off-road speed 25/75." }
 ];
 
 let n = 0;
