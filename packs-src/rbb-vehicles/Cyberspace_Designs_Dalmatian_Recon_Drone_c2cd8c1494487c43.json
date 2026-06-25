@@ -1,0 +1,62 @@
+{
+  "_id": "c2cd8c1494487c43",
+  "name": "Cyberspace Designs Dalmatian Recon Drone",
+  "type": "vehicle",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "vehicleType": "drone",
+    "skill": "",
+    "handling": 3,
+    "speed": 35,
+    "acceleration": 0,
+    "body": 2,
+    "armor": 0,
+    "signature": 4,
+    "pilot": 2,
+    "sensor": 1,
+    "cargo": 6,
+    "load": 0,
+    "seating": "Drone (rigged)",
+    "cost": 15000,
+    "availability": "",
+    "conditionMonitor": {
+      "value": 0,
+      "max": 10
+    },
+    "autonav": 2,
+    "notes": "<p>A turbofan delta-airfoil surveillance drone with a capacious sensor pod, VTOL capability and a \"stealth\" mode.</p><p><em>Max speed 105 m/CT (cruising 35 used for tests). Drone. Sensor Standard (1); VSTOL; 5-min setup. Armed variant: B/A 4/1, Sig 5, 2 firmpoints, Store 12, 30,000¥. Rigger Black Book p.82.</em></p>"
+  },
+  "prototypeToken": {
+    "name": "Cyberspace Designs Dalmatian Recon Drone",
+    "displayName": 20,
+    "actorLink": false,
+    "width": 2,
+    "height": 1,
+    "texture": {
+      "src": "icons/svg/explosion.svg",
+      "scaleX": 1,
+      "scaleY": 1
+    },
+    "disposition": 0,
+    "displayBars": 0
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.1.0",
+    "createdTime": 1782200000000,
+    "modifiedTime": 1782200000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!actors!c2cd8c1494487c43"
+}

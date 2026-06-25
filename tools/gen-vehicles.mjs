@@ -184,7 +184,26 @@ const VEHICLES = [
   { name: "CASA J-239 Raven", vt: "aircraft", skill: "aircraft", h: 3, s: 200, sMax: 400, b: 3, a: 0, sig: 1, p: 1, cargo: 5, cost: 175000, seating: "Twin bucket seats", page: 72,
     desc: "A reinforced glider airframe with twin micro-turbofans, built for low-signature security and surveillance — STOL-capable with a powered/unpowered gliding mode.", extra: "IC/250 liters; 5 km/liter; STOL. Gliding: Handling 5, speed 50/100, Sig 0 (glide ratio 1.3)." },
   { name: "Moonlight Aerospace Avenger", vt: "aircraft", skill: "aircraft", h: 4, s: 100, sMax: 200, b: 3, a: 3, sig: 3, p: 2, cargo: 3, cost: 250000, seating: "Single bucket seat", page: 73,
-    desc: "An ultralight, multipurpose paramilitary STOL aircraft with a rear-mounted pusher turboprop, minimal signature and a low-radar-reflection composite airframe.", extra: "IC/150 liters; 4 km/liter; STOL/amphibian. Disassembles for transport. Armed: 2 fuselage firmpoints + 1 center hardpoint. (Signature value in the book scan is unclear; read as minimal per the text.)" }
+    desc: "An ultralight, multipurpose paramilitary STOL aircraft with a rear-mounted pusher turboprop, minimal signature and a low-radar-reflection composite airframe.", extra: "IC/150 liters; 4 km/liter; STOL/amphibian. Disassembles for transport. Armed: 2 fuselage firmpoints + 1 center hardpoint. (Signature value in the book scan is unclear; read as minimal per the text.)" },
+
+  // --- Red Ranger Scout ACV (book p.75, tail of the security section).
+  { name: "Sikorsky-Bell \"Red Ranger\" Scout ACV", vt: "hovercraft", skill: "hovercraft", h: 4, s: 150, sMax: 450, b: 2, a: 2, sig: 3, p: 3, sensor: 1, cargo: 30, cost: 250000, seating: "1 + 1 single bucket seats", page: 75,
+    desc: "A light, ultra-fast two-man scout/recon ACV with dual drive (air-cushion + powered wheels), survey radar, IR/visible-light, sound and motion sensors.", extra: "IC/2,500 liters; 5 km/liter. Wheels engaged: handling 3/5, speed 30/90, Sig 8. 1 small turret (2 CF ammo)." },
+
+  // --- Drones (book p.77+). vehicleType drone. Store -> cargo, Sensor Package
+  // rating -> sensor. Heavy overlap with Rigger 2 — skipped (in system/Rigger 2):
+  // Aztechnology GCR-23C Crawler, Aerodesign Condor LDSD-23, MCT-Nissan Rotodrone,
+  // GM-Nissan Spotter (= Spotter Drone).
+  { name: "GAZ-Niki GNRD-71bis Snooper", vt: "drone", skill: "", h: 4, s: 25, sMax: 75, b: 1, a: 0, sig: 5, p: 1, sensor: 1, cargo: 1, cost: 1750, seating: "Drone (rigged)", page: 79,
+    desc: "A six-wheeled surveillance drone on electric balloon tires — a Russo-Polish security favorite that climbs to 3 m, takes corners and slips through 5-cm openings.", extra: "Drone. Sensor Standard (1). 6 hours stationary operation; no set-up time." },
+  { name: "Cyberspace Designs Dalmatian Recon Drone", vt: "drone", skill: "", h: 3, s: 35, sMax: 105, b: 2, a: 0, sig: 4, p: 2, sensor: 1, cargo: 6, cost: 15000, seating: "Drone (rigged)", page: 82,
+    desc: "A turbofan delta-airfoil surveillance drone with a capacious sensor pod, VTOL capability and a \"stealth\" mode.", extra: "Drone. Sensor Standard (1); VSTOL; 5-min setup. Armed variant: B/A 4/1, Sig 5, 2 firmpoints, Store 12, 30,000¥." },
+  { name: "Sikorsky-Bell Microskimmer", vt: "drone", skill: "", h: 5, s: 30, sMax: 90, b: 1, a: 0, sig: 5, p: 1, sensor: 1, cargo: 2, cost: 2750, seating: "Drone (rigged)", page: 83,
+    desc: "A trash-can-sized ACV drone carrying a full sensor suite at high speed over any terrain — fully electric and floatable on water.", extra: "Drone. Sensor Standard (1). 8 hours stationary operation." },
+  { name: "CAS \"Wandjina\" RPV", vt: "drone", skill: "", h: 3, s: 250, sMax: 500, b: 5, a: 2, sig: 4, p: 4, sensor: 3, cargo: 50, cost: 75000, seating: "Drone (rigged)", page: 84,
+    desc: "A combat Remotely Piloted Vehicle from Commonwealth Aerospace (Australia) — built for both assault and recon, with a hardened airframe and weapon hardpoints.", extra: "Drone. Sensor Advanced (3); STOL. Armament: Vengeance/Vanquisher minigun + 3 ordnance hardpoints (centerline 2×2 CF, underwing 3 CF). Stealth mode." },
+  { name: "GM-Nissan \"Doberman\" Patrol Vehicle", vt: "drone", skill: "", h: 3, s: 35, sMax: 70, b: 3, a: 2, sig: 3, p: 2, sensor: 3, cargo: 20, cost: 10000, seating: "Drone (rigged)", page: 85,
+    desc: "The classic perimeter-patrol drone — thermographic and motion sensors, heavy armor and a micro-turret, equally effective day or night.", extra: "Drone. Sensor Advanced (3). Micro-turret + forward firmpoint: twin LMG or shotgun (gel/standard); optional Defiance Super Shock taser." }
 ];
 
 let n = 0;

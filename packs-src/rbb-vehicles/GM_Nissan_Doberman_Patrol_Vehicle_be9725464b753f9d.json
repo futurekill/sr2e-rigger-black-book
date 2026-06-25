@@ -1,0 +1,62 @@
+{
+  "_id": "be9725464b753f9d",
+  "name": "GM-Nissan \"Doberman\" Patrol Vehicle",
+  "type": "vehicle",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "vehicleType": "drone",
+    "skill": "",
+    "handling": 3,
+    "speed": 35,
+    "acceleration": 0,
+    "body": 3,
+    "armor": 2,
+    "signature": 3,
+    "pilot": 2,
+    "sensor": 3,
+    "cargo": 20,
+    "load": 0,
+    "seating": "Drone (rigged)",
+    "cost": 10000,
+    "availability": "",
+    "conditionMonitor": {
+      "value": 0,
+      "max": 10
+    },
+    "autonav": 2,
+    "notes": "<p>The classic perimeter-patrol drone — thermographic and motion sensors, heavy armor and a micro-turret, equally effective day or night.</p><p><em>Max speed 70 m/CT (cruising 35 used for tests). Drone. Sensor Advanced (3). Micro-turret + forward firmpoint: twin LMG or shotgun (gel/standard); optional Defiance Super Shock taser. Rigger Black Book p.85.</em></p>"
+  },
+  "prototypeToken": {
+    "name": "GM-Nissan \"Doberman\" Patrol Vehicle",
+    "displayName": 20,
+    "actorLink": false,
+    "width": 2,
+    "height": 1,
+    "texture": {
+      "src": "icons/svg/explosion.svg",
+      "scaleX": 1,
+      "scaleY": 1
+    },
+    "disposition": 0,
+    "displayBars": 0
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.1.0",
+    "createdTime": 1782200000000,
+    "modifiedTime": 1782200000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!actors!be9725464b753f9d"
+}
