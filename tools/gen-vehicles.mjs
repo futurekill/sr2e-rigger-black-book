@@ -127,7 +127,22 @@ const VEHICLES = [
   { name: "GMC-Beachcraft \"Vacationer\" ACV", vt: "hovercraft", skill: "hovercraft", h: 4, s: 35, sMax: 105, b: 4, a: 0, sig: 3, p: 3, cargo: 30, cost: 100000, seating: "2 + 4-6 bucket seats", page: 39,
     desc: "The most popular civilian ACV in North America — a recreational hovercraft on the Beachcraft Patroller chassis with built-in camping gear (bunks, mini-kitchen, shower).", extra: "IC/250 liters; 2 km/liter. Boat-hull and winterized variants available." },
   { name: "GMC-Nissan Hovertruck", vt: "hovercraft", skill: "hovercraft", h: 4, s: 40, sMax: 120, b: 4, a: 0, sig: 5, p: 1, cargo: 500, cost: 100000, seating: "Twin bucket + 1 folding bench", page: 40,
-    desc: "A decade-old cargo hauler for roadless terrain with a water-planing boat hull — popular in Africa and South America where rivers are the only \"highways.\"", extra: "Multifuel/500 liters; 2.5 km/liter. Rear flat accepts a standard 500-CF container." }
+    desc: "A decade-old cargo hauler for roadless terrain with a water-planing boat hull — popular in Africa and South America where rivers are the only \"highways.\"", extra: "Multifuel/500 liters; 2.5 km/liter. Rear flat accepts a standard 500-CF container." },
+
+  // --- Marine Vehicles (book p.41-45). Skipped (in system): Samuvani-Criscraft
+  // Otter, Aztechnology Nightrunner. vehicleType boat, single handling.
+  { name: "Suzuki Watersport (Standard)", vt: "boat", skill: "boat", h: 2, s: 15, sMax: 45, b: 1, a: 0, sig: 3, p: 0, cargo: 0, cost: 1200, seating: "1", page: 41,
+    desc: "The most popular water jet bike of the last decade — the 2051 standard model has improved handling and economy.", extra: "IC/10 liters; 15 km/liter." },
+  { name: "Suzuki Watersport (Electric)", vt: "boat", skill: "boat", h: 2, s: 10, sMax: 30, b: 1, a: 0, sig: 5, p: 0, cargo: 0, cost: 1300, seating: "1", page: 41,
+    desc: "The electric-drive Suzuki Watersport jet bike — quieter and lower-signature than the IC model.", extra: "Electric, 300 PF; 0.5 PF/km." },
+  { name: "Zemlya-Poltava Swordsman", vt: "boat", skill: "boat", h: 4, s: 25, sMax: 75, b: 3, a: 0, sig: 3, p: 2, cargo: 40, cost: 30000, seating: "2 bucket + 6 folding bench", page: 42,
+    desc: "A classic pleasure craft updated for the 2050s — a 7-meter, partially decked-in runabout with a sun shelter.", extra: "IC/75 liters; 25 km/liter. Optional EuroNav Poseidon outboards (speed 30/90) and electric drive." },
+  { name: "Colorado Craft \"Cigarette\" Hydroconvertible", vt: "boat", skill: "boat", h: 4, s: 25, sMax: 75, b: 2, a: 0, sig: 3, p: 2, cargo: 10, cost: 35000, seating: "2 bucket seats", page: 43,
+    desc: "A 6-meter convertible hydrofoil — cruise as a high-speed planing craft, then drop the foils at the flick of a switch for the open sea.", extra: "IC/50 liters; 25 km/liter. Foils down: Handling 8, speed 35/105, Sig 1, autopilot disabled, 12 km/liter." },
+  { name: "Marine Technologies \"Dolphin II\" Motor Yacht", vt: "boat", skill: "boat", h: 3, s: 15, sMax: 45, b: 3, a: 0, sig: 3, p: 2, cargo: 10, cost: 50000, seating: "5 on deck + cabins", page: 44,
+    desc: "A 10-meter state-of-the-art pleasure craft for the corp exec on the way up — lounge/kitchen below decks, a semi-enclosed bridge with flying bridge.", extra: "IC/100 liters; 35 km/liter." },
+  { name: "Harland & Wolff \"Classique\" Motor Yacht", vt: "boat", skill: "boat", h: 5, s: 15, sMax: 45, b: 3, a: 0, sig: 2, p: 4, cargo: 25, cost: 3500000, seating: "12 passengers + crew", page: 45,
+    desc: "The ultimate corp-exec status symbol — a 27-meter luxury yacht with individual cabins for twelve, full galley, owner's suite and a deckhouse with launch davits.", extra: "IC/2,500 liters; 30 km/liter." }
 ];
 
 let n = 0;

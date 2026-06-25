@@ -1,0 +1,62 @@
+{
+  "_id": "713ac9e3aed1da96",
+  "name": "Harland & Wolff \"Classique\" Motor Yacht",
+  "type": "vehicle",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "vehicleType": "boat",
+    "skill": "boat",
+    "handling": 5,
+    "speed": 15,
+    "acceleration": 0,
+    "body": 3,
+    "armor": 0,
+    "signature": 2,
+    "pilot": 4,
+    "sensor": 0,
+    "cargo": 25,
+    "load": 0,
+    "seating": "12 passengers + crew",
+    "cost": 3500000,
+    "availability": "",
+    "conditionMonitor": {
+      "value": 0,
+      "max": 10
+    },
+    "autonav": 4,
+    "notes": "<p>The ultimate corp-exec status symbol — a 27-meter luxury yacht with individual cabins for twelve, full galley, owner's suite and a deckhouse with launch davits.</p><p><em>Max speed 45 m/CT (cruising 15 used for tests). IC/2,500 liters; 30 km/liter. Rigger Black Book p.45.</em></p>"
+  },
+  "prototypeToken": {
+    "name": "Harland & Wolff \"Classique\" Motor Yacht",
+    "displayName": 20,
+    "actorLink": false,
+    "width": 2,
+    "height": 1,
+    "texture": {
+      "src": "icons/svg/explosion.svg",
+      "scaleX": 1,
+      "scaleY": 1
+    },
+    "disposition": 0,
+    "displayBars": 0
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.1.0",
+    "createdTime": 1782200000000,
+    "modifiedTime": 1782200000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!actors!713ac9e3aed1da96"
+}
