@@ -55,7 +55,26 @@ const VEHICLES = [
   { name: "Toyota \"Elite\" Limousine", h: 4, hOff: 8, s: 40, sMax: 120, b: 3, a: 0, sig: 2, p: 4, cargo: 8, cost: 125000, seating: "Twin + quad rear bucket seats", page: 14,
     desc: "A mid-size limo with a Kevlarplex divider, EnviroSeal climate control, refrigerated wet bar and a mobile telecom system. The \"Hollywood Ford.\"", extra: "IC/300 liters; 18 km/liter; EnviroSeal." },
   { name: "Rolls Royce \"Phaeton\" Limousine", h: 4, hOff: 4, s: 60, sMax: 180, b: 5, a: 2, sig: 2, p: 4, cargo: 15, cost: 500000, seating: "Twin + 6 bucket + 3 folding seats", page: 15,
-    desc: "The luxury vehicle for the 2050s: armored seating for six plus three jump seats, APPS, roll bars, full comm/stereo with satellite uplink and a wet bar.", extra: "IC/300 liters; 12 km/liter; EnviroSeal, active suspension." }
+    desc: "The luxury vehicle for the 2050s: armored seating for six plus three jump seats, APPS, roll bars, full comm/stereo with satellite uplink and a wet bar.", extra: "IC/300 liters; 12 km/liter; EnviroSeal, active suspension." },
+
+  // --- Motorcycles (book p.16-23). Skipped (already in system): Dodge Scoot,
+  // Yamaha Rapier, Harley-Davidson Scorpion.
+  { name: "Entertainment Systems Papoose", vt: "ground", skill: "bike", h: 3, hOff: 6, s: 30, sMax: 90, b: 1, a: 0, sig: 5, p: 0, cargo: 1, cost: 4000, seating: "1", page: 16,
+    desc: "A recreational electric bike from a maker better known for racing bicycles — folds into a compact bundle for trunk or roof-rack storage.", extra: "Electric, 320 PF; 2 PF/km." },
+  { name: "Entertainment Systems Papoose Maximus", vt: "ground", skill: "bike", h: 3, hOff: 6, s: 30, sMax: 90, b: 2, a: 0, sig: 5, p: 0, cargo: 1, cost: 12000, seating: "1 + 1", page: 16,
+    desc: "The larger Papoose Maximus — two seats, a tougher hull and an extended range.", extra: "Electric, 400 PF." },
+  { name: "Suzuki \"Aurora\" Racing Bike", vt: "ground", skill: "bike", h: 2, hOff: 4, s: 70, sMax: 210, b: 1, a: 0, sig: 1, p: 1, cargo: 1, cost: 15000, seating: "1", page: 17,
+    desc: "Winner of the Pan-Pacific Motorcycle Circuit — CompuaGlide-equipped racing bike with massively improved handling and performance.", extra: "IC/15 liters; 80 km/liter." },
+  { name: "Hyundai Offroader", vt: "ground", skill: "bike", h: 4, hOff: 2, s: 60, sMax: 180, b: 2, a: 0, sig: 1, p: 1, cargo: 2, cost: 12500, seating: "1 + 1", page: 18,
+    desc: "Purpose-built for the off-road market — the best rough-terrain handling of any bike, supplied under contract to the Sioux and Ute border patrols.", extra: "Multifuel/25 liters; 90 km/liter; off-road speed 55/165. Sidecar +1,500¥ (special option only)." },
+  { name: "Thundercloud \"Pinto\" All-Terrain Trike", vt: "ground", skill: "bike", h: 4, hOff: 2, s: 20, sMax: 60, b: 3, a: 2, sig: 2, p: 0, cargo: 15, cost: 35000, seating: "Single bucket + 2 rear", page: 19,
+    desc: "A durable all-terrain trike built by the Pueblo Corporate Council — balloon tires give limited amphibious capability, popular in the Far North.", extra: "IC/50 liters; 50 km/liter; off-road speed 35/105, amphibious 5/15. Enclosed canopy (Armor 1) +5,000¥." },
+  { name: "GAZ-Niki White Eagle", vt: "ground", skill: "bike", h: 3, hOff: 3, s: 60, sMax: 180, b: 3, a: 0, sig: 1, p: 0, cargo: 0, cost: 15000, seating: "1 front + 1 rear", page: 20,
+    desc: "The scout bike of the Polish Armed Forces — easy to maintain and durable, and able to mount an optimum number of light weapons.", extra: "Multifuel/35 liters; 6 km/liter. Options: bike trailer, SnowMaster snow kit (+5,000¥)." },
+  { name: "BMW Blitzen 2050", vt: "ground", skill: "bike", h: 3, hOff: 4, s: 95, sMax: 285, b: 3, a: 2, sig: 1, p: 2, cargo: 4, cost: 25000, seating: "1 front + 1 rear", page: 22,
+    desc: "The latest of the classic Blitzen high-performance combat bikes — armored with metallo-ceramic alloys for heavy-duty security work.", extra: "IC/35 liters; 35 km/liter. Above 210 kph handling becomes 4/5. Mounts 3 firepoints, or 2 + 1 hardpoint." },
+  { name: "Honda \"Viking\" Supercycle", vt: "ground", skill: "bike", h: 3, hOff: 5, s: 50, sMax: 150, b: 4, a: 1, sig: 1, p: 2, cargo: 4, cost: 17000, seating: "1 front + 1 rear", page: 23,
+    desc: "A supercycle with reinforced seating for troll-sized riders as standard, and extra-heavy construction that boosts durability and rider protection.", extra: "IC/35 liters; 30 km/liter." }
 ];
 
 let n = 0;

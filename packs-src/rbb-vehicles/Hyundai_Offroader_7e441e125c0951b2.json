@@ -1,0 +1,62 @@
+{
+  "_id": "7e441e125c0951b2",
+  "name": "Hyundai Offroader",
+  "type": "vehicle",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "vehicleType": "ground",
+    "skill": "bike",
+    "handling": 4,
+    "speed": 60,
+    "acceleration": 0,
+    "body": 2,
+    "armor": 0,
+    "signature": 1,
+    "pilot": 1,
+    "sensor": 0,
+    "cargo": 2,
+    "load": 0,
+    "seating": "1 + 1",
+    "cost": 12500,
+    "availability": "",
+    "conditionMonitor": {
+      "value": 0,
+      "max": 10
+    },
+    "autonav": 1,
+    "notes": "<p>Purpose-built for the off-road market — the best rough-terrain handling of any bike, supplied under contract to the Sioux and Ute border patrols.</p><p><em>Off-road handling 2. Max speed 180 m/CT (cruising 60 used for tests). Multifuel/25 liters; 90 km/liter; off-road speed 55/165. Sidecar +1,500¥ (special option only). Rigger Black Book p.18.</em></p>"
+  },
+  "prototypeToken": {
+    "name": "Hyundai Offroader",
+    "displayName": 20,
+    "actorLink": false,
+    "width": 2,
+    "height": 1,
+    "texture": {
+      "src": "icons/svg/explosion.svg",
+      "scaleX": 1,
+      "scaleY": 1
+    },
+    "disposition": 0,
+    "displayBars": 0
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.1.0",
+    "createdTime": 1782200000000,
+    "modifiedTime": 1782200000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!actors!7e441e125c0951b2"
+}

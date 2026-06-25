@@ -1,0 +1,62 @@
+{
+  "_id": "f94626eb10c6036c",
+  "name": "Suzuki \"Aurora\" Racing Bike",
+  "type": "vehicle",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "vehicleType": "ground",
+    "skill": "bike",
+    "handling": 2,
+    "speed": 70,
+    "acceleration": 0,
+    "body": 1,
+    "armor": 0,
+    "signature": 1,
+    "pilot": 1,
+    "sensor": 0,
+    "cargo": 1,
+    "load": 0,
+    "seating": "1",
+    "cost": 15000,
+    "availability": "",
+    "conditionMonitor": {
+      "value": 0,
+      "max": 10
+    },
+    "autonav": 1,
+    "notes": "<p>Winner of the Pan-Pacific Motorcycle Circuit — CompuaGlide-equipped racing bike with massively improved handling and performance.</p><p><em>Off-road handling 4. Max speed 210 m/CT (cruising 70 used for tests). IC/15 liters; 80 km/liter. Rigger Black Book p.17.</em></p>"
+  },
+  "prototypeToken": {
+    "name": "Suzuki \"Aurora\" Racing Bike",
+    "displayName": 20,
+    "actorLink": false,
+    "width": 2,
+    "height": 1,
+    "texture": {
+      "src": "icons/svg/explosion.svg",
+      "scaleX": 1,
+      "scaleY": 1
+    },
+    "disposition": 0,
+    "displayBars": 0
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.1.0",
+    "createdTime": 1782200000000,
+    "modifiedTime": 1782200000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!actors!f94626eb10c6036c"
+}
