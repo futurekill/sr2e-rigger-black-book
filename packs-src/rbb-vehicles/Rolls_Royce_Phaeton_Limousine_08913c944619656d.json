@@ -1,0 +1,62 @@
+{
+  "_id": "08913c944619656d",
+  "name": "Rolls Royce \"Phaeton\" Limousine",
+  "type": "vehicle",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "vehicleType": "ground",
+    "skill": "car",
+    "handling": 4,
+    "speed": 60,
+    "acceleration": 0,
+    "body": 5,
+    "armor": 2,
+    "signature": 2,
+    "pilot": 4,
+    "sensor": 0,
+    "cargo": 15,
+    "load": 0,
+    "seating": "Twin + 6 bucket + 3 folding seats",
+    "cost": 500000,
+    "availability": "",
+    "conditionMonitor": {
+      "value": 0,
+      "max": 10
+    },
+    "autonav": 4,
+    "notes": "<p>The luxury vehicle for the 2050s: armored seating for six plus three jump seats, APPS, roll bars, full comm/stereo with satellite uplink and a wet bar.</p><p><em>Off-road handling 4. Max speed 180 m/CT (cruising 60 used for tests). IC/300 liters; 12 km/liter; EnviroSeal, active suspension. Rigger Black Book p.15.</em></p>"
+  },
+  "prototypeToken": {
+    "name": "Rolls Royce \"Phaeton\" Limousine",
+    "displayName": 20,
+    "actorLink": false,
+    "width": 2,
+    "height": 1,
+    "texture": {
+      "src": "icons/svg/explosion.svg",
+      "scaleX": 1,
+      "scaleY": 1
+    },
+    "disposition": 0,
+    "displayBars": 0
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.1.0",
+    "createdTime": 1782200000000,
+    "modifiedTime": 1782200000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!actors!08913c944619656d"
+}

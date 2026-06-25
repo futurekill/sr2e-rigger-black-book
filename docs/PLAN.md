@@ -14,7 +14,9 @@ and Rigger 2.
 ## SR1 → SR2 stat mapping (confirmed against the Leyland-Zil Tsarina, p.9)
 SR1 stat block → SR2 `vehicle` field:
 - **Handling** `on/off` (e.g. 4/8) → `handling` = on-road; off-road in notes.
-- **Speed** `cruise/max` (e.g. 25/75) → `speed` = max (2nd); cruise in notes.
+- **Speed** `cruise/max` (e.g. 25/75) → `speed` = **cruising (1st)** — the system
+  uses the cruising figure for tests (cf. the core Ford Americar: speed 35, not
+  105); max goes in notes.
 - **B/A** (e.g. 1/0) → `body` / `armor`.
 - **Sig** → `signature`.
 - **APilot** (Autopilot) → `pilot`.

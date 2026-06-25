@@ -1,0 +1,62 @@
+{
+  "_id": "4f51857bce9128fe",
+  "name": "Toyota \"Elite\" Limousine",
+  "type": "vehicle",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "vehicleType": "ground",
+    "skill": "car",
+    "handling": 4,
+    "speed": 40,
+    "acceleration": 0,
+    "body": 3,
+    "armor": 0,
+    "signature": 2,
+    "pilot": 4,
+    "sensor": 0,
+    "cargo": 8,
+    "load": 0,
+    "seating": "Twin + quad rear bucket seats",
+    "cost": 125000,
+    "availability": "",
+    "conditionMonitor": {
+      "value": 0,
+      "max": 10
+    },
+    "autonav": 4,
+    "notes": "<p>A mid-size limo with a Kevlarplex divider, EnviroSeal climate control, refrigerated wet bar and a mobile telecom system. The \"Hollywood Ford.\"</p><p><em>Off-road handling 8. Max speed 120 m/CT (cruising 40 used for tests). IC/300 liters; 18 km/liter; EnviroSeal. Rigger Black Book p.14.</em></p>"
+  },
+  "prototypeToken": {
+    "name": "Toyota \"Elite\" Limousine",
+    "displayName": 20,
+    "actorLink": false,
+    "width": 2,
+    "height": 1,
+    "texture": {
+      "src": "icons/svg/explosion.svg",
+      "scaleX": 1,
+      "scaleY": 1
+    },
+    "disposition": 0,
+    "displayBars": 0
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.1.0",
+    "createdTime": 1782200000000,
+    "modifiedTime": 1782200000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!actors!4f51857bce9128fe"
+}

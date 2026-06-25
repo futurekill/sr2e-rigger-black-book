@@ -1,0 +1,62 @@
+{
+  "_id": "ee479af7f4f49a6f",
+  "name": "Honda-GM 3220 ZX",
+  "type": "vehicle",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "vehicleType": "ground",
+    "skill": "car",
+    "handling": 4,
+    "speed": 40,
+    "acceleration": 0,
+    "body": 2,
+    "armor": 0,
+    "signature": 2,
+    "pilot": 1,
+    "sensor": 0,
+    "cargo": 4,
+    "load": 0,
+    "seating": "Front/rear twin bucket seats",
+    "cost": 30000,
+    "availability": "",
+    "conditionMonitor": {
+      "value": 0,
+      "max": 10
+    },
+    "autonav": 1,
+    "notes": "<p>The cheapest sports car on the road — targa top, mag wheels, high-speed suspension and exceptional road-holding.</p><p><em>Off-road handling 8. Max speed 120 m/CT (cruising 40 used for tests). IC/30 liters; 50 km/liter. Rigger Black Book p.12.</em></p>"
+  },
+  "prototypeToken": {
+    "name": "Honda-GM 3220 ZX",
+    "displayName": 20,
+    "actorLink": false,
+    "width": 2,
+    "height": 1,
+    "texture": {
+      "src": "icons/svg/explosion.svg",
+      "scaleX": 1,
+      "scaleY": 1
+    },
+    "disposition": 0,
+    "displayBars": 0
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.1.0",
+    "createdTime": 1782200000000,
+    "modifiedTime": 1782200000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!actors!ee479af7f4f49a6f"
+}
