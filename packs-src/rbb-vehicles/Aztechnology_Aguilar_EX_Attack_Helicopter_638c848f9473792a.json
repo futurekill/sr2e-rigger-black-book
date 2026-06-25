@@ -1,0 +1,62 @@
+{
+  "_id": "638c848f9473792a",
+  "name": "Aztechnology Aguilar-EX Attack Helicopter",
+  "type": "vehicle",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "vehicleType": "rotor",
+    "skill": "rotorcraft",
+    "handling": 4,
+    "speed": 280,
+    "acceleration": 0,
+    "body": 3,
+    "armor": 2,
+    "signature": 4,
+    "pilot": 4,
+    "sensor": 4,
+    "cargo": 2,
+    "load": 0,
+    "seating": "1 + 1 integrated bucket seats",
+    "cost": 2600000,
+    "availability": "",
+    "conditionMonitor": {
+      "value": 0,
+      "max": 10
+    },
+    "autonav": 4,
+    "notes": "<p>Aztlan's premier VTOL weapons platform in an export configuration — a stealth electric-turbine attack helicopter with an internal signature-suppression suite, near-unsurpassed on the modern battlefield.</p><p><em>Max speed 560 m/CT (cruising 280 used for tests). 1,000 liters/100 PF; electric option. Sensors Military (read ~4-7); ECM/ECCM Military I (4)/II (5). Armament: wing/side mounts, 1,000-rd HMG, Bandit AGMs / 7.62 rocket ripples, underbelly rack (4 AAMs/AGMs). Rigger Black Book p.94.</em></p>"
+  },
+  "prototypeToken": {
+    "name": "Aztechnology Aguilar-EX Attack Helicopter",
+    "displayName": 20,
+    "actorLink": false,
+    "width": 2,
+    "height": 1,
+    "texture": {
+      "src": "icons/svg/explosion.svg",
+      "scaleX": 1,
+      "scaleY": 1
+    },
+    "disposition": 0,
+    "displayBars": 0
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.1.0",
+    "createdTime": 1782200000000,
+    "modifiedTime": 1782200000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!actors!638c848f9473792a"
+}

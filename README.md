@@ -10,9 +10,9 @@ signature/pilot/sensor/cargo…); the SR1 rules are **not** imported. Requires t
 content, personal use only.
 
 ## Status
-Scaffold + survey done; transcribing the catalog by section (cars, bikes, trucks,
-ACV, marine, aircraft, rotorcraft, LTA, security, drones, military). See
-`docs/PLAN.md`.
+**Complete — 65 vehicles** across all 13 book sections (cars, bikes, 4WD, trucks,
+air-cushion, marine, aircraft, rotorcraft, LTA, security, drones, military),
+render-verified and deduped. Released **v0.1.0**.
 
 ## Build
 ```

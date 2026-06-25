@@ -203,7 +203,15 @@ const VEHICLES = [
   { name: "CAS \"Wandjina\" RPV", vt: "drone", skill: "", h: 3, s: 250, sMax: 500, b: 5, a: 2, sig: 4, p: 4, sensor: 3, cargo: 50, cost: 75000, seating: "Drone (rigged)", page: 84,
     desc: "A combat Remotely Piloted Vehicle from Commonwealth Aerospace (Australia) — built for both assault and recon, with a hardened airframe and weapon hardpoints.", extra: "Drone. Sensor Advanced (3); STOL. Armament: Vengeance/Vanquisher minigun + 3 ordnance hardpoints (centerline 2×2 CF, underwing 3 CF). Stealth mode." },
   { name: "GM-Nissan \"Doberman\" Patrol Vehicle", vt: "drone", skill: "", h: 3, s: 35, sMax: 70, b: 3, a: 2, sig: 3, p: 2, sensor: 3, cargo: 20, cost: 10000, seating: "Drone (rigged)", page: 85,
-    desc: "The classic perimeter-patrol drone — thermographic and motion sensors, heavy armor and a micro-turret, equally effective day or night.", extra: "Drone. Sensor Advanced (3). Micro-turret + forward firmpoint: twin LMG or shotgun (gel/standard); optional Defiance Super Shock taser." }
+    desc: "The classic perimeter-patrol drone — thermographic and motion sensors, heavy armor and a micro-turret, equally effective day or night.", extra: "Drone. Sensor Advanced (3). Micro-turret + forward firmpoint: twin LMG or shotgun (gel/standard); optional Defiance Super Shock taser." },
+
+  // --- Military Vehicles (book p.86-95). Skipped (in system): GMC Banshee,
+  // Federated-Boeing Eagle, BAC-Dassault EFA (= EFA Eurofighter). The CAS/GD
+  // "Stonewall" MBT is printed with no stat block ("data corrupt") — omitted.
+  { name: "Ferrari \"Appaloosa\" Light Scout Vehicle", h: 2, hOff: 3, s: 100, sMax: 200, b: 3, a: 3, sig: 5, p: 2, sensor: 4, cargo: 5, cost: 1000000, seating: "1 + 2 bucket + 1 folding bench", page: 90,
+    desc: "A wheeled military Light Scout Vehicle that drives like a racing car on runflats — glassed-in fighting compartment with quick-deployment armored shutters, used by several Sovereign Tribal Council members.", extra: "250 liters; 5-7 km/liter. Sensors Military 1 (4); ECM/ECCM Military 1 (4). Variable armament: Vanquisher rotary 1,250-rd HMG + coaxial 2,500-rd LMG, firmpoints, missile launcher." },
+  { name: "Aztechnology Aguilar-EX Attack Helicopter", vt: "rotor", skill: "rotorcraft", h: 4, s: 280, sMax: 560, b: 3, a: 2, sig: 4, p: 4, sensor: 4, cargo: 2, cost: 2600000, seating: "1 + 1 integrated bucket seats", page: 94,
+    desc: "Aztlan's premier VTOL weapons platform in an export configuration — a stealth electric-turbine attack helicopter with an internal signature-suppression suite, near-unsurpassed on the modern battlefield.", extra: "1,000 liters/100 PF; electric option. Sensors Military (read ~4-7); ECM/ECCM Military I (4)/II (5). Armament: wing/side mounts, 1,000-rd HMG, Bandit AGMs / 7.62 rocket ripples, underbelly rack (4 AAMs/AGMs)." }
 ];
 
 let n = 0;

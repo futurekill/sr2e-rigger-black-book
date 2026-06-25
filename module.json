@@ -2,7 +2,7 @@
   "id": "sr2e-rigger-black-book",
   "title": "Shadowrun 2E: Rigger Black Book",
   "description": "The vehicle & drone catalog from the Rigger Black Book (FASA 7108, SR1) as ready-to-drop vehicle actors for the Shadowrun 2nd Edition system. SR1 vehicle stat blocks map onto the SR2 vehicle model; the rules text is not imported.",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "compatibility": { "minimum": "13", "verified": "13" },
   "relationships": {
     "systems": [

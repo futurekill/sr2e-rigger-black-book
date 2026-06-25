@@ -1,0 +1,62 @@
+{
+  "_id": "cefc71722b619998",
+  "name": "Ferrari \"Appaloosa\" Light Scout Vehicle",
+  "type": "vehicle",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "vehicleType": "ground",
+    "skill": "car",
+    "handling": 2,
+    "speed": 100,
+    "acceleration": 0,
+    "body": 3,
+    "armor": 3,
+    "signature": 5,
+    "pilot": 2,
+    "sensor": 4,
+    "cargo": 5,
+    "load": 0,
+    "seating": "1 + 2 bucket + 1 folding bench",
+    "cost": 1000000,
+    "availability": "",
+    "conditionMonitor": {
+      "value": 0,
+      "max": 10
+    },
+    "autonav": 2,
+    "notes": "<p>A wheeled military Light Scout Vehicle that drives like a racing car on runflats — glassed-in fighting compartment with quick-deployment armored shutters, used by several Sovereign Tribal Council members.</p><p><em>Off-road handling 3. Max speed 200 m/CT (cruising 100 used for tests). 250 liters; 5-7 km/liter. Sensors Military 1 (4); ECM/ECCM Military 1 (4). Variable armament: Vanquisher rotary 1,250-rd HMG + coaxial 2,500-rd LMG, firmpoints, missile launcher. Rigger Black Book p.90.</em></p>"
+  },
+  "prototypeToken": {
+    "name": "Ferrari \"Appaloosa\" Light Scout Vehicle",
+    "displayName": 20,
+    "actorLink": false,
+    "width": 2,
+    "height": 1,
+    "texture": {
+      "src": "icons/svg/explosion.svg",
+      "scaleX": 1,
+      "scaleY": 1
+    },
+    "disposition": 0,
+    "displayBars": 0
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.1.0",
+    "createdTime": 1782200000000,
+    "modifiedTime": 1782200000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!actors!cefc71722b619998"
+}
