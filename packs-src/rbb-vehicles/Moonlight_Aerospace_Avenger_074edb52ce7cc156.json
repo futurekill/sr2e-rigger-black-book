@@ -1,0 +1,62 @@
+{
+  "_id": "074edb52ce7cc156",
+  "name": "Moonlight Aerospace Avenger",
+  "type": "vehicle",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "vehicleType": "aircraft",
+    "skill": "aircraft",
+    "handling": 4,
+    "speed": 100,
+    "acceleration": 0,
+    "body": 3,
+    "armor": 3,
+    "signature": 3,
+    "pilot": 2,
+    "sensor": 0,
+    "cargo": 3,
+    "load": 0,
+    "seating": "Single bucket seat",
+    "cost": 250000,
+    "availability": "",
+    "conditionMonitor": {
+      "value": 0,
+      "max": 10
+    },
+    "autonav": 2,
+    "notes": "<p>An ultralight, multipurpose paramilitary STOL aircraft with a rear-mounted pusher turboprop, minimal signature and a low-radar-reflection composite airframe.</p><p><em>Max speed 200 m/CT (cruising 100 used for tests). IC/150 liters; 4 km/liter; STOL/amphibian. Disassembles for transport. Armed: 2 fuselage firmpoints + 1 center hardpoint. (Signature value in the book scan is unclear; read as minimal per the text.) Rigger Black Book p.73.</em></p>"
+  },
+  "prototypeToken": {
+    "name": "Moonlight Aerospace Avenger",
+    "displayName": 20,
+    "actorLink": false,
+    "width": 2,
+    "height": 1,
+    "texture": {
+      "src": "icons/svg/explosion.svg",
+      "scaleX": 1,
+      "scaleY": 1
+    },
+    "disposition": 0,
+    "displayBars": 0
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.1.0",
+    "createdTime": 1782200000000,
+    "modifiedTime": 1782200000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!actors!074edb52ce7cc156"
+}

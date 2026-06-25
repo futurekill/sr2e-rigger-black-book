@@ -1,0 +1,62 @@
+{
+  "_id": "4823d8e882e31b56",
+  "name": "CASA J-239 Raven",
+  "type": "vehicle",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "vehicleType": "aircraft",
+    "skill": "aircraft",
+    "handling": 3,
+    "speed": 200,
+    "acceleration": 0,
+    "body": 3,
+    "armor": 0,
+    "signature": 1,
+    "pilot": 1,
+    "sensor": 0,
+    "cargo": 5,
+    "load": 0,
+    "seating": "Twin bucket seats",
+    "cost": 175000,
+    "availability": "",
+    "conditionMonitor": {
+      "value": 0,
+      "max": 10
+    },
+    "autonav": 1,
+    "notes": "<p>A reinforced glider airframe with twin micro-turbofans, built for low-signature security and surveillance — STOL-capable with a powered/unpowered gliding mode.</p><p><em>Max speed 400 m/CT (cruising 200 used for tests). IC/250 liters; 5 km/liter; STOL. Gliding: Handling 5, speed 50/100, Sig 0 (glide ratio 1.3). Rigger Black Book p.72.</em></p>"
+  },
+  "prototypeToken": {
+    "name": "CASA J-239 Raven",
+    "displayName": 20,
+    "actorLink": false,
+    "width": 2,
+    "height": 1,
+    "texture": {
+      "src": "icons/svg/explosion.svg",
+      "scaleX": 1,
+      "scaleY": 1
+    },
+    "disposition": 0,
+    "displayBars": 0
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.1.0",
+    "createdTime": 1782200000000,
+    "modifiedTime": 1782200000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!actors!4823d8e882e31b56"
+}

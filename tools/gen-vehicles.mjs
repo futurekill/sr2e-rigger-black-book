@@ -166,7 +166,25 @@ const VEHICLES = [
   { name: "Goodyear Commuter-47 LTA", vt: "aircraft", skill: "aircraft", h: 3, s: 150, sMax: 300, b: 8, a: 1, sig: 8, p: 2, cargo: 75, cost: 225000, seating: "2 + 1 bench", page: 58,
     desc: "A small SHAPLL airship for personal or executive use — a 25×10 m triangular lifting-body craft with the flight deck and passenger cabin enclosed in the nose.", extra: "LTA. IC/625 liters; 8 km/liter. Passenger bay 50 CF / six bucket seats." },
   { name: "Airship Industries Skyswimmer", vt: "aircraft", skill: "aircraft", h: 3, s: 90, sMax: 180, b: 6, a: 1, sig: 8, p: 2, cargo: 30, cost: 100000, seating: "2 + 4 bench", page: 59,
-    desc: "A purely recreational SHAPLL airship — solar-electric, gimbaled ducted fans and a folding wingtip design give it (weather permitting) unlimited flying time.", extra: "LTA. Solar-electric (zero economy in sun); optional turbofans speed 110/220. Each 30 CF of cargo cuts speed by ~5/15." }
+    desc: "A purely recreational SHAPLL airship — solar-electric, gimbaled ducted fans and a folding wingtip design give it (weather permitting) unlimited flying time.", extra: "LTA. Solar-electric (zero economy in sun); optional turbofans speed 110/220. Each 30 CF of cargo cuts speed by ~5/15." },
+
+  // --- Security Vehicles (book p.62-74). Heavy overlap — skipped (in system):
+  // Citymaster, Chrysler-Nissan Patrol-One, GMC Riverine, Northrop Wasp, Northrop
+  // Yellowjacket, GMC-Beachcraft Patroller.
+  { name: "Ares Mobmaster Riot Control Vehicle", h: 4, hOff: 10, s: 30, sMax: 120, b: 5, a: 5, sig: 2, p: 5, cargo: 500, cost: 3650000, seating: "Twin bucket + 10 folding bench", page: 63,
+    desc: "Ares's riot-control sibling of the Citymaster — a Personnel Carrier (ten troops) / Command vehicle with a forward micro-turret (FN-MAG MMGs) and tear-gas grenade launchers, fully gas-sealable.", extra: "IC/500 liters; 10 km/liter; standard load 500 CF." },
+  { name: "General Products COP", h: 4, hOff: 9, s: 30, sMax: 90, b: 1, a: 1, sig: 5, p: 1, cargo: 2, cost: 25000, seating: "1 + 1 single bucket seats", page: 65,
+    desc: "The City Operations Patroller — a cheap electric two-seat patrol car with secure prisoner transport and front-panel space for weapons and equipment.", extra: "Electric, 200 PF; 1 PF/km." },
+  { name: "Harley Electraglide-1000 Patrol Cycle", vt: "ground", skill: "bike", h: 3, hOff: 4, s: 95, sMax: 285, b: 3, a: 2, sig: 2, p: 1, cargo: 3, cost: 75000, seating: "1 + 1", page: 66,
+    desc: "The ultimate police cycle — the fastest on the road, with runflat tires, off-road suspension, three firmpoints, a light urban comm suite and siren.", extra: "IC/45 liters; 50 km/liter. 2 forward + 1 rear firmpoint (1 CF ammo each)." },
+  { name: "Surfstar Marine Seacop (5M)", vt: "boat", skill: "boat", h: 3, s: 30, sMax: 90, b: 3, a: 2, sig: 3, p: 2, cargo: 12, cost: 50000, seating: "Single bucket + 3 bench", page: 67,
+    desc: "The harbor equivalent of the Patrol-One — a marine patrol craft with EnviroSeal cabin, remote-controlled spotlight, siren and forward firmpoints.", extra: "IC/100 liters; 25 km/liter." },
+  { name: "Blohm & Voss River Commander", vt: "boat", skill: "boat", h: 4, s: 25, sMax: 75, b: 6, a: 3, sig: 3, p: 3, cargo: 20, cost: 300000, seating: "Twin bucket + rear bench", page: 69,
+    desc: "A paramilitary river patrol boat used worldwide (Rhine, North/Central/South America) — modular fittings (Police, Security, Assault) and weapon mounts.", extra: "IC/1,000 liters; 15 km/liter. Military model Armor 4; seagoing variant 325,000¥." },
+  { name: "CASA J-239 Raven", vt: "aircraft", skill: "aircraft", h: 3, s: 200, sMax: 400, b: 3, a: 0, sig: 1, p: 1, cargo: 5, cost: 175000, seating: "Twin bucket seats", page: 72,
+    desc: "A reinforced glider airframe with twin micro-turbofans, built for low-signature security and surveillance — STOL-capable with a powered/unpowered gliding mode.", extra: "IC/250 liters; 5 km/liter; STOL. Gliding: Handling 5, speed 50/100, Sig 0 (glide ratio 1.3)." },
+  { name: "Moonlight Aerospace Avenger", vt: "aircraft", skill: "aircraft", h: 4, s: 100, sMax: 200, b: 3, a: 3, sig: 3, p: 2, cargo: 3, cost: 250000, seating: "Single bucket seat", page: 73,
+    desc: "An ultralight, multipurpose paramilitary STOL aircraft with a rear-mounted pusher turboprop, minimal signature and a low-radar-reflection composite airframe.", extra: "IC/150 liters; 4 km/liter; STOL/amphibian. Disassembles for transport. Armed: 2 fuselage firmpoints + 1 center hardpoint. (Signature value in the book scan is unclear; read as minimal per the text.)" }
 ];
 
 let n = 0;

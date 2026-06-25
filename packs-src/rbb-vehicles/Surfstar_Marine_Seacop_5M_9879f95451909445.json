@@ -1,0 +1,62 @@
+{
+  "_id": "9879f95451909445",
+  "name": "Surfstar Marine Seacop (5M)",
+  "type": "vehicle",
+  "img": "icons/svg/explosion.svg",
+  "system": {
+    "vehicleType": "boat",
+    "skill": "boat",
+    "handling": 3,
+    "speed": 30,
+    "acceleration": 0,
+    "body": 3,
+    "armor": 2,
+    "signature": 3,
+    "pilot": 2,
+    "sensor": 0,
+    "cargo": 12,
+    "load": 0,
+    "seating": "Single bucket + 3 bench",
+    "cost": 50000,
+    "availability": "",
+    "conditionMonitor": {
+      "value": 0,
+      "max": 10
+    },
+    "autonav": 2,
+    "notes": "<p>The harbor equivalent of the Patrol-One — a marine patrol craft with EnviroSeal cabin, remote-controlled spotlight, siren and forward firmpoints.</p><p><em>Max speed 90 m/CT (cruising 30 used for tests). IC/100 liters; 25 km/liter. Rigger Black Book p.67.</em></p>"
+  },
+  "prototypeToken": {
+    "name": "Surfstar Marine Seacop (5M)",
+    "displayName": 20,
+    "actorLink": false,
+    "width": 2,
+    "height": 1,
+    "texture": {
+      "src": "icons/svg/explosion.svg",
+      "scaleX": 1,
+      "scaleY": 1
+    },
+    "disposition": 0,
+    "displayBars": 0
+  },
+  "effects": [],
+  "folder": null,
+  "sort": 0,
+  "flags": {},
+  "_stats": {
+    "coreVersion": "13.351",
+    "systemId": "sr2e",
+    "systemVersion": "0.1.0",
+    "createdTime": 1782200000000,
+    "modifiedTime": 1782200000000,
+    "lastModifiedBy": null,
+    "compendiumSource": null,
+    "duplicateSource": null,
+    "exportSource": null
+  },
+  "ownership": {
+    "default": 0
+  },
+  "_key": "!actors!9879f95451909445"
+}
