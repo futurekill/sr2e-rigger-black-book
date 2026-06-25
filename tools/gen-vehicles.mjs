@@ -52,8 +52,6 @@ const VEHICLES = [
     desc: "The turbo-boosted 3220 ZX — the engine that won the NorAm Sports Car Circuit Gold Cup. A real handful at top speed.", extra: "IC/30 liters; 45 km/liter." },
   { name: "Saab \"Dynamit\" 776TI", h: 4, hOff: 8, s: 80, sMax: 250, b: 2, a: 1, sig: 1, p: 3, cargo: 4, cost: 250000, seating: "Twin bucket seats + bench", page: 13,
     desc: "A state-of-the-art turbocharged speedfreak's sports car — roll bars, improved suspension, APPS and a convertible top. Winner of the Euro-Rally Production Sports Circuit.", extra: "IC/150 liters; 40 km/liter; APPS, rollbars." },
-  { name: "Toyota \"Elite\" Limousine", h: 4, hOff: 8, s: 40, sMax: 120, b: 3, a: 0, sig: 2, p: 4, cargo: 8, cost: 125000, seating: "Twin + quad rear bucket seats", page: 14,
-    desc: "A mid-size limo with a Kevlarplex divider, EnviroSeal climate control, refrigerated wet bar and a mobile telecom system. The \"Hollywood Ford.\"", extra: "IC/300 liters; 18 km/liter; EnviroSeal." },
   { name: "Rolls Royce \"Phaeton\" Limousine", h: 4, hOff: 4, s: 60, sMax: 180, b: 5, a: 2, sig: 2, p: 4, cargo: 15, cost: 500000, seating: "Twin + 6 bucket + 3 folding seats", page: 15,
     desc: "The luxury vehicle for the 2050s: armored seating for six plus three jump seats, APPS, roll bars, full comm/stereo with satellite uplink and a wet bar.", extra: "IC/300 liters; 12 km/liter; EnviroSeal, active suspension." },
 
