@@ -30,7 +30,15 @@ see the system `module/data/actor-data.mjs` VehicleData and the shipped
 - Original/summarised descriptions (no verbatim flavour); cite the book page.
 - One generator (or per-section data) → `npm run build-packs rbb-vehicles`.
 
-## Packs are COMMITTED (built LevelDB), like the other content modules.
+## Packs are a build artifact (gitignored)
+`packs/` (the built LevelDB) is gitignored, like the other content modules —
+Foundry recompacts it every session, so committing it churns the tree. `packs-src/`
+is the source; the release workflow rebuilds `packs/` from it.
+
+**A fresh clone has no `packs/`** — run `npm run build-packs` before pointing
+Foundry here, and rebuild after editing `packs-src/`: Foundry reads the LevelDB,
+not the JSON, so a stale build silently serves old data. Close Foundry first
+(LevelDB locks).
 
 ## Copyright
 *Rigger Black Book* / *Shadowrun* are © FASA and rights holders. Personal table
