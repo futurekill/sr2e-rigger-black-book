@@ -1,5 +1,19 @@
 # Changelog
 
+## Unreleased
+
+## 0.2.0 — 2026-07-26
+
+### Added
+- **Top-down token art, first 24 vehicles.** Every vehicle in this module was
+  sharing a stock Foundry icon. The first 24 now have 1024×1024 tokens drawn
+  strictly overhead on a **transparent background**, so they read properly on a
+  battle map. Rotation stays unlocked and the art points nose-up, so a token turns
+  to face the way it's driving. Variant pairs — the Plutocrat and its armed
+  version, the River Commander and its military fit — deliberately read as the
+  same airframe differing only by visible weapons. *The remaining 45 vehicles are
+  still on stock icons and will follow in the next release.*
+
 ## 0.1.1
 
 - Split the four genuine **combat variants** into their own drag-and-drop actors

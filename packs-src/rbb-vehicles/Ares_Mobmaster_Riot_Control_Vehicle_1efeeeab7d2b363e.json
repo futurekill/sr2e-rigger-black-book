@@ -2,7 +2,7 @@
   "_id": "1efeeeab7d2b363e",
   "name": "Ares Mobmaster Riot Control Vehicle",
   "type": "vehicle",
-  "img": "icons/svg/explosion.svg",
+  "img": "modules/sr2e-rigger-black-book/assets/vehicle_portraits/ares-mobmaster-riot-control-vehicle.webp",
   "system": {
     "vehicleType": "ground",
     "skill": "car",
@@ -33,12 +33,13 @@
     "width": 2,
     "height": 1,
     "texture": {
-      "src": "icons/svg/explosion.svg",
+      "src": "modules/sr2e-rigger-black-book/assets/vehicle_portraits/ares-mobmaster-riot-control-vehicle.webp",
       "scaleX": 1,
       "scaleY": 1
     },
     "disposition": 0,
-    "displayBars": 0
+    "displayBars": 0,
+    "lockRotation": false
   },
   "effects": [],
   "folder": null,
