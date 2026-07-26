@@ -2,6 +2,15 @@
 
 ## Unreleased
 
+## 0.4.0 — 2026-07-26
+
+### Added
+- **All 69 vehicles now have top-down token art.** The module is complete: every
+  car, truck, boat, aircraft, hovercraft, drone and rotorcraft has a 1024×1024
+  token drawn strictly overhead on a **transparent background**, so it sits on a
+  battle map instead of floating on a square. Rotation stays unlocked and the art
+  points nose-up, so tokens turn to face the way they travel.
+
 ## 0.3.0 — 2026-07-26
 
 ### Added
