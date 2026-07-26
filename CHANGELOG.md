@@ -2,6 +2,16 @@
 
 ## Unreleased
 
+## 0.3.0 — 2026-07-26
+
+### Added
+- **24 more top-down vehicle tokens** (48 of 69 now done). This batch covers the
+  everyday traffic a rigger actually shares the road with — hatchbacks, panel
+  vans, 4WDs, the Tsarina limousine, the Platinum II jet and the LZ-2049 zeppelin.
+  Electric and combustion variants of the same chassis read as the same vehicle,
+  differing only by charge port versus exhaust and fuel filler. *21 vehicles
+  remain on stock icons.*
+
 ## 0.2.0 — 2026-07-26
 
 ### Added

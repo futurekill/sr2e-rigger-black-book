@@ -2,7 +2,7 @@
   "_id": "db482c34f4a42c00",
   "name": "Landrover Model 2046 (Long Wheelbase)",
   "type": "vehicle",
-  "img": "icons/svg/explosion.svg",
+  "img": "modules/sr2e-rigger-black-book/assets/vehicle_portraits/landrover-model-2046-long-wheelbase.webp",
   "system": {
     "vehicleType": "ground",
     "skill": "car",
@@ -33,12 +33,13 @@
     "width": 2,
     "height": 1,
     "texture": {
-      "src": "icons/svg/explosion.svg",
+      "src": "modules/sr2e-rigger-black-book/assets/vehicle_portraits/landrover-model-2046-long-wheelbase.webp",
       "scaleX": 1,
       "scaleY": 1
     },
     "disposition": 0,
-    "displayBars": 0
+    "displayBars": 0,
+    "lockRotation": false
   },
   "effects": [],
   "folder": null,
