@@ -2,7 +2,7 @@
   "_id": "f20c5dd86d204465",
   "name": "Blohm & Voss River Commander",
   "type": "vehicle",
-  "img": "modules/sr2e-rigger-black-book/assets/vehicle_portraits/blohm-voss-river-commander.webp",
+  "img": "icons/svg/explosion.svg",
   "system": {
     "vehicleType": "boat",
     "skill": "boat",
@@ -10,7 +10,7 @@
     "speed": 25,
     "acceleration": 0,
     "body": 6,
-    "armor": 3,
+    "armor": 9,
     "signature": 3,
     "pilot": 3,
     "sensor": 0,
@@ -24,7 +24,7 @@
       "max": 10
     },
     "autonav": 3,
-    "notes": "<p>A paramilitary river patrol boat used worldwide (Rhine, North/Central/South America) — modular fittings (Police, Security, Assault) and weapon mounts.</p><p><em>Max speed 75 m/CT (cruising 25 used for tests). IC/1,000 liters; 15 km/liter. A Military (uparmored) model is a separate actor; seagoing variant 325,000¥. Rigger Black Book p.69.</em></p>"
+    "notes": "<p>A paramilitary river patrol boat used worldwide (Rhine, North/Central/South America) — modular fittings (Police, Security, Assault) and weapon mounts.</p><p><em>Max speed 75 m/CT (cruising 25 used for tests). IC/1,000 liters; 15 km/liter. A Military (uparmored) model is a separate actor; seagoing variant 325,000¥. Rigger Black Book p.69. Armor 3 as printed (SR1) x3 = 9 for SRII, per Sourcebook Updates p.283.</em></p>"
   },
   "prototypeToken": {
     "name": "Blohm & Voss River Commander",
@@ -33,13 +33,12 @@
     "width": 2,
     "height": 1,
     "texture": {
-      "src": "modules/sr2e-rigger-black-book/assets/vehicle_portraits/blohm-voss-river-commander.webp",
+      "src": "icons/svg/explosion.svg",
       "scaleX": 1,
       "scaleY": 1
     },
     "disposition": 0,
-    "displayBars": 0,
-    "lockRotation": false
+    "displayBars": 0
   },
   "effects": [],
   "folder": null,

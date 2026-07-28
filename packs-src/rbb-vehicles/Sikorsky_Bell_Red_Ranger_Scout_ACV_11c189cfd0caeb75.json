@@ -2,7 +2,7 @@
   "_id": "11c189cfd0caeb75",
   "name": "Sikorsky-Bell \"Red Ranger\" Scout ACV",
   "type": "vehicle",
-  "img": "modules/sr2e-rigger-black-book/assets/vehicle_portraits/sikorsky-bell-red-ranger-scout-acv.webp",
+  "img": "icons/svg/explosion.svg",
   "system": {
     "vehicleType": "hovercraft",
     "skill": "hovercraft",
@@ -10,7 +10,7 @@
     "speed": 150,
     "acceleration": 0,
     "body": 2,
-    "armor": 2,
+    "armor": 6,
     "signature": 3,
     "pilot": 3,
     "sensor": 1,
@@ -24,7 +24,7 @@
       "max": 10
     },
     "autonav": 3,
-    "notes": "<p>A light, ultra-fast two-man scout/recon ACV with dual drive (air-cushion + powered wheels), survey radar, IR/visible-light, sound and motion sensors.</p><p><em>Max speed 450 m/CT (cruising 150 used for tests). IC/2,500 liters; 5 km/liter. Wheels engaged: handling 3/5, speed 30/90, Sig 8. 1 small turret (2 CF ammo). Rigger Black Book p.75.</em></p>"
+    "notes": "<p>A light, ultra-fast two-man scout/recon ACV with dual drive (air-cushion + powered wheels), survey radar, IR/visible-light, sound and motion sensors.</p><p><em>Max speed 450 m/CT (cruising 150 used for tests). IC/2,500 liters; 5 km/liter. Wheels engaged: handling 3/5, speed 30/90, Sig 8. 1 small turret (2 CF ammo). Rigger Black Book p.75. Armor 2 as printed (SR1) x3 = 6 for SRII, per Sourcebook Updates p.283.</em></p>"
   },
   "prototypeToken": {
     "name": "Sikorsky-Bell \"Red Ranger\" Scout ACV",
@@ -33,13 +33,12 @@
     "width": 2,
     "height": 1,
     "texture": {
-      "src": "modules/sr2e-rigger-black-book/assets/vehicle_portraits/sikorsky-bell-red-ranger-scout-acv.webp",
+      "src": "icons/svg/explosion.svg",
       "scaleX": 1,
       "scaleY": 1
     },
     "disposition": 0,
-    "displayBars": 0,
-    "lockRotation": false
+    "displayBars": 0
   },
   "effects": [],
   "folder": null,

@@ -2,7 +2,7 @@
   "_id": "fe633adbda6d1ad7",
   "name": "Leyland-Zil Tsarina (Multifuel)",
   "type": "vehicle",
-  "img": "modules/sr2e-rigger-black-book/assets/vehicle_portraits/leyland-zil-tsarina-multifuel.webp",
+  "img": "icons/svg/explosion.svg",
   "system": {
     "vehicleType": "ground",
     "skill": "car",
@@ -10,7 +10,7 @@
     "speed": 30,
     "acceleration": 0,
     "body": 1,
-    "armor": 2,
+    "armor": 6,
     "signature": 2,
     "pilot": 1,
     "sensor": 0,
@@ -24,7 +24,7 @@
       "max": 10
     },
     "autonav": 1,
-    "notes": "<p>The multifuel version of the Tsarina — same body, a tougher hull and a longer-legged drivetrain.</p><p><em>Off-road handling 8. Max speed 90 m/CT (cruising 30 used for tests). Multifuel/25 liters; 90 km/liter; 2 CF trunk + 3 CF roof rack. Rigger Black Book p.9.</em></p>"
+    "notes": "<p>The multifuel version of the Tsarina — same body, a tougher hull and a longer-legged drivetrain.</p><p><em>Off-road handling 8. Max speed 90 m/CT (cruising 30 used for tests). Multifuel/25 liters; 90 km/liter; 2 CF trunk + 3 CF roof rack. Rigger Black Book p.9. Armor 2 as printed (SR1) x3 = 6 for SRII, per Sourcebook Updates p.283.</em></p>"
   },
   "prototypeToken": {
     "name": "Leyland-Zil Tsarina (Multifuel)",
@@ -33,13 +33,12 @@
     "width": 2,
     "height": 1,
     "texture": {
-      "src": "modules/sr2e-rigger-black-book/assets/vehicle_portraits/leyland-zil-tsarina-multifuel.webp",
+      "src": "icons/svg/explosion.svg",
       "scaleX": 1,
       "scaleY": 1
     },
     "disposition": 0,
-    "displayBars": 0,
-    "lockRotation": false
+    "displayBars": 0
   },
   "effects": [],
   "folder": null,

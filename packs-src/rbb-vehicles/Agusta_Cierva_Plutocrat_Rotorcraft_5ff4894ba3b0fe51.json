@@ -2,7 +2,7 @@
   "_id": "5ff4894ba3b0fe51",
   "name": "Agusta-Cierva \"Plutocrat\" Rotorcraft",
   "type": "vehicle",
-  "img": "modules/sr2e-rigger-black-book/assets/vehicle_portraits/agusta-cierva-plutocrat-rotorcraft.webp",
+  "img": "icons/svg/explosion.svg",
   "system": {
     "vehicleType": "rotor",
     "skill": "rotorcraft",
@@ -10,7 +10,7 @@
     "speed": 200,
     "acceleration": 0,
     "body": 4,
-    "armor": 1,
+    "armor": 3,
     "signature": 4,
     "pilot": 4,
     "sensor": 0,
@@ -24,7 +24,7 @@
       "max": 10
     },
     "autonav": 4,
-    "notes": "<p>A purpose-designed luxury transport chopper with real-leather upholstery, wood paneling and the finest onboard facilities — VTOL site-access for the corp exec.</p><p><em>Max speed 450 m/CT (cruising 200 used for tests). IC/1,000 liters; 1.5 km/liter. An armed variant is a separate actor. Rigger Black Book p.56.</em></p>"
+    "notes": "<p>A purpose-designed luxury transport chopper with real-leather upholstery, wood paneling and the finest onboard facilities — VTOL site-access for the corp exec.</p><p><em>Max speed 450 m/CT (cruising 200 used for tests). IC/1,000 liters; 1.5 km/liter. An armed variant is a separate actor. Rigger Black Book p.56. Armor 1 as printed (SR1) x3 = 3 for SRII, per Sourcebook Updates p.283.</em></p>"
   },
   "prototypeToken": {
     "name": "Agusta-Cierva \"Plutocrat\" Rotorcraft",
@@ -33,13 +33,12 @@
     "width": 2,
     "height": 1,
     "texture": {
-      "src": "modules/sr2e-rigger-black-book/assets/vehicle_portraits/agusta-cierva-plutocrat-rotorcraft.webp",
+      "src": "icons/svg/explosion.svg",
       "scaleX": 1,
       "scaleY": 1
     },
     "disposition": 0,
-    "displayBars": 0,
-    "lockRotation": false
+    "displayBars": 0
   },
   "effects": [],
   "folder": null,

@@ -2,7 +2,7 @@
   "_id": "c64b19205f7e9c87",
   "name": "Airship Industries Skyswimmer",
   "type": "vehicle",
-  "img": "modules/sr2e-rigger-black-book/assets/vehicle_portraits/airship-industries-skyswimmer.webp",
+  "img": "icons/svg/explosion.svg",
   "system": {
     "vehicleType": "aircraft",
     "skill": "aircraft",
@@ -10,7 +10,7 @@
     "speed": 90,
     "acceleration": 0,
     "body": 6,
-    "armor": 1,
+    "armor": 3,
     "signature": 8,
     "pilot": 2,
     "sensor": 0,
@@ -24,7 +24,7 @@
       "max": 10
     },
     "autonav": 2,
-    "notes": "<p>A purely recreational SHAPLL airship — solar-electric, gimbaled ducted fans and a folding wingtip design give it (weather permitting) unlimited flying time.</p><p><em>Max speed 180 m/CT (cruising 90 used for tests). LTA. Solar-electric (zero economy in sun); optional turbofans speed 110/220. Each 30 CF of cargo cuts speed by ~5/15. Rigger Black Book p.59.</em></p>"
+    "notes": "<p>A purely recreational SHAPLL airship — solar-electric, gimbaled ducted fans and a folding wingtip design give it (weather permitting) unlimited flying time.</p><p><em>Max speed 180 m/CT (cruising 90 used for tests). LTA. Solar-electric (zero economy in sun); optional turbofans speed 110/220. Each 30 CF of cargo cuts speed by ~5/15. Rigger Black Book p.59. Armor 1 as printed (SR1) x3 = 3 for SRII, per Sourcebook Updates p.283.</em></p>"
   },
   "prototypeToken": {
     "name": "Airship Industries Skyswimmer",
@@ -33,13 +33,12 @@
     "width": 2,
     "height": 1,
     "texture": {
-      "src": "modules/sr2e-rigger-black-book/assets/vehicle_portraits/airship-industries-skyswimmer.webp",
+      "src": "icons/svg/explosion.svg",
       "scaleX": 1,
       "scaleY": 1
     },
     "disposition": 0,
-    "displayBars": 0,
-    "lockRotation": false
+    "displayBars": 0
   },
   "effects": [],
   "folder": null,

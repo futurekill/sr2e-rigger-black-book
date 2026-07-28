@@ -2,7 +2,7 @@
   "_id": "ecd979dc66472058",
   "name": "GMC Bulldog Step-Van (Bonded-Courier)",
   "type": "vehicle",
-  "img": "modules/sr2e-rigger-black-book/assets/vehicle_portraits/gmc-bulldog-step-van-bonded-courier.webp",
+  "img": "icons/svg/explosion.svg",
   "system": {
     "vehicleType": "ground",
     "skill": "car",
@@ -10,7 +10,7 @@
     "speed": 35,
     "acceleration": 0,
     "body": 4,
-    "armor": 2,
+    "armor": 6,
     "signature": 2,
     "pilot": 2,
     "sensor": 0,
@@ -24,7 +24,7 @@
       "max": 10
     },
     "autonav": 2,
-    "notes": "<p>The Bonded-Courier Bulldog — off-road suspension, runflat dual-purpose tires and turbocharging as standard. Popular with independent couriers.</p><p><em>Off-road handling 6. Max speed 105 m/CT (cruising 35 used for tests). Multifuel/150 liters; 14 km/liter; off-road speed 30/80. Rigger Black Book p.33.</em></p>"
+    "notes": "<p>The Bonded-Courier Bulldog — off-road suspension, runflat dual-purpose tires and turbocharging as standard. Popular with independent couriers.</p><p><em>Off-road handling 6. Max speed 105 m/CT (cruising 35 used for tests). Multifuel/150 liters; 14 km/liter; off-road speed 30/80. Rigger Black Book p.33. Armor 2 as printed (SR1) x3 = 6 for SRII, per Sourcebook Updates p.283.</em></p>"
   },
   "prototypeToken": {
     "name": "GMC Bulldog Step-Van (Bonded-Courier)",
@@ -33,13 +33,12 @@
     "width": 2,
     "height": 1,
     "texture": {
-      "src": "modules/sr2e-rigger-black-book/assets/vehicle_portraits/gmc-bulldog-step-van-bonded-courier.webp",
+      "src": "icons/svg/explosion.svg",
       "scaleX": 1,
       "scaleY": 1
     },
     "disposition": 0,
-    "displayBars": 0,
-    "lockRotation": false
+    "displayBars": 0
   },
   "effects": [],
   "folder": null,

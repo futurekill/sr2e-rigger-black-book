@@ -2,7 +2,7 @@
   "_id": "5981c7eda5ca4933",
   "name": "Cyberspace Designs Dalmatian Recon Drone (Armed)",
   "type": "vehicle",
-  "img": "modules/sr2e-rigger-black-book/assets/vehicle_portraits/cyberspace-designs-dalmatian-recon-drone-armed.webp",
+  "img": "icons/svg/explosion.svg",
   "system": {
     "vehicleType": "drone",
     "skill": "",
@@ -10,7 +10,7 @@
     "speed": 35,
     "acceleration": 0,
     "body": 4,
-    "armor": 1,
+    "armor": 3,
     "signature": 5,
     "pilot": 2,
     "sensor": 1,
@@ -24,7 +24,7 @@
       "max": 10
     },
     "autonav": 2,
-    "notes": "<p>The armed configuration of the Dalmatian recon drone — uprated armor and a higher signature, fitted with two wing firmpoints for ordnance.</p><p><em>Max speed 105 m/CT (cruising 35 used for tests). Drone. Sensor Standard (1); VSTOL. Armament: 2 wing firmpoints (2 CF ordnance). Rigger Black Book p.82.</em></p>"
+    "notes": "<p>The armed configuration of the Dalmatian recon drone — uprated armor and a higher signature, fitted with two wing firmpoints for ordnance.</p><p><em>Max speed 105 m/CT (cruising 35 used for tests). Drone. Sensor Standard (1); VSTOL. Armament: 2 wing firmpoints (2 CF ordnance). Rigger Black Book p.82. Armor 1 as printed (SR1) x3 = 3 for SRII, per Sourcebook Updates p.283.</em></p>"
   },
   "prototypeToken": {
     "name": "Cyberspace Designs Dalmatian Recon Drone (Armed)",
@@ -33,13 +33,12 @@
     "width": 2,
     "height": 1,
     "texture": {
-      "src": "modules/sr2e-rigger-black-book/assets/vehicle_portraits/cyberspace-designs-dalmatian-recon-drone-armed.webp",
+      "src": "icons/svg/explosion.svg",
       "scaleX": 1,
       "scaleY": 1
     },
     "disposition": 0,
-    "displayBars": 0,
-    "lockRotation": false
+    "displayBars": 0
   },
   "effects": [],
   "folder": null,

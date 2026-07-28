@@ -2,7 +2,7 @@
   "_id": "a6b971d986752e37",
   "name": "Blohm & Voss River Commander (Military)",
   "type": "vehicle",
-  "img": "modules/sr2e-rigger-black-book/assets/vehicle_portraits/blohm-voss-river-commander-military.webp",
+  "img": "icons/svg/explosion.svg",
   "system": {
     "vehicleType": "boat",
     "skill": "boat",
@@ -10,7 +10,7 @@
     "speed": 25,
     "acceleration": 0,
     "body": 6,
-    "armor": 4,
+    "armor": 12,
     "signature": 3,
     "pilot": 3,
     "sensor": 0,
@@ -24,7 +24,7 @@
       "max": 10
     },
     "autonav": 3,
-    "notes": "<p>The Military configuration of the River Commander river patrol boat — uparmored (Armor 4) and fitted for weapon mounts.</p><p><em>Max speed 75 m/CT (cruising 25 used for tests). IC/1,000 liters; 15 km/liter. Weapon mounts. Seagoing variant +25,000¥. Rigger Black Book p.69.</em></p>"
+    "notes": "<p>The Military configuration of the River Commander river patrol boat — uparmored (Armor 4) and fitted for weapon mounts.</p><p><em>Max speed 75 m/CT (cruising 25 used for tests). IC/1,000 liters; 15 km/liter. Weapon mounts. Seagoing variant +25,000¥. Rigger Black Book p.69. Armor 4 as printed (SR1) x3 = 12 for SRII, per Sourcebook Updates p.283.</em></p>"
   },
   "prototypeToken": {
     "name": "Blohm & Voss River Commander (Military)",
@@ -33,13 +33,12 @@
     "width": 2,
     "height": 1,
     "texture": {
-      "src": "modules/sr2e-rigger-black-book/assets/vehicle_portraits/blohm-voss-river-commander-military.webp",
+      "src": "icons/svg/explosion.svg",
       "scaleX": 1,
       "scaleY": 1
     },
     "disposition": 0,
-    "displayBars": 0,
-    "lockRotation": false
+    "displayBars": 0
   },
   "effects": [],
   "folder": null,

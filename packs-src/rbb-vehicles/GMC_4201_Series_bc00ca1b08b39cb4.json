@@ -2,7 +2,7 @@
   "_id": "bc00ca1b08b39cb4",
   "name": "GMC 4201 Series",
   "type": "vehicle",
-  "img": "modules/sr2e-rigger-black-book/assets/vehicle_portraits/gmc-4201-series.webp",
+  "img": "icons/svg/explosion.svg",
   "system": {
     "vehicleType": "ground",
     "skill": "car",
@@ -10,7 +10,7 @@
     "speed": 35,
     "acceleration": 0,
     "body": 5,
-    "armor": 1,
+    "armor": 3,
     "signature": 2,
     "pilot": 2,
     "sensor": 0,
@@ -24,7 +24,7 @@
       "max": 10
     },
     "autonav": 2,
-    "notes": "<p>A classic heavy truck — the \"Mechanical Mule\" — that has kept industry and commerce supplied through war and revolution.</p><p><em>Off-road handling 6. Max speed 85 m/CT (cruising 35 used for tests). Multifuel/750 liters; 12 km/liter; standard load 750 CF. Bodies: Rear-Tray (+38,000¥), Van (1,000 CF, +120,000¥), Tanker (37.5 kl, +100,000¥), SURT Citycoach bus (+125,000¥). Rigger Black Book p.34.</em></p>"
+    "notes": "<p>A classic heavy truck — the \"Mechanical Mule\" — that has kept industry and commerce supplied through war and revolution.</p><p><em>Off-road handling 6. Max speed 85 m/CT (cruising 35 used for tests). Multifuel/750 liters; 12 km/liter; standard load 750 CF. Bodies: Rear-Tray (+38,000¥), Van (1,000 CF, +120,000¥), Tanker (37.5 kl, +100,000¥), SURT Citycoach bus (+125,000¥). Rigger Black Book p.34. Armor 1 as printed (SR1) x3 = 3 for SRII, per Sourcebook Updates p.283.</em></p>"
   },
   "prototypeToken": {
     "name": "GMC 4201 Series",
@@ -33,13 +33,12 @@
     "width": 2,
     "height": 1,
     "texture": {
-      "src": "modules/sr2e-rigger-black-book/assets/vehicle_portraits/gmc-4201-series.webp",
+      "src": "icons/svg/explosion.svg",
       "scaleX": 1,
       "scaleY": 1
     },
     "disposition": 0,
-    "displayBars": 0,
-    "lockRotation": false
+    "displayBars": 0
   },
   "effects": [],
   "folder": null,

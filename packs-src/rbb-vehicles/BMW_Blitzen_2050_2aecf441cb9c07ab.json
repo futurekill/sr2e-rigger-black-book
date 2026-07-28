@@ -2,7 +2,7 @@
   "_id": "2aecf441cb9c07ab",
   "name": "BMW Blitzen 2050",
   "type": "vehicle",
-  "img": "modules/sr2e-rigger-black-book/assets/vehicle_portraits/bmw-blitzen-2050.webp",
+  "img": "icons/svg/explosion.svg",
   "system": {
     "vehicleType": "ground",
     "skill": "bike",
@@ -10,7 +10,7 @@
     "speed": 95,
     "acceleration": 0,
     "body": 3,
-    "armor": 2,
+    "armor": 6,
     "signature": 1,
     "pilot": 2,
     "sensor": 0,
@@ -24,7 +24,7 @@
       "max": 10
     },
     "autonav": 2,
-    "notes": "<p>The latest of the classic Blitzen high-performance combat bikes — armored with metallo-ceramic alloys for heavy-duty security work.</p><p><em>Off-road handling 4. Max speed 285 m/CT (cruising 95 used for tests). IC/35 liters; 35 km/liter. Above 210 kph handling becomes 4/5. Mounts 3 firepoints, or 2 + 1 hardpoint. Rigger Black Book p.22.</em></p>"
+    "notes": "<p>The latest of the classic Blitzen high-performance combat bikes — armored with metallo-ceramic alloys for heavy-duty security work.</p><p><em>Off-road handling 4. Max speed 285 m/CT (cruising 95 used for tests). IC/35 liters; 35 km/liter. Above 210 kph handling becomes 4/5. Mounts 3 firepoints, or 2 + 1 hardpoint. Rigger Black Book p.22. Armor 2 as printed (SR1) x3 = 6 for SRII, per Sourcebook Updates p.283.</em></p>"
   },
   "prototypeToken": {
     "name": "BMW Blitzen 2050",
@@ -33,13 +33,12 @@
     "width": 2,
     "height": 1,
     "texture": {
-      "src": "modules/sr2e-rigger-black-book/assets/vehicle_portraits/bmw-blitzen-2050.webp",
+      "src": "icons/svg/explosion.svg",
       "scaleX": 1,
       "scaleY": 1
     },
     "disposition": 0,
-    "displayBars": 0,
-    "lockRotation": false
+    "displayBars": 0
   },
   "effects": [],
   "folder": null,

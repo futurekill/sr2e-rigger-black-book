@@ -2,7 +2,7 @@
   "_id": "159507ed9791ccd5",
   "name": "Harley Electraglide-1000 Patrol Cycle",
   "type": "vehicle",
-  "img": "modules/sr2e-rigger-black-book/assets/vehicle_portraits/harley-electraglide-1000-patrol-cycle.webp",
+  "img": "icons/svg/explosion.svg",
   "system": {
     "vehicleType": "ground",
     "skill": "bike",
@@ -10,7 +10,7 @@
     "speed": 95,
     "acceleration": 0,
     "body": 3,
-    "armor": 2,
+    "armor": 6,
     "signature": 2,
     "pilot": 1,
     "sensor": 0,
@@ -24,7 +24,7 @@
       "max": 10
     },
     "autonav": 1,
-    "notes": "<p>The ultimate police cycle — the fastest on the road, with runflat tires, off-road suspension, three firmpoints, a light urban comm suite and siren.</p><p><em>Off-road handling 4. Max speed 285 m/CT (cruising 95 used for tests). IC/45 liters; 50 km/liter. 2 forward + 1 rear firmpoint (1 CF ammo each). Rigger Black Book p.66.</em></p>"
+    "notes": "<p>The ultimate police cycle — the fastest on the road, with runflat tires, off-road suspension, three firmpoints, a light urban comm suite and siren.</p><p><em>Off-road handling 4. Max speed 285 m/CT (cruising 95 used for tests). IC/45 liters; 50 km/liter. 2 forward + 1 rear firmpoint (1 CF ammo each). Rigger Black Book p.66. Armor 2 as printed (SR1) x3 = 6 for SRII, per Sourcebook Updates p.283.</em></p>"
   },
   "prototypeToken": {
     "name": "Harley Electraglide-1000 Patrol Cycle",
@@ -33,13 +33,12 @@
     "width": 2,
     "height": 1,
     "texture": {
-      "src": "modules/sr2e-rigger-black-book/assets/vehicle_portraits/harley-electraglide-1000-patrol-cycle.webp",
+      "src": "icons/svg/explosion.svg",
       "scaleX": 1,
       "scaleY": 1
     },
     "disposition": 0,
-    "displayBars": 0,
-    "lockRotation": false
+    "displayBars": 0
   },
   "effects": [],
   "folder": null,

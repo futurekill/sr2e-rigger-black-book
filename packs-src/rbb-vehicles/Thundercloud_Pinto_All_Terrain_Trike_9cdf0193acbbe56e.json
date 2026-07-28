@@ -2,7 +2,7 @@
   "_id": "9cdf0193acbbe56e",
   "name": "Thundercloud \"Pinto\" All-Terrain Trike",
   "type": "vehicle",
-  "img": "modules/sr2e-rigger-black-book/assets/vehicle_portraits/thundercloud-pinto-all-terrain-trike.webp",
+  "img": "icons/svg/explosion.svg",
   "system": {
     "vehicleType": "ground",
     "skill": "bike",
@@ -10,7 +10,7 @@
     "speed": 20,
     "acceleration": 0,
     "body": 3,
-    "armor": 2,
+    "armor": 6,
     "signature": 2,
     "pilot": 0,
     "sensor": 0,
@@ -24,7 +24,7 @@
       "max": 10
     },
     "autonav": 0,
-    "notes": "<p>A durable all-terrain trike built by the Pueblo Corporate Council — balloon tires give limited amphibious capability, popular in the Far North.</p><p><em>Off-road handling 2. Max speed 60 m/CT (cruising 20 used for tests). IC/50 liters; 50 km/liter; off-road speed 35/105, amphibious 5/15. Enclosed canopy (Armor 1) +5,000¥. Rigger Black Book p.19.</em></p>"
+    "notes": "<p>A durable all-terrain trike built by the Pueblo Corporate Council — balloon tires give limited amphibious capability, popular in the Far North.</p><p><em>Off-road handling 2. Max speed 60 m/CT (cruising 20 used for tests). IC/50 liters; 50 km/liter; off-road speed 35/105, amphibious 5/15. Enclosed canopy (Armor 1) +5,000¥. Rigger Black Book p.19. Armor 2 as printed (SR1) x3 = 6 for SRII, per Sourcebook Updates p.283.</em></p>"
   },
   "prototypeToken": {
     "name": "Thundercloud \"Pinto\" All-Terrain Trike",
@@ -33,13 +33,12 @@
     "width": 2,
     "height": 1,
     "texture": {
-      "src": "modules/sr2e-rigger-black-book/assets/vehicle_portraits/thundercloud-pinto-all-terrain-trike.webp",
+      "src": "icons/svg/explosion.svg",
       "scaleX": 1,
       "scaleY": 1
     },
     "disposition": 0,
-    "displayBars": 0,
-    "lockRotation": false
+    "displayBars": 0
   },
   "effects": [],
   "folder": null,

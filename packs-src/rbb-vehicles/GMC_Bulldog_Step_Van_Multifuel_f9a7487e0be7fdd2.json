@@ -2,7 +2,7 @@
   "_id": "f9a7487e0be7fdd2",
   "name": "GMC Bulldog Step-Van (Multifuel)",
   "type": "vehicle",
-  "img": "modules/sr2e-rigger-black-book/assets/vehicle_portraits/gmc-bulldog-step-van-multifuel.webp",
+  "img": "icons/svg/explosion.svg",
   "system": {
     "vehicleType": "ground",
     "skill": "car",
@@ -10,7 +10,7 @@
     "speed": 35,
     "acceleration": 0,
     "body": 4,
-    "armor": 1,
+    "armor": 3,
     "signature": 2,
     "pilot": 2,
     "sensor": 0,
@@ -24,7 +24,7 @@
       "max": 10
     },
     "autonav": 2,
-    "notes": "<p>A standard, reliable delivery truck found in most North American sprawls — UCAS Express and Parcel Service use them.</p><p><em>Off-road handling 8. Max speed 85 m/CT (cruising 35 used for tests). Multifuel/150 liters; 16 km/liter. Rigger Black Book p.33.</em></p>"
+    "notes": "<p>A standard, reliable delivery truck found in most North American sprawls — UCAS Express and Parcel Service use them.</p><p><em>Off-road handling 8. Max speed 85 m/CT (cruising 35 used for tests). Multifuel/150 liters; 16 km/liter. Rigger Black Book p.33. Armor 1 as printed (SR1) x3 = 3 for SRII, per Sourcebook Updates p.283.</em></p>"
   },
   "prototypeToken": {
     "name": "GMC Bulldog Step-Van (Multifuel)",
@@ -33,13 +33,12 @@
     "width": 2,
     "height": 1,
     "texture": {
-      "src": "modules/sr2e-rigger-black-book/assets/vehicle_portraits/gmc-bulldog-step-van-multifuel.webp",
+      "src": "icons/svg/explosion.svg",
       "scaleX": 1,
       "scaleY": 1
     },
     "disposition": 0,
-    "displayBars": 0,
-    "lockRotation": false
+    "displayBars": 0
   },
   "effects": [],
   "folder": null,

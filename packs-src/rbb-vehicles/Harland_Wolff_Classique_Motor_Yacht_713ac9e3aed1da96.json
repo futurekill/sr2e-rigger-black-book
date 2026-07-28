@@ -2,7 +2,7 @@
   "_id": "713ac9e3aed1da96",
   "name": "Harland & Wolff \"Classique\" Motor Yacht",
   "type": "vehicle",
-  "img": "modules/sr2e-rigger-black-book/assets/vehicle_portraits/harland-wolff-classique-motor-yacht.webp",
+  "img": "icons/svg/explosion.svg",
   "system": {
     "vehicleType": "boat",
     "skill": "boat",
@@ -33,13 +33,12 @@
     "width": 2,
     "height": 1,
     "texture": {
-      "src": "modules/sr2e-rigger-black-book/assets/vehicle_portraits/harland-wolff-classique-motor-yacht.webp",
+      "src": "icons/svg/explosion.svg",
       "scaleX": 1,
       "scaleY": 1
     },
     "disposition": 0,
-    "displayBars": 0,
-    "lockRotation": false
+    "displayBars": 0
   },
   "effects": [],
   "folder": null,

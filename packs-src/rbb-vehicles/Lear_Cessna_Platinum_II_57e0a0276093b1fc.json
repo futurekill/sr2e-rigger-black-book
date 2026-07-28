@@ -2,7 +2,7 @@
   "_id": "57e0a0276093b1fc",
   "name": "Lear-Cessna Platinum II",
   "type": "vehicle",
-  "img": "modules/sr2e-rigger-black-book/assets/vehicle_portraits/lear-cessna-platinum-ii.webp",
+  "img": "icons/svg/explosion.svg",
   "system": {
     "vehicleType": "aircraft",
     "skill": "aircraft",
@@ -10,7 +10,7 @@
     "speed": 800,
     "acceleration": 0,
     "body": 5,
-    "armor": 1,
+    "armor": 3,
     "signature": 3,
     "pilot": 4,
     "sensor": 0,
@@ -24,7 +24,7 @@
       "max": 10
     },
     "autonav": 4,
-    "notes": "<p>A faster development of the Platinum I executive transport — twin rear-mounted turbofans for the exec in a hurry, STOL-capable.</p><p><em>Max speed 1600 m/CT (cruising 800 used for tests). IC/750 liters; 1.5 km/liter; STOL. Variants: Luxury/Standard Executive, Commuter (15 seats), Cargo. Rigger Black Book p.50.</em></p>"
+    "notes": "<p>A faster development of the Platinum I executive transport — twin rear-mounted turbofans for the exec in a hurry, STOL-capable.</p><p><em>Max speed 1600 m/CT (cruising 800 used for tests). IC/750 liters; 1.5 km/liter; STOL. Variants: Luxury/Standard Executive, Commuter (15 seats), Cargo. Rigger Black Book p.50. Armor 1 as printed (SR1) x3 = 3 for SRII, per Sourcebook Updates p.283.</em></p>"
   },
   "prototypeToken": {
     "name": "Lear-Cessna Platinum II",
@@ -33,13 +33,12 @@
     "width": 2,
     "height": 1,
     "texture": {
-      "src": "modules/sr2e-rigger-black-book/assets/vehicle_portraits/lear-cessna-platinum-ii.webp",
+      "src": "icons/svg/explosion.svg",
       "scaleX": 1,
       "scaleY": 1
     },
     "disposition": 0,
-    "displayBars": 0,
-    "lockRotation": false
+    "displayBars": 0
   },
   "effects": [],
   "folder": null,

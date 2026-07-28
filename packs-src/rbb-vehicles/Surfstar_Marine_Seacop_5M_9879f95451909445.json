@@ -2,7 +2,7 @@
   "_id": "9879f95451909445",
   "name": "Surfstar Marine Seacop (5M)",
   "type": "vehicle",
-  "img": "modules/sr2e-rigger-black-book/assets/vehicle_portraits/surfstar-marine-seacop-5m.webp",
+  "img": "icons/svg/explosion.svg",
   "system": {
     "vehicleType": "boat",
     "skill": "boat",
@@ -10,7 +10,7 @@
     "speed": 30,
     "acceleration": 0,
     "body": 3,
-    "armor": 2,
+    "armor": 6,
     "signature": 3,
     "pilot": 2,
     "sensor": 0,
@@ -24,7 +24,7 @@
       "max": 10
     },
     "autonav": 2,
-    "notes": "<p>The harbor equivalent of the Patrol-One — a marine patrol craft with EnviroSeal cabin, remote-controlled spotlight, siren and forward firmpoints.</p><p><em>Max speed 90 m/CT (cruising 30 used for tests). IC/100 liters; 25 km/liter. Rigger Black Book p.67.</em></p>"
+    "notes": "<p>The harbor equivalent of the Patrol-One — a marine patrol craft with EnviroSeal cabin, remote-controlled spotlight, siren and forward firmpoints.</p><p><em>Max speed 90 m/CT (cruising 30 used for tests). IC/100 liters; 25 km/liter. Rigger Black Book p.67. Armor 2 as printed (SR1) x3 = 6 for SRII, per Sourcebook Updates p.283.</em></p>"
   },
   "prototypeToken": {
     "name": "Surfstar Marine Seacop (5M)",
@@ -33,13 +33,12 @@
     "width": 2,
     "height": 1,
     "texture": {
-      "src": "modules/sr2e-rigger-black-book/assets/vehicle_portraits/surfstar-marine-seacop-5m.webp",
+      "src": "icons/svg/explosion.svg",
       "scaleX": 1,
       "scaleY": 1
     },
     "disposition": 0,
-    "displayBars": 0,
-    "lockRotation": false
+    "displayBars": 0
   },
   "effects": [],
   "folder": null,

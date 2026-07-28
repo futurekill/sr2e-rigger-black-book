@@ -2,7 +2,7 @@
   "_id": "638c848f9473792a",
   "name": "Aztechnology Aguilar-EX Attack Helicopter",
   "type": "vehicle",
-  "img": "modules/sr2e-rigger-black-book/assets/vehicle_portraits/aztechnology-aguilar-ex-attack-helicopter.webp",
+  "img": "icons/svg/explosion.svg",
   "system": {
     "vehicleType": "rotor",
     "skill": "rotorcraft",
@@ -10,7 +10,7 @@
     "speed": 280,
     "acceleration": 0,
     "body": 3,
-    "armor": 2,
+    "armor": 6,
     "signature": 4,
     "pilot": 4,
     "sensor": 4,
@@ -24,7 +24,7 @@
       "max": 10
     },
     "autonav": 4,
-    "notes": "<p>Aztlan's premier VTOL weapons platform in an export configuration — a stealth electric-turbine attack helicopter with an internal signature-suppression suite, near-unsurpassed on the modern battlefield.</p><p><em>Max speed 560 m/CT (cruising 280 used for tests). 1,000 liters/100 PF; electric option. Sensors Military (read ~4-7); ECM/ECCM Military I (4)/II (5). Armament: wing/side mounts, 1,000-rd HMG, Bandit AGMs / 7.62 rocket ripples, underbelly rack (4 AAMs/AGMs). Rigger Black Book p.94.</em></p>"
+    "notes": "<p>Aztlan's premier VTOL weapons platform in an export configuration — a stealth electric-turbine attack helicopter with an internal signature-suppression suite, near-unsurpassed on the modern battlefield.</p><p><em>Max speed 560 m/CT (cruising 280 used for tests). 1,000 liters/100 PF; electric option. Sensors Military (read ~4-7); ECM/ECCM Military I (4)/II (5). Armament: wing/side mounts, 1,000-rd HMG, Bandit AGMs / 7.62 rocket ripples, underbelly rack (4 AAMs/AGMs). Rigger Black Book p.94. Armor 2 as printed (SR1) x3 = 6 for SRII, per Sourcebook Updates p.283.</em></p>"
   },
   "prototypeToken": {
     "name": "Aztechnology Aguilar-EX Attack Helicopter",
@@ -33,13 +33,12 @@
     "width": 2,
     "height": 1,
     "texture": {
-      "src": "modules/sr2e-rigger-black-book/assets/vehicle_portraits/aztechnology-aguilar-ex-attack-helicopter.webp",
+      "src": "icons/svg/explosion.svg",
       "scaleX": 1,
       "scaleY": 1
     },
     "disposition": 0,
-    "displayBars": 0,
-    "lockRotation": false
+    "displayBars": 0
   },
   "effects": [],
   "folder": null,

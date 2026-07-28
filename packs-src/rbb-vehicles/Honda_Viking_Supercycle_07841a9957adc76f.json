@@ -2,7 +2,7 @@
   "_id": "07841a9957adc76f",
   "name": "Honda \"Viking\" Supercycle",
   "type": "vehicle",
-  "img": "modules/sr2e-rigger-black-book/assets/vehicle_portraits/honda-viking-supercycle.webp",
+  "img": "icons/svg/explosion.svg",
   "system": {
     "vehicleType": "ground",
     "skill": "bike",
@@ -10,7 +10,7 @@
     "speed": 50,
     "acceleration": 0,
     "body": 4,
-    "armor": 1,
+    "armor": 3,
     "signature": 1,
     "pilot": 2,
     "sensor": 0,
@@ -24,7 +24,7 @@
       "max": 10
     },
     "autonav": 2,
-    "notes": "<p>A supercycle with reinforced seating for troll-sized riders as standard, and extra-heavy construction that boosts durability and rider protection.</p><p><em>Off-road handling 5. Max speed 150 m/CT (cruising 50 used for tests). IC/35 liters; 30 km/liter. Rigger Black Book p.23.</em></p>"
+    "notes": "<p>A supercycle with reinforced seating for troll-sized riders as standard, and extra-heavy construction that boosts durability and rider protection.</p><p><em>Off-road handling 5. Max speed 150 m/CT (cruising 50 used for tests). IC/35 liters; 30 km/liter. Rigger Black Book p.23. Armor 1 as printed (SR1) x3 = 3 for SRII, per Sourcebook Updates p.283.</em></p>"
   },
   "prototypeToken": {
     "name": "Honda \"Viking\" Supercycle",
@@ -33,13 +33,12 @@
     "width": 2,
     "height": 1,
     "texture": {
-      "src": "modules/sr2e-rigger-black-book/assets/vehicle_portraits/honda-viking-supercycle.webp",
+      "src": "icons/svg/explosion.svg",
       "scaleX": 1,
       "scaleY": 1
     },
     "disposition": 0,
-    "displayBars": 0,
-    "lockRotation": false
+    "displayBars": 0
   },
   "effects": [],
   "folder": null,

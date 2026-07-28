@@ -1,7 +1,12 @@
 // Generate Rigger Black Book vehicles (FASA 7108, SR1) as `vehicle` actors into
 // packs-src/rbb-vehicles. SR1 stat block -> SR2 vehicle field (see docs/PLAN.md):
 // handling = on-road (1st of on/off); speed = cruising (1st of cruise/max, which
-// the system uses for tests) with max in notes; B/A -> body/armor; Sig ->
+// SR1 -> SR2 ARMOR CONVERSION: the core book's Sourcebook Updates section
+// (p.283) says to "multiply the Vehicle Armor Ratings listed for the vehicles in
+// the Rigger Black Book by 3 to make the values compatible with the SRII rules."
+// The `a:` values in the table below are the SR1 numbers AS PRINTED; the x3 is
+// applied on write. Do not pre-multiply them here, or it will be applied twice.
+// the system uses for tests) with max in notes; B/A -> body/(armor x3, see below); Sig ->
 // signature; APilot -> pilot & autonav; Storage CF -> cargo; acceleration 0 (SR1
 // has none). Render-verified. Vehicles already in the system `vehicles` pack /
 // Rigger 2 are skipped. Re-run, then build-packs rbb-vehicles.
@@ -22,11 +27,11 @@ function vehicle(v) {
     system: {
       vehicleType: v.vt ?? "ground", skill: v.skill ?? "car",
       handling: v.h, speed: v.s, acceleration: 0,
-      body: v.b, armor: v.a, signature: v.sig, pilot: v.p, sensor: v.sensor ?? 0,
+      body: v.b, armor: (v.a ?? 0) * 3, signature: v.sig, pilot: v.p, sensor: v.sensor ?? 0,
       cargo: v.cargo ?? 0, load: v.load ?? 0, seating: v.seating ?? "",
       cost: v.cost ?? 0, availability: v.avail ?? "",
       conditionMonitor: { value: 0, max: 10 }, autonav: v.p,
-      notes: `<p>${v.desc}</p><p><em>${offRoad}Max speed ${v.sMax} m/CT (cruising ${v.s} used for tests).${v.extra ? " " + v.extra : ""} Rigger Black Book p.${v.page}.</em></p>`
+      notes: `<p>${v.desc}</p><p><em>${offRoad}Max speed ${v.sMax} m/CT (cruising ${v.s} used for tests).${v.extra ? " " + v.extra : ""} Rigger Black Book p.${v.page}.${v.a ? ` Armor ${v.a} as printed (SR1) x3 = ${v.a * 3} for SRII, per Sourcebook Updates p.283.` : ""}</em></p>`
     },
     prototypeToken: {
       name: v.name, displayName: 20, actorLink: false, width: 2, height: 1,
