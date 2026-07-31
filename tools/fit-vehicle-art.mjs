@@ -7,7 +7,7 @@
  *   node tools/fit-vehicle-art.mjs --fix    # rewrite the .webp files in place
  *
  * WHY. The portraits are square 1024x1024 canvases with the vehicle drawn
- * nose-up down the middle — the Bulldog occupies 508x965 of its canvas, so HALF
+ * down the middle — the Bulldog occupies 508x965 of its canvas, so HALF
  * the image is empty air. Foundry's `fit: "contain"` scales the whole canvas
  * (margin included) to fit the token box, so the vehicle rendered at about half
  * a grid square inside a 2x1 box and looked tiny with the box half empty.
@@ -80,7 +80,7 @@ for (const file of readdirSync(ART).filter(f => f.endsWith(".webp")).sort()) {
 
   const before = statSync(path).size;
   const box = contentBox(path);
-  const aspect = box.w / box.h;                       // < 1 for a nose-up vehicle
+  const aspect = box.w / box.h;                       // < 1 for a nose-down (south) vehicle
   const w = widthMetres({ ...doc.system });
   const h = Math.max(1, Math.round(w / aspect));
 

@@ -124,7 +124,7 @@ function vehicle(v) {
       // stretch it. Either way the art now IS the vehicle (the portraits are
       // trimmed), which is what stopped these rendering at half a square.
       texture: { src: img, fit, scaleX: 1, scaleY: 1 },
-      // A vehicle token turns to face where it drives; the art points nose-up,
+      // A vehicle token turns to face where it drives; the art points south,
       // so the box is PORTRAIT. It used to be a flat 2x1 landscape for every
       // vehicle, perpendicular to its own art.
       lockRotation: false, disposition: 0, displayBars: 0
