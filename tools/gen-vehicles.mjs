@@ -43,9 +43,66 @@ function artFor(name) {
   return `modules/${MODULE_ID}/${rel}`;
 }
 
+/**
+ * Canvas size straight out of the WebP header — no ImageMagick, no dependency.
+ * The portraits are trimmed to the vehicle (tools/fit-vehicle-art.mjs), so the
+ * file's aspect IS the vehicle's aspect, which is what the token box must match.
+ */
+function webpSize(rel) {
+  const b = readFileSync(rel);
+  if (b.toString("ascii", 0, 4) !== "RIFF" || b.toString("ascii", 8, 12) !== "WEBP") return null;
+  switch (b.toString("ascii", 12, 16)) {
+    case "VP8X": return { w: 1 + b.readUIntLE(24, 3), h: 1 + b.readUIntLE(27, 3) };
+    case "VP8 ": return { w: b.readUInt16LE(26) & 0x3fff, h: b.readUInt16LE(28) & 0x3fff };
+    default: return null;                       // VP8L: not produced by our pipeline
+  }
+}
+
+/**
+ * Token footprint in grid squares. Scenes are 1 m per square, so these are
+ * metres — and the art fills the box because the box takes its aspect from the
+ * (trimmed) art.
+ *
+ * Width is calibrated against the shipped core `vehicles` pack rather than
+ * invented: a motorcycle is 1 across there, an Americar 2, a Citymaster 3, a
+ * river boat 4, and rotorcraft/aircraft run 8-14 because the rotor disc and
+ * wingspan are what occupy the ground. `skill` separates a scooter from a small
+ * car — both sit at Body 1-2, and Body alone made a pickup narrower than a bike.
+ *
+ * Keep this in step with tools/fit-vehicle-art.mjs, which reports the same
+ * numbers when re-fitting the art.
+ */
+function tokenSize(v, rel) {
+  const b = v.b ?? 0;
+  const type = v.vt ?? "ground";
+  let w;
+  if (v.skill === "bike") w = 1;
+  else switch (type) {
+    case "ground":     w = b <= 4 ? 2 : b <= 6 ? 3 : 4; break;
+    case "drone":      w = b <= 2 ? 1 : b <= 4 ? 2 : 3; break;
+    case "hovercraft": w = b <= 2 ? 2 : 3; break;
+    case "boat":       w = b <= 1 ? 1 : b <= 2 ? 2 : b <= 3 ? 3 : 4; break;   // Body 1 = jet-ski
+    case "rotor":      w = b <= 3 ? 8 : b <= 5 ? 12 : 14; break;
+    case "aircraft":   w = b <= 5 ? 8 : b <= 6 ? 11 : 12; break;
+    case "vectored_thrust": w = 12; break;
+    default:           w = 2;
+  }
+  const size = rel.startsWith("modules/") ? webpSize(rel.replace(/^modules\/[^/]+\//, "")) : null;
+  // No art (placeholder): fall back to a square so nothing is wildly wrong.
+  const h = size ? Math.max(1, Math.round(w * (size.h / size.w))) : w;
+
+  // Whole grid squares are a coarse ruler for a small vehicle: a drone whose art
+  // is 0.69 wide has to round to 1x1, which "fill" would stretch by 46%. So
+  // stretch only where the box really does match the art, and letterbox the rest
+  // — a slightly inset motorbike beats a visibly fat one.
+  const err = size ? Math.abs((size.w / size.h) - (w / h)) / (size.w / size.h) : 1;
+  return { width: w, height: h, fit: err <= 0.08 ? "fill" : "contain" };
+}
+
 function vehicle(v) {
   const _id = idFor(v.name);
   const img = artFor(v.name);
+  const { width, height, fit } = tokenSize(v, img);
   // Off-road handling only applies to ground vehicles (on/off-road pair); ACVs,
   // boats and aircraft have a single handling value, so omit the note for them.
   const offRoad = (v.hOff != null && v.hOff !== v.h) ? `Off-road handling ${v.hOff}. ` : "";
@@ -61,9 +118,15 @@ function vehicle(v) {
       notes: `<p>${v.desc}</p><p><em>${offRoad}Max speed ${v.sMax} m/CT (cruising ${v.s} used for tests).${v.extra ? " " + v.extra : ""} Rigger Black Book p.${v.page}.${v.a ? ` Armor ${v.a} as printed (SR1) x3 = ${v.a * 3} for SRII, per Sourcebook Updates p.283.` : ""}</em></p>`
     },
     prototypeToken: {
-      name: v.name, displayName: 20, actorLink: false, width: 2, height: 1,
-      texture: { src: img, scaleX: 1, scaleY: 1 },
-      // A vehicle token turns to face where it drives; the art points nose-up.
+      name: v.name, displayName: 20, actorLink: false, width, height,
+      // fit is chosen per vehicle in tokenSize(): "fill" where the box matches
+      // the art within 8%, "contain" where whole-square rounding would visibly
+      // stretch it. Either way the art now IS the vehicle (the portraits are
+      // trimmed), which is what stopped these rendering at half a square.
+      texture: { src: img, fit, scaleX: 1, scaleY: 1 },
+      // A vehicle token turns to face where it drives; the art points nose-up,
+      // so the box is PORTRAIT. It used to be a flat 2x1 landscape for every
+      // vehicle, perpendicular to its own art.
       lockRotation: false, disposition: 0, displayBars: 0
     },
     effects: [], folder: null, sort: 0, flags: {},

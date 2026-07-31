@@ -30,10 +30,11 @@
     "name": "Luftschiffbau Zeppelin LZ-2049",
     "displayName": 20,
     "actorLink": false,
-    "width": 2,
-    "height": 1,
+    "width": 12,
+    "height": 29,
     "texture": {
       "src": "modules/sr2e-rigger-black-book/assets/vehicle_portraits/luftschiffbau-zeppelin-lz-2049.webp",
+      "fit": "fill",
       "scaleX": 1,
       "scaleY": 1
     },

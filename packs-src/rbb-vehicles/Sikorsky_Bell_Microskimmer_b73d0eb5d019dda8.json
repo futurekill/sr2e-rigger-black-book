@@ -30,10 +30,11 @@
     "name": "Sikorsky-Bell Microskimmer",
     "displayName": 20,
     "actorLink": false,
-    "width": 2,
+    "width": 1,
     "height": 1,
     "texture": {
       "src": "modules/sr2e-rigger-black-book/assets/vehicle_portraits/sikorsky-bell-microskimmer.webp",
+      "fit": "fill",
       "scaleX": 1,
       "scaleY": 1
     },

@@ -30,10 +30,11 @@
     "name": "Goodyear Commuter-47 LTA",
     "displayName": 20,
     "actorLink": false,
-    "width": 2,
-    "height": 1,
+    "width": 12,
+    "height": 25,
     "texture": {
       "src": "modules/sr2e-rigger-black-book/assets/vehicle_portraits/goodyear-commuter-47-lta.webp",
+      "fit": "fill",
       "scaleX": 1,
       "scaleY": 1
     },

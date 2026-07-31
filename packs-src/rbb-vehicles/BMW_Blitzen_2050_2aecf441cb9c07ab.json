@@ -30,10 +30,11 @@
     "name": "BMW Blitzen 2050",
     "displayName": 20,
     "actorLink": false,
-    "width": 2,
-    "height": 1,
+    "width": 1,
+    "height": 2,
     "texture": {
       "src": "modules/sr2e-rigger-black-book/assets/vehicle_portraits/bmw-blitzen-2050.webp",
+      "fit": "contain",
       "scaleX": 1,
       "scaleY": 1
     },

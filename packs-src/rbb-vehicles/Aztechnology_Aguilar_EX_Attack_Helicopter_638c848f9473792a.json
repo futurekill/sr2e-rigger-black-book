@@ -30,10 +30,11 @@
     "name": "Aztechnology Aguilar-EX Attack Helicopter",
     "displayName": 20,
     "actorLink": false,
-    "width": 2,
-    "height": 1,
+    "width": 8,
+    "height": 11,
     "texture": {
       "src": "modules/sr2e-rigger-black-book/assets/vehicle_portraits/aztechnology-aguilar-ex-attack-helicopter.webp",
+      "fit": "fill",
       "scaleX": 1,
       "scaleY": 1
     },

@@ -30,10 +30,11 @@
     "name": "Agusta-Cierva \"Plutocrat\" Rotorcraft (Armed)",
     "displayName": 20,
     "actorLink": false,
-    "width": 2,
-    "height": 1,
+    "width": 12,
+    "height": 15,
     "texture": {
       "src": "modules/sr2e-rigger-black-book/assets/vehicle_portraits/agusta-cierva-plutocrat-rotorcraft-armed.webp",
+      "fit": "fill",
       "scaleX": 1,
       "scaleY": 1
     },

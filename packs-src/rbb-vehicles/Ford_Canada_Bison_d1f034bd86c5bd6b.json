@@ -30,10 +30,11 @@
     "name": "Ford-Canada Bison",
     "displayName": 20,
     "actorLink": false,
-    "width": 2,
-    "height": 1,
+    "width": 3,
+    "height": 6,
     "texture": {
       "src": "modules/sr2e-rigger-black-book/assets/vehicle_portraits/ford-canada-bison.webp",
+      "fit": "fill",
       "scaleX": 1,
       "scaleY": 1
     },

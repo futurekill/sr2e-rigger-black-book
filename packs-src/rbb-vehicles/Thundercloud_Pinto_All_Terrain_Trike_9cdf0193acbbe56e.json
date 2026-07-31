@@ -30,10 +30,11 @@
     "name": "Thundercloud \"Pinto\" All-Terrain Trike",
     "displayName": 20,
     "actorLink": false,
-    "width": 2,
-    "height": 1,
+    "width": 1,
+    "height": 2,
     "texture": {
       "src": "modules/sr2e-rigger-black-book/assets/vehicle_portraits/thundercloud-pinto-all-terrain-trike.webp",
+      "fit": "contain",
       "scaleX": 1,
       "scaleY": 1
     },

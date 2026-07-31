@@ -30,10 +30,11 @@
     "name": "Entertainment Systems Papoose Maximus",
     "displayName": 20,
     "actorLink": false,
-    "width": 2,
-    "height": 1,
+    "width": 1,
+    "height": 3,
     "texture": {
       "src": "modules/sr2e-rigger-black-book/assets/vehicle_portraits/entertainment-systems-papoose-maximus.webp",
+      "fit": "fill",
       "scaleX": 1,
       "scaleY": 1
     },

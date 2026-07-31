@@ -30,10 +30,11 @@
     "name": "Airship Industries Skyswimmer",
     "displayName": 20,
     "actorLink": false,
-    "width": 2,
-    "height": 1,
+    "width": 11,
+    "height": 22,
     "texture": {
       "src": "modules/sr2e-rigger-black-book/assets/vehicle_portraits/airship-industries-skyswimmer.webp",
+      "fit": "fill",
       "scaleX": 1,
       "scaleY": 1
     },

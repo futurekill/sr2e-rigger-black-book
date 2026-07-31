@@ -30,10 +30,11 @@
     "name": "Harley Electraglide-1000 Patrol Cycle",
     "displayName": 20,
     "actorLink": false,
-    "width": 2,
-    "height": 1,
+    "width": 1,
+    "height": 2,
     "texture": {
       "src": "modules/sr2e-rigger-black-book/assets/vehicle_portraits/harley-electraglide-1000-patrol-cycle.webp",
+      "fit": "contain",
       "scaleX": 1,
       "scaleY": 1
     },

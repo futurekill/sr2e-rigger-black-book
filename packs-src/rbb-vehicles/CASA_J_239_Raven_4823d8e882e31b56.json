@@ -30,10 +30,11 @@
     "name": "CASA J-239 Raven",
     "displayName": 20,
     "actorLink": false,
-    "width": 2,
-    "height": 1,
+    "width": 8,
+    "height": 8,
     "texture": {
       "src": "modules/sr2e-rigger-black-book/assets/vehicle_portraits/casa-j-239-raven.webp",
+      "fit": "fill",
       "scaleX": 1,
       "scaleY": 1
     },

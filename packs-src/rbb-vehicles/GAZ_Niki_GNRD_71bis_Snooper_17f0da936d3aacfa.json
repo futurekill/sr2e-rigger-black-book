@@ -30,10 +30,11 @@
     "name": "GAZ-Niki GNRD-71bis Snooper",
     "displayName": 20,
     "actorLink": false,
-    "width": 2,
+    "width": 1,
     "height": 1,
     "texture": {
       "src": "modules/sr2e-rigger-black-book/assets/vehicle_portraits/gaz-niki-gnrd-71bis-snooper.webp",
+      "fit": "contain",
       "scaleX": 1,
       "scaleY": 1
     },
