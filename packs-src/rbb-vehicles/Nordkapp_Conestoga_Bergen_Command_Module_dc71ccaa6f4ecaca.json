@@ -2,7 +2,7 @@
   "_id": "dc71ccaa6f4ecaca",
   "name": "Nordkapp-Conestoga \"Bergen\" (Command Module)",
   "type": "vehicle",
-  "img": "icons/svg/explosion.svg",
+  "img": "modules/sr2e-rigger-black-book/assets/vehicle_portraits/nordkapp-conestoga-bergen-command-module.webp",
   "system": {
     "vehicleType": "ground",
     "skill": "car",
@@ -33,10 +33,11 @@
     "width": 2,
     "height": 1,
     "texture": {
-      "src": "icons/svg/explosion.svg",
+      "src": "modules/sr2e-rigger-black-book/assets/vehicle_portraits/nordkapp-conestoga-bergen-command-module.webp",
       "scaleX": 1,
       "scaleY": 1
     },
+    "lockRotation": false,
     "disposition": 0,
     "displayBars": 0
   },

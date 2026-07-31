@@ -2,7 +2,7 @@
   "_id": "a6b971d986752e37",
   "name": "Blohm & Voss River Commander (Military)",
   "type": "vehicle",
-  "img": "icons/svg/explosion.svg",
+  "img": "modules/sr2e-rigger-black-book/assets/vehicle_portraits/blohm-voss-river-commander-military.webp",
   "system": {
     "vehicleType": "boat",
     "skill": "boat",
@@ -33,10 +33,11 @@
     "width": 2,
     "height": 1,
     "texture": {
-      "src": "icons/svg/explosion.svg",
+      "src": "modules/sr2e-rigger-black-book/assets/vehicle_portraits/blohm-voss-river-commander-military.webp",
       "scaleX": 1,
       "scaleY": 1
     },
+    "lockRotation": false,
     "disposition": 0,
     "displayBars": 0
   },

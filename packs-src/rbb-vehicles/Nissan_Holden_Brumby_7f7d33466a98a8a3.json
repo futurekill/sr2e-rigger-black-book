@@ -2,7 +2,7 @@
   "_id": "7f7d33466a98a8a3",
   "name": "Nissan-Holden Brumby",
   "type": "vehicle",
-  "img": "icons/svg/explosion.svg",
+  "img": "modules/sr2e-rigger-black-book/assets/vehicle_portraits/nissan-holden-brumby.webp",
   "system": {
     "vehicleType": "ground",
     "skill": "car",
@@ -33,10 +33,11 @@
     "width": 2,
     "height": 1,
     "texture": {
-      "src": "icons/svg/explosion.svg",
+      "src": "modules/sr2e-rigger-black-book/assets/vehicle_portraits/nissan-holden-brumby.webp",
       "scaleX": 1,
       "scaleY": 1
     },
+    "lockRotation": false,
     "disposition": 0,
     "displayBars": 0
   },

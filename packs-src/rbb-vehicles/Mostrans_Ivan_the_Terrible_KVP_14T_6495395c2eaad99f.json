@@ -2,7 +2,7 @@
   "_id": "6495395c2eaad99f",
   "name": "Mostrans \"Ivan the Terrible\" KVP-14T",
   "type": "vehicle",
-  "img": "icons/svg/explosion.svg",
+  "img": "modules/sr2e-rigger-black-book/assets/vehicle_portraits/mostrans-ivan-the-terrible-kvp-14t.webp",
   "system": {
     "vehicleType": "hovercraft",
     "skill": "hovercraft",
@@ -33,10 +33,11 @@
     "width": 2,
     "height": 1,
     "texture": {
-      "src": "icons/svg/explosion.svg",
+      "src": "modules/sr2e-rigger-black-book/assets/vehicle_portraits/mostrans-ivan-the-terrible-kvp-14t.webp",
       "scaleX": 1,
       "scaleY": 1
     },
+    "lockRotation": false,
     "disposition": 0,
     "displayBars": 0
   },

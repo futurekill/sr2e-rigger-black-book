@@ -10,20 +10,47 @@
 // signature; APilot -> pilot & autonav; Storage CF -> cargo; acceleration 0 (SR1
 // has none). Render-verified. Vehicles already in the system `vehicles` pack /
 // Rigger 2 are skipped. Re-run, then build-packs rbb-vehicles.
-import { writeFileSync, mkdirSync } from "node:fs";
+import { writeFileSync, mkdirSync, existsSync, readFileSync } from "node:fs";
 import { createHash } from "node:crypto";
 
 const DIR = "packs-src/rbb-vehicles";
 mkdirSync(DIR, { recursive: true });
 const idFor = (s) => createHash("sha1").update("rbb:" + s).digest("hex").slice(0, 16);
 
+// This generator OVERWRITES packs-src wholesale, so anything it doesn't emit is
+// destroyed on every re-run. It used to stamp a placeholder icon, which silently
+// un-wired all 69 portraits the moment the armor conversion was regenerated
+// (0.5.0) — the compendium went back to default icons and nobody noticed until
+// a vehicle was needed at the table. So it emits the real art path itself.
+//
+// Same slug rule as tools/set-art.mjs. Duplicated rather than shared: this file
+// is a standalone one-shot generator with no imports, and the two must agree —
+// which the art-file check below enforces at generation time rather than
+// trusting the copies to stay in sync.
+const MODULE_ID = JSON.parse(readFileSync("module.json", "utf8")).id;
+const slugify = (name) => name
+  .toLowerCase()
+  .normalize("NFD").replace(/[̀-ͯ]/g, "")
+  .replace(/['’]/g, "")
+  .replace(/[^a-z0-9]+/g, "-")
+  .replace(/^-+|-+$/g, "");
+
+const PLACEHOLDER = "icons/svg/explosion.svg";
+const missingArt = [];
+function artFor(name) {
+  const rel = `assets/vehicle_portraits/${slugify(name)}.webp`;
+  if (!existsSync(rel)) { missingArt.push(`${name} -> ${rel}`); return PLACEHOLDER; }
+  return `modules/${MODULE_ID}/${rel}`;
+}
+
 function vehicle(v) {
   const _id = idFor(v.name);
+  const img = artFor(v.name);
   // Off-road handling only applies to ground vehicles (on/off-road pair); ACVs,
   // boats and aircraft have a single handling value, so omit the note for them.
   const offRoad = (v.hOff != null && v.hOff !== v.h) ? `Off-road handling ${v.hOff}. ` : "";
   return {
-    _id, name: v.name, type: "vehicle", img: "icons/svg/explosion.svg",
+    _id, name: v.name, type: "vehicle", img,
     system: {
       vehicleType: v.vt ?? "ground", skill: v.skill ?? "car",
       handling: v.h, speed: v.s, acceleration: 0,
@@ -35,8 +62,9 @@ function vehicle(v) {
     },
     prototypeToken: {
       name: v.name, displayName: 20, actorLink: false, width: 2, height: 1,
-      texture: { src: "icons/svg/explosion.svg", scaleX: 1, scaleY: 1 },
-      disposition: 0, displayBars: 0
+      texture: { src: img, scaleX: 1, scaleY: 1 },
+      // A vehicle token turns to face where it drives; the art points nose-up.
+      lockRotation: false, disposition: 0, displayBars: 0
     },
     effects: [], folder: null, sort: 0, flags: {},
     _stats: { coreVersion: "13.351", systemId: "sr2e", systemVersion: "0.1.0", createdTime: 1782200000000, modifiedTime: 1782200000000, lastModifiedBy: null, compendiumSource: null, duplicateSource: null, exportSource: null },
@@ -237,3 +265,13 @@ for (const v of VEHICLES) {
   n++;
 }
 console.log(`wrote ${n} vehicles`);
+// Loudly, because the failure mode is silent: a vehicle whose art didn't match
+// keeps the placeholder icon and looks fine in the JSON. That is how all 69
+// portraits stayed un-wired through a release.
+if (missingArt.length) {
+  console.log(`\n⚠ ${missingArt.length} vehicle(s) fell back to the placeholder icon — no art file:`);
+  for (const m of missingArt) console.log(`   ${m}`);
+  console.log("\nGenerate the art, or fix the name/slug mismatch, then re-run.");
+} else {
+  console.log(`all ${n} wired to their portrait`);
+}

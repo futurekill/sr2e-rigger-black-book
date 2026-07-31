@@ -2,7 +2,7 @@
   "_id": "5ff4894ba3b0fe51",
   "name": "Agusta-Cierva \"Plutocrat\" Rotorcraft",
   "type": "vehicle",
-  "img": "icons/svg/explosion.svg",
+  "img": "modules/sr2e-rigger-black-book/assets/vehicle_portraits/agusta-cierva-plutocrat-rotorcraft.webp",
   "system": {
     "vehicleType": "rotor",
     "skill": "rotorcraft",
@@ -33,10 +33,11 @@
     "width": 2,
     "height": 1,
     "texture": {
-      "src": "icons/svg/explosion.svg",
+      "src": "modules/sr2e-rigger-black-book/assets/vehicle_portraits/agusta-cierva-plutocrat-rotorcraft.webp",
       "scaleX": 1,
       "scaleY": 1
     },
+    "lockRotation": false,
     "disposition": 0,
     "displayBars": 0
   },

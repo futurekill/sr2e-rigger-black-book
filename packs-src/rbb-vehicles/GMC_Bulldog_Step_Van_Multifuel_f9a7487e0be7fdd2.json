@@ -2,7 +2,7 @@
   "_id": "f9a7487e0be7fdd2",
   "name": "GMC Bulldog Step-Van (Multifuel)",
   "type": "vehicle",
-  "img": "icons/svg/explosion.svg",
+  "img": "modules/sr2e-rigger-black-book/assets/vehicle_portraits/gmc-bulldog-step-van-multifuel.webp",
   "system": {
     "vehicleType": "ground",
     "skill": "car",
@@ -33,10 +33,11 @@
     "width": 2,
     "height": 1,
     "texture": {
-      "src": "icons/svg/explosion.svg",
+      "src": "modules/sr2e-rigger-black-book/assets/vehicle_portraits/gmc-bulldog-step-van-multifuel.webp",
       "scaleX": 1,
       "scaleY": 1
     },
+    "lockRotation": false,
     "disposition": 0,
     "displayBars": 0
   },

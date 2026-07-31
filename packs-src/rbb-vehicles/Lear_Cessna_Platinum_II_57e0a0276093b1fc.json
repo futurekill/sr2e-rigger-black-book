@@ -2,7 +2,7 @@
   "_id": "57e0a0276093b1fc",
   "name": "Lear-Cessna Platinum II",
   "type": "vehicle",
-  "img": "icons/svg/explosion.svg",
+  "img": "modules/sr2e-rigger-black-book/assets/vehicle_portraits/lear-cessna-platinum-ii.webp",
   "system": {
     "vehicleType": "aircraft",
     "skill": "aircraft",
@@ -33,10 +33,11 @@
     "width": 2,
     "height": 1,
     "texture": {
-      "src": "icons/svg/explosion.svg",
+      "src": "modules/sr2e-rigger-black-book/assets/vehicle_portraits/lear-cessna-platinum-ii.webp",
       "scaleX": 1,
       "scaleY": 1
     },
+    "lockRotation": false,
     "disposition": 0,
     "displayBars": 0
   },

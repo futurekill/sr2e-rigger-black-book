@@ -2,7 +2,7 @@
   "_id": "074edb52ce7cc156",
   "name": "Moonlight Aerospace Avenger",
   "type": "vehicle",
-  "img": "icons/svg/explosion.svg",
+  "img": "modules/sr2e-rigger-black-book/assets/vehicle_portraits/moonlight-aerospace-avenger.webp",
   "system": {
     "vehicleType": "aircraft",
     "skill": "aircraft",
@@ -33,10 +33,11 @@
     "width": 2,
     "height": 1,
     "texture": {
-      "src": "icons/svg/explosion.svg",
+      "src": "modules/sr2e-rigger-black-book/assets/vehicle_portraits/moonlight-aerospace-avenger.webp",
       "scaleX": 1,
       "scaleY": 1
     },
+    "lockRotation": false,
     "disposition": 0,
     "displayBars": 0
   },
