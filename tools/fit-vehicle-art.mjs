@@ -19,7 +19,7 @@
  * A small transparent margin is kept so the art doesn't butt against the token
  * border and its selection ring.
  */
-import { readdirSync, readFileSync, writeFileSync, statSync } from "node:fs";
+import { readdirSync, readFileSync, statSync } from "node:fs";
 import { execFileSync } from "node:child_process";
 import { join } from "node:path";
 
