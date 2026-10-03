@@ -2,6 +2,36 @@
 
 ## Unreleased
 
+## 0.6.1 — 2026-07-31
+
+### Fixed
+- Vehicles drove backwards: Foundry's token rotation 0 faces south and the art
+  faced north. All 69 portraits are turned to face south.
+
+## 0.6.0 — 2026-07-31
+
+### Changed
+- **Vehicle tokens are sized in real metres** from their art, instead of a flat
+  2 × 1 box for everything from a motorcycle to a zeppelin. The art is trimmed to
+  the vehicle, so it fills its token, and the box is no longer turned sideways
+  to the artwork.
+
+## 0.5.1 — 2026-07-31
+
+### Fixed
+- Every vehicle showed a default icon: regenerating the vehicles for 0.5.0 wiped
+  the art references. All 69 are wired again, and the generator now keeps them.
+  Tokens turn to face their direction of travel again.
+
+## 0.5.0 — 2026-07-28
+
+### Fixed
+- **Every armoured vehicle had a third of its SR2 armour.** The core book's
+  Sourcebook Updates (p.283) says to multiply the Rigger Black Book's armour by 3
+  for SR2, and that was never applied. 32 vehicles change (the Ares Mobmaster
+  goes from 5 to 15); the 37 unarmoured stay at 0. Each vehicle's notes record
+  the printed value and the conversion.
+
 ## 0.4.0 — 2026-07-26
 
 ### Added
