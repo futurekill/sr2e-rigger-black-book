@@ -25,7 +25,7 @@
       "max": 10
     },
     "autonav": 0,
-    "notes": "<p>The armed configuration of the Dalmatian recon drone — uprated armor and a higher signature, fitted with two wing firmpoints for ordnance.</p><p><em>Max speed 105 m/CT (cruising 35 used for tests). Drone. Sensor Standard (1); VSTOL. Armament: 2 wing firmpoints (2 CF ordnance). Rigger Black Book p.82. Stowing it takes 12 CF of another vehicle's cargo space. Armor 1 as printed (SR1) x3 = 3 for SRII, per Sourcebook Updates p.283.</em></p>"
+    "notes": "<p>The armed configuration of the Dalmatian recon drone — uprated armor and a higher signature, fitted with two wing firmpoints for ordnance.</p><p><em>Max speed 105 m/CT (cruising 35 used for tests). Drone. Economy 12 km/liter. Sensor Standard (1); VSTOL. Armament: 2 wing firmpoints (2 CF ordnance). Rigger Black Book p.82. Stowing it takes 12 CF of another vehicle's cargo space. Armor 1 as printed (SR1) x3 = 3 for SRII, per Sourcebook Updates p.283.</em></p>"
   },
   "prototypeToken": {
     "name": "Cyberspace Designs Dalmatian Recon Drone (Armed)",

@@ -15,7 +15,7 @@
     "signature": 3,
     "pilot": 0,
     "sensor": 1,
-    "cargo": 30,
+    "cargo": 10,
     "load": 0,
     "seating": "1 + 1 single bucket seats",
     "cost": 250000,
@@ -25,7 +25,7 @@
       "max": 10
     },
     "autonav": 3,
-    "notes": "<p>A light, ultra-fast two-man scout/recon ACV with dual drive (air-cushion + powered wheels), survey radar, IR/visible-light, sound and motion sensors.</p><p><em>Handling printed 4/6. Max speed 450 m/CT (cruising 150 used for tests). IC/2,500 liters; 5 km/liter. Wheels engaged: handling 3/5, speed 30/90, Sig 8. 1 small turret (2 CF ammo). Rigger Black Book p.75. Armor 2 as printed (SR1) x3 = 6 for SRII, per Sourcebook Updates p.283.</em></p>"
+    "notes": "<p>A light, ultra-fast two-man scout/recon ACV with dual drive (air-cushion + powered wheels), survey radar, IR/visible-light, sound and motion sensors.</p><p><em>Handling printed 4/6. Max speed 450 m/CT (cruising 150 used for tests). IC/2,500 liters; 0.5 km/liter. Wheels engaged: handling 3/5, speed 30/90, Sig 8, economy 2 km/liter. 1 small turret (2 CF ammo). Rigger Black Book p.75. Armor 2 as printed (SR1) x3 = 6 for SRII, per Sourcebook Updates p.283.</em></p>"
   },
   "prototypeToken": {
     "name": "Sikorsky-Bell \"Red Ranger\" Scout ACV",

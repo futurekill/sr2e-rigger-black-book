@@ -25,7 +25,7 @@
       "max": 10
     },
     "autonav": 0,
-    "notes": "<p>A turbofan delta-airfoil surveillance drone with a capacious sensor pod, VTOL capability and a \"stealth\" mode.</p><p><em>Max speed 105 m/CT (cruising 35 used for tests). Drone. Sensor Standard (1); VSTOL; 5-min setup. An armed variant is a separate actor. Rigger Black Book p.82. Stowing it takes 6 CF of another vehicle's cargo space.</em></p>"
+    "notes": "<p>A turbofan delta-airfoil surveillance drone with a capacious sensor pod, VTOL capability and a \"stealth\" mode.</p><p><em>Max speed 105 m/CT (cruising 35 used for tests). Drone. Fuel 50 liters; 15 km/liter. Sensor Standard (1); VSTOL; 5-min setup. An armed variant is a separate actor. Rigger Black Book p.82. Stowing it takes 6 CF of another vehicle's cargo space.</em></p>"
   },
   "prototypeToken": {
     "name": "Cyberspace Designs Dalmatian Recon Drone",

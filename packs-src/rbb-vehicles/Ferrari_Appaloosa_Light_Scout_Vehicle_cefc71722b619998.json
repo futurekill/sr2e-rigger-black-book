@@ -14,7 +14,7 @@
     "armor": 9,
     "signature": 5,
     "pilot": 0,
-    "sensor": 4,
+    "sensor": 6,
     "cargo": 5,
     "load": 0,
     "seating": "1 + 2 bucket + 1 folding bench",
@@ -25,7 +25,7 @@
       "max": 10
     },
     "autonav": 2,
-    "notes": "<p>A wheeled military Light Scout Vehicle that drives like a racing car on runflats — glassed-in fighting compartment with quick-deployment armored shutters, used by several Sovereign Tribal Council members.</p><p><em>Off-road handling 3. Max speed 200 m/CT (cruising 100 used for tests). 250 liters; 5-7 km/liter. Sensors Military 1 (4); ECM/ECCM Military 1 (4). Variable armament: Vanquisher rotary 1,250-rd HMG + coaxial 2,500-rd LMG, firmpoints, missile launcher. Rigger Black Book p.90. Armor 3 as printed (SR1) x3 = 9 for SRII, per Sourcebook Updates p.283.</em></p>"
+    "notes": "<p>A wheeled military Light Scout Vehicle that drives like a racing car on runflats — glassed-in fighting compartment with quick-deployment armored shutters, used by several Sovereign Tribal Council members.</p><p><em>Off-road handling 3. Max speed 200 m/CT (cruising 100 used for tests). 250 liters; 5-7 km/liter. Sensors Military I (6); ECM/ECCM Military I (4)/Military I (4). Variable armament: Vanquisher rotary 1,250-rd HMG + coaxial 2,500-rd LMG, firmpoints, missile launcher. Rigger Black Book p.90. Armor 3 as printed (SR1) x3 = 9 for SRII, per Sourcebook Updates p.283.</em></p>"
   },
   "prototypeToken": {
     "name": "Ferrari \"Appaloosa\" Light Scout Vehicle",

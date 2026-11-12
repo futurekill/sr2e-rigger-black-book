@@ -25,7 +25,7 @@
       "max": 10
     },
     "autonav": 2,
-    "notes": "<p>A classic pleasure craft updated for the 2050s — a 7-meter, partially decked-in runabout with a sun shelter.</p><p><em>Max speed 75 m/CT (cruising 25 used for tests). IC/75 liters; 25 km/liter. Optional EuroNav Poseidon outboards (speed 30/90) and electric drive. Rigger Black Book p.42.</em></p>"
+    "notes": "<p>A classic pleasure craft updated for the 2050s — a 7-meter, partially decked-in runabout with a sun shelter.</p><p><em>Max speed 75 m/CT (cruising 25 used for tests). IC/50 liters; 25 km/liter. Optional EuroNav Poseidon outboards (speed 30/90) and electric drive. Rigger Black Book p.42.</em></p>"
   },
   "prototypeToken": {
     "name": "Zemlya-Poltava Swordsman",

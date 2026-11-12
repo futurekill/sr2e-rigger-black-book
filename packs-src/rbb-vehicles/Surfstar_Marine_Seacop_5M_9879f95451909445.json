@@ -15,7 +15,7 @@
     "signature": 3,
     "pilot": 0,
     "sensor": 0,
-    "cargo": 12,
+    "cargo": 10,
     "load": 0,
     "seating": "Single bucket + 3 bench",
     "cost": 50000,
@@ -25,7 +25,7 @@
       "max": 10
     },
     "autonav": 2,
-    "notes": "<p>The harbor equivalent of the Patrol-One — a marine patrol craft with EnviroSeal cabin, remote-controlled spotlight, siren and forward firmpoints.</p><p><em>Max speed 90 m/CT (cruising 30 used for tests). IC/100 liters; 25 km/liter. Rigger Black Book p.67. Armor 2 as printed (SR1) x3 = 6 for SRII, per Sourcebook Updates p.283.</em></p>"
+    "notes": "<p>The harbor equivalent of the Patrol-One — a marine patrol craft with a fully enclosed cabin, remote-controlled spotlight, siren and forward firmpoints.</p><p><em>Max speed 90 m/CT (cruising 30 used for tests). IC/100 liters; 25 km/liter. Rigger Black Book p.67. Armor 2 as printed (SR1) x3 = 6 for SRII, per Sourcebook Updates p.283.</em></p>"
   },
   "prototypeToken": {
     "name": "Surfstar Marine Seacop (5M)",

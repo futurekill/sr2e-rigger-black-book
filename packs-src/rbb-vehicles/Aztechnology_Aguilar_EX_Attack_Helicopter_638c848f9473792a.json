@@ -14,7 +14,7 @@
     "armor": 6,
     "signature": 4,
     "pilot": 0,
-    "sensor": 4,
+    "sensor": 7,
     "cargo": 2,
     "load": 0,
     "seating": "1 + 1 integrated bucket seats",
@@ -25,7 +25,7 @@
       "max": 10
     },
     "autonav": 4,
-    "notes": "<p>Aztlan's premier VTOL weapons platform in an export configuration — a stealth electric-turbine attack helicopter with an internal signature-suppression suite, near-unsurpassed on the modern battlefield.</p><p><em>Max speed 560 m/CT (cruising 280 used for tests). 1,000 liters/100 PF; electric option. Sensors Military (read ~4-7); ECM/ECCM Military I (4)/II (5). Armament: wing/side mounts, 1,000-rd HMG, Bandit AGMs / 7.62 rocket ripples, underbelly rack (4 AAMs/AGMs). Rigger Black Book p.94. Armor 2 as printed (SR1) x3 = 6 for SRII, per Sourcebook Updates p.283.</em></p>"
+    "notes": "<p>Aztlan's premier VTOL weapons platform in an export configuration — a stealth electric-turbine attack helicopter with an internal signature-suppression suite, near-unsurpassed on the modern battlefield.</p><p><em>Max speed 560 m/CT (cruising 280 used for tests). 1,000 liters; 1 km/liter (under the short-term electric drive: 100 PF; 2 PF/km). Sensors Military II (7); ECM/ECCM Military I (4)/II (5). Armament: wing/side mounts, 1,000-rd HMG, Bandit AGMs / 7.62 rocket ripples, underbelly rack (4 AAMs/AGMs). Rigger Black Book p.94. Armor 2 as printed (SR1) x3 = 6 for SRII, per Sourcebook Updates p.283.</em></p>"
   },
   "prototypeToken": {
     "name": "Aztechnology Aguilar-EX Attack Helicopter",
