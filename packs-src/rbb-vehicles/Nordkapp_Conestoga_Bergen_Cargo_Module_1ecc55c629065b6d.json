@@ -15,7 +15,7 @@
     "signature": 2,
     "pilot": 0,
     "sensor": 0,
-    "cargo": 1000,
+    "cargo": 1005,
     "load": 0,
     "seating": "2 bucket seats",
     "cost": 200000,
@@ -24,8 +24,8 @@
       "value": 0,
       "max": 10
     },
-    "autonav": 2,
-    "notes": "<p>A self-powered cargo module for the Bergen road train — 500-CF and 1,000-CF versions chain behind the command module to make a single train.</p><p><em>Off-road handling 6. Max speed 90 m/CT (cruising 30 used for tests). Multifuel/1,000 liters; 4 km/liter. 1,000 CF cargo module shown; 500-CF version also available. Rigger Black Book p.36. Armor 1 as printed (SR1) x3 = 3 for SRII, per Sourcebook Updates p.283.</em></p>"
+    "autonav": 0,
+    "notes": "<p>A self-powered cargo module for the Bergen road train — 500-CF and 1,000-CF versions chain behind the command module to make a single train.</p><p><em>Off-road handling 6. Max speed 90 m/CT (cruising 30 used for tests). Multifuel/1,000 liters; 4 km/liter. No APilot printed. Storage 5 CF + 1,000 CF cargo; 1,000 CF cargo module shown, a 500-CF version also available. Its Speed is the linked train's: unlinked, under local control, it moves at 5/10. Fitted like the command module (mini-cabin, 10 CF for a turret and weapons); +1 Handling per 10 kph over max, to +60 kph. Rigger Black Book p.36. Armor 1 as printed (SR1) x3 = 3 for SRII, per Sourcebook Updates p.283.</em></p>"
   },
   "prototypeToken": {
     "name": "Nordkapp-Conestoga \"Bergen\" (Cargo Module)",

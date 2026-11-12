@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.6.3 — 2026-11-12
+
+### Fixed
+- **Bergen (Cargo Module)**, checked against a photo of p.36: the book prints no APilot (the cost sits under that
+  heading), so its autonav is 0 (was 2); cargo 1,005 (5 CF storage + 1,000 CF cargo, was 1,000). Its notes now say
+  that unlinked, under local control, it moves at only 5/10, and that it is fitted like the command module.
+
 ## 0.6.2 — 2026-11-11
 
 ### Fixed

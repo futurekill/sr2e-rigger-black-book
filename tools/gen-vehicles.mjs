@@ -216,8 +216,8 @@ const VEHICLES = [
     desc: "The most reliable tractor on the market — built to a price but dependable, with a twin-bunk sleeper mini-cab for long hauls.", extra: "IC/750 liters; 8 km/liter; standard load 1,000 CF." },
   { name: "Nordkapp-Conestoga \"Bergen\" (Command Module)", h: 3, hOff: 6, s: 30, sMax: 90, b: 6, a: 2, sig: 2, p: 4, cargo: 5, cost: 600000, seating: "2×2 twin bucket seats", page: 36,
     desc: "The command module of the Bergen articulated \"road train\" (N-CAV concept), built for railless wilderness — can chain to up to five self-powered cargo modules.", extra: "Multifuel/2,000 liters; 4 km/liter. Command module can mount a turret/weapons; +1 Handling above the rated speed." },
-  { name: "Nordkapp-Conestoga \"Bergen\" (Cargo Module)", h: 3, hOff: 6, s: 30, sMax: 90, b: 5, a: 1, sig: 2, p: 2, cargo: 1000, cost: 200000, seating: "2 bucket seats", page: 36,
-    desc: "A self-powered cargo module for the Bergen road train — 500-CF and 1,000-CF versions chain behind the command module to make a single train.", extra: "Multifuel/1,000 liters; 4 km/liter. 1,000 CF cargo module shown; 500-CF version also available." },
+  { name: "Nordkapp-Conestoga \"Bergen\" (Cargo Module)", h: 3, hOff: 6, s: 30, sMax: 90, b: 5, a: 1, sig: 2, p: 0, cargo: 1005, cost: 200000, seating: "2 bucket seats", page: 36,
+    desc: "A self-powered cargo module for the Bergen road train — 500-CF and 1,000-CF versions chain behind the command module to make a single train.", extra: "Multifuel/1,000 liters; 4 km/liter. No APilot printed. Storage 5 CF + 1,000 CF cargo; 1,000 CF cargo module shown, a 500-CF version also available. Its Speed is the linked train's: unlinked, under local control, it moves at 5/10. Fitted like the command module (mini-cabin, 10 CF for a turret and weapons); +1 Handling per 10 kph over max, to +60 kph." },
 
   // --- Air-Cushion Vehicles (book p.37-40). Skipped (in system): Chrysler-Nissan
   // G12A. Single handling value (no off-road).
