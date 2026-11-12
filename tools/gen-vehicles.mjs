@@ -100,22 +100,25 @@ function tokenSize(v, rel) {
 }
 
 function vehicle(v) {
-  const _id = idFor(v.name);
-  const img = artFor(v.name);
+  const _id = idFor(v.idName ?? v.name);   // idName: a corrected name keeps its document id and art
+  const img = artFor(v.idName ?? v.name);
   const { width, height, fit } = tokenSize(v, img);
   // Off-road handling only applies to ground vehicles (on/off-road pair); ACVs,
   // boats and aircraft have a single handling value, so omit the note for them.
-  const offRoad = (v.hOff != null && v.hOff !== v.h) ? `Off-road handling ${v.hOff}. ` : "";
+  const ground = (v.vt ?? "ground") === "ground";
+  const offRoad = (v.hOff != null && v.hOff !== v.h) ? (ground ? `Off-road handling ${v.hOff}. ` : `Handling printed ${v.h}/${v.hOff}. `) : "";
+  // A drone's "Store" is the cargo space needed to carry it aboard another vehicle, not its own cargo (audit 2026-11-11).
+  const store = v.store ? ` Stowing it takes ${v.store} CF of another vehicle's cargo space.` : "";
   return {
     _id, name: v.name, type: "vehicle", img,
     system: {
       vehicleType: v.vt ?? "ground", skill: v.skill ?? "car",
-      handling: v.h, speed: v.s, acceleration: 0,
-      body: v.b, armor: (v.a ?? 0) * 3, signature: v.sig, pilot: v.p, sensor: v.sensor ?? 0,
+      handling: v.h, handlingOffRoad: ground && v.hOff != null ? v.hOff : null, speed: v.s, acceleration: 0,
+      body: v.b, armor: (v.a ?? 0) * 3, signature: v.sig, pilot: v.vt === "drone" ? v.p : 0, sensor: v.sensor ?? 0,
       cargo: v.cargo ?? 0, load: v.load ?? 0, seating: v.seating ?? "",
       cost: v.cost ?? 0, availability: v.avail ?? "",
-      conditionMonitor: { value: 0, max: 10 }, autonav: v.p,
-      notes: `<p>${v.desc}</p><p><em>${offRoad}Max speed ${v.sMax} m/CT (cruising ${v.s} used for tests).${v.extra ? " " + v.extra : ""} Rigger Black Book p.${v.page}.${v.a ? ` Armor ${v.a} as printed (SR1) x3 = ${v.a * 3} for SRII, per Sourcebook Updates p.283.` : ""}</em></p>`
+      conditionMonitor: { value: 0, max: 10 }, autonav: v.vt === "drone" ? 0 : v.p,
+      notes: `<p>${v.desc}</p><p><em>${offRoad}Max speed ${v.sMax} m/CT (cruising ${v.s} used for tests).${v.extra ? " " + v.extra : ""} Rigger Black Book p.${v.page}.${store}${v.a ? ` Armor ${v.a} as printed (SR1) x3 = ${v.a * 3} for SRII, per Sourcebook Updates p.283.` : ""}</em></p>`
     },
     prototypeToken: {
       name: v.name, displayName: 20, actorLink: false, width, height,
@@ -143,11 +146,11 @@ const VEHICLES = [
     desc: "A low-slung, battery-powered three-wheel commuter (GridLink/SunCell optional) with a Kevlarplex canopy and underseat luggage space.", extra: "Electric, 200 PF; economy 2 PF/km." },
   { name: "Leyland-Zil Tsarina (Electric)", h: 4, hOff: 8, s: 25, sMax: 75, b: 1, a: 0, sig: 5, p: 1, cargo: 5, cost: 10000, seating: "1 + 1 bucket seats", page: 9,
     desc: "A roomy L-Z chassis car with an unusual front-high seating layout, full canopy and a rear-deck luggage rack.", extra: "Electric, 200 PF; 2 CF trunk + 3 CF roof rack." },
-  { name: "Leyland-Zil Tsarina (Multifuel)", h: 4, hOff: 8, s: 30, sMax: 90, b: 1, a: 2, sig: 2, p: 1, cargo: 5, cost: 12000, seating: "1 + 1 bucket seats", page: 9,
+  { name: "Leyland-Zil Tsarina (Multifuel)", h: 4, hOff: 8, s: 30, sMax: 90, b: 1, a: 0, sig: 2, p: 1, cargo: 5, cost: 12000, seating: "1 + 1 bucket seats", page: 9,
     desc: "The multifuel version of the Tsarina — same body, a tougher hull and a longer-legged drivetrain.", extra: "Multifuel/25 liters; 90 km/liter; 2 CF trunk + 3 CF roof rack." },
   { name: "Honda-GM 3220 ZX", h: 4, hOff: 8, s: 40, sMax: 120, b: 2, a: 0, sig: 2, p: 1, cargo: 4, cost: 30000, seating: "Front/rear twin bucket seats", page: 12,
     desc: "The cheapest sports car on the road — targa top, mag wheels, high-speed suspension and exceptional road-holding.", extra: "IC/30 liters; 50 km/liter." },
-  { name: "Honda-GM 3220 ZX Turbo", h: 4, hOff: 8, s: 50, sMax: 150, b: 2, a: 0, sig: 1, p: 1, cargo: 4, cost: 45000, seating: "Front/rear twin bucket seats", page: 12,
+  { name: "Honda-GM 3220 ZX Turbo", h: 4, hOff: 8, s: 50, sMax: 150, b: 2, a: 0, sig: 1, p: 2, cargo: 4, cost: 45000, seating: "Front/rear twin bucket seats", page: 12,
     desc: "The turbo-boosted 3220 ZX — the engine that won the NorAm Sports Car Circuit Gold Cup. A real handful at top speed.", extra: "IC/30 liters; 45 km/liter." },
   { name: "Saab \"Dynamit\" 776TI", h: 4, hOff: 8, s: 80, sMax: 250, b: 2, a: 1, sig: 1, p: 3, cargo: 4, cost: 250000, seating: "Twin bucket seats + bench", page: 13,
     desc: "A state-of-the-art turbocharged speedfreak's sports car — roll bars, improved suspension, APPS and a convertible top. Winner of the Euro-Rally Production Sports Circuit.", extra: "IC/150 liters; 40 km/liter; APPS, rollbars." },
@@ -156,15 +159,15 @@ const VEHICLES = [
 
   // --- Motorcycles (book p.16-23). Skipped (already in system): Dodge Scoot,
   // Yamaha Rapier, Harley-Davidson Scorpion.
-  { name: "Entertainment Systems Papoose", vt: "ground", skill: "bike", h: 3, hOff: 6, s: 30, sMax: 90, b: 1, a: 0, sig: 5, p: 0, cargo: 1, cost: 4000, seating: "1", page: 16,
+  { name: "Entertainment Systems Papoose", vt: "ground", skill: "bike", h: 3, hOff: 6, s: 30, sMax: 90, b: 1, a: 0, sig: 5, p: 0, cargo: 1, cost: 6000, seating: "1", page: 16,
     desc: "A recreational electric bike from a maker better known for racing bicycles — folds into a compact bundle for trunk or roof-rack storage.", extra: "Electric, 320 PF; 2 PF/km." },
   { name: "Entertainment Systems Papoose Maximus", vt: "ground", skill: "bike", h: 3, hOff: 6, s: 30, sMax: 90, b: 2, a: 0, sig: 5, p: 0, cargo: 1, cost: 12000, seating: "1 + 1", page: 16,
     desc: "The larger Papoose Maximus — two seats, a tougher hull and an extended range.", extra: "Electric, 400 PF." },
   { name: "Suzuki \"Aurora\" Racing Bike", vt: "ground", skill: "bike", h: 2, hOff: 4, s: 70, sMax: 210, b: 1, a: 0, sig: 1, p: 1, cargo: 1, cost: 15000, seating: "1", page: 17,
     desc: "Winner of the Pan-Pacific Motorcycle Circuit — CompuaGlide-equipped racing bike with massively improved handling and performance.", extra: "IC/15 liters; 80 km/liter." },
-  { name: "Hyundai Offroader", vt: "ground", skill: "bike", h: 4, hOff: 2, s: 60, sMax: 180, b: 2, a: 0, sig: 1, p: 1, cargo: 2, cost: 12500, seating: "1 + 1", page: 18,
+  { name: "Hyundai Offroader", vt: "ground", skill: "bike", h: 4, hOff: 2, s: 60, sMax: 180, b: 2, a: 0, sig: 2, p: 1, cargo: 2, cost: 12500, seating: "1 + 1", page: 18,
     desc: "Purpose-built for the off-road market — the best rough-terrain handling of any bike, supplied under contract to the Sioux and Ute border patrols.", extra: "Multifuel/25 liters; 90 km/liter; off-road speed 55/165. Sidecar +1,500¥ (special option only)." },
-  { name: "Thundercloud \"Pinto\" All-Terrain Trike", vt: "ground", skill: "bike", h: 4, hOff: 2, s: 20, sMax: 60, b: 3, a: 2, sig: 2, p: 0, cargo: 15, cost: 35000, seating: "Single bucket + 2 rear", page: 19,
+  { name: "Thundercloud \"Pinto\" All-Terrain Trike", vt: "ground", skill: "bike", h: 4, hOff: 2, s: 20, sMax: 60, b: 3, a: 0, sig: 2, p: 0, cargo: 15, cost: 35000, seating: "Single bucket + 2 rear", page: 19,
     desc: "A durable all-terrain trike built by the Pueblo Corporate Council — balloon tires give limited amphibious capability, popular in the Far North.", extra: "IC/50 liters; 50 km/liter; off-road speed 35/105, amphibious 5/15. Enclosed canopy (Armor 1) +5,000¥." },
   { name: "GAZ-Niki White Eagle", vt: "ground", skill: "bike", h: 3, hOff: 3, s: 60, sMax: 180, b: 3, a: 0, sig: 1, p: 0, cargo: 0, cost: 15000, seating: "1 front + 1 rear", page: 20,
     desc: "The scout bike of the Polish Armed Forces — easy to maintain and durable, and able to mount an optimum number of light weapons.", extra: "Multifuel/35 liters; 6 km/liter. Options: bike trailer, SnowMaster snow kit (+5,000¥)." },
@@ -184,7 +187,7 @@ const VEHICLES = [
     desc: "An Australian import — a smaller-than-usual 4WD with off-road suspension, at home in the wooded backwoods.", extra: "Multifuel/50 liters; 75 km/liter; off-road speed 25/75." },
   { name: "Landrover Model 2046 (Short Wheelbase)", h: 3, hOff: 3, s: 30, sMax: 90, b: 2, a: 0, sig: 2, p: 1, cargo: 25, cost: 35000, seating: "Twin bucket + 4 folding bench", page: 27,
     desc: "A general-purpose 4WD in the long Landrover tradition — improved and active suspension make rough, hilly terrain easy going.", extra: "Multifuel/50 liters; 75 km/liter; off-road speed 25/75." },
-  { name: "Landrover Model 2046 (Long Wheelbase)", h: 3, hOff: 3, s: 30, sMax: 90, b: 3, a: 0, sig: 2, p: 1, cargo: 45, cost: 45000, seating: "Twin bucket + 6 folding bench", page: 27,
+  { name: "Landrover Model 2046 (Long Wheelbase)", h: 3, hOff: 3, s: 30, sMax: 90, b: 3, a: 0, sig: 2, p: 2, cargo: 45, cost: 45000, seating: "Twin bucket + 6 folding bench", page: 27,
     desc: "The long-wheelbase Landrover 2046 — more seating and cargo, same rugged go-anywhere drivetrain.", extra: "Multifuel/75 liters; 80 km/liter; off-road speed 25/75." },
 
   // --- Light Trucks & Vans (book p.28-31). No system dups.
@@ -205,22 +208,22 @@ const VEHICLES = [
     desc: "The medium-cargo variant of the Ares Master series — interchangeable body types make it a sensible buy for cost-conscious corps and governments.", extra: "IC/500 liters; 15 km/liter; standard load 500 CF. Bodies: Rear-Tray (1,000 CF, +25,000¥), Van (1,000 CF, +80,000¥), Tanker (25 kl, +80,000¥)." },
   { name: "GMC Bulldog Step-Van (Multifuel)", h: 4, hOff: 8, s: 35, sMax: 85, b: 4, a: 1, sig: 2, p: 2, cargo: 200, cost: 35000, seating: "Single bucket + 1 folding bench", page: 33,
     desc: "A standard, reliable delivery truck found in most North American sprawls — UCAS Express and Parcel Service use them.", extra: "Multifuel/150 liters; 16 km/liter." },
-  { name: "GMC Bulldog Step-Van (Bonded-Courier)", h: 4, hOff: 6, s: 35, sMax: 105, b: 4, a: 2, sig: 2, p: 2, cargo: 200, cost: 60000, seating: "Single bucket + 1 folding bench", page: 33,
+  { name: "GMC Bulldog Step-Van (Bonded-Courier)", h: 4, hOff: 6, s: 35, sMax: 85, b: 4, a: 2, sig: 1, p: 2, cargo: 200, cost: 60000, seating: "Single bucket + 1 folding bench", page: 33,
     desc: "The Bonded-Courier Bulldog — off-road suspension, runflat dual-purpose tires and turbocharging as standard. Popular with independent couriers.", extra: "Multifuel/150 liters; 14 km/liter; off-road speed 30/80." },
   { name: "GMC 4201 Series", h: 3, hOff: 6, s: 35, sMax: 85, b: 5, a: 1, sig: 2, p: 2, cargo: 750, cost: 75000, seating: "Twin bucket + 1 folding bench", page: 34,
     desc: "A classic heavy truck — the \"Mechanical Mule\" — that has kept industry and commerce supplied through war and revolution.", extra: "Multifuel/750 liters; 12 km/liter; standard load 750 CF. Bodies: Rear-Tray (+38,000¥), Van (1,000 CF, +120,000¥), Tanker (37.5 kl, +100,000¥), SURT Citycoach bus (+125,000¥)." },
   { name: "Conestoga Trailblazer Prime Mover", h: 4, hOff: 8, s: 30, sMax: 90, b: 5, a: 0, sig: 2, p: 2, cargo: 1000, cost: 150000, seating: "Twin bucket + 1 folding bench", page: 35,
     desc: "The most reliable tractor on the market — built to a price but dependable, with a twin-bunk sleeper mini-cab for long hauls.", extra: "IC/750 liters; 8 km/liter; standard load 1,000 CF." },
-  { name: "Nordkapp-Conestoga \"Bergen\" (Command Module)", h: 3, hOff: 6, s: 30, sMax: 90, b: 6, a: 2, sig: 3, p: 4, cargo: 5, cost: 600000, seating: "2×2 twin bucket seats", page: 36,
+  { name: "Nordkapp-Conestoga \"Bergen\" (Command Module)", h: 3, hOff: 6, s: 30, sMax: 90, b: 6, a: 2, sig: 2, p: 4, cargo: 5, cost: 600000, seating: "2×2 twin bucket seats", page: 36,
     desc: "The command module of the Bergen articulated \"road train\" (N-CAV concept), built for railless wilderness — can chain to up to five self-powered cargo modules.", extra: "Multifuel/2,000 liters; 4 km/liter. Command module can mount a turret/weapons; +1 Handling above the rated speed." },
-  { name: "Nordkapp-Conestoga \"Bergen\" (Cargo Module)", h: 3, hOff: 6, s: 30, sMax: 90, b: 5, a: 0, sig: 2, p: 2, cargo: 1000, cost: 200000, seating: "2 bucket seats", page: 36,
+  { name: "Nordkapp-Conestoga \"Bergen\" (Cargo Module)", h: 3, hOff: 6, s: 30, sMax: 90, b: 5, a: 1, sig: 2, p: 2, cargo: 1000, cost: 200000, seating: "2 bucket seats", page: 36,
     desc: "A self-powered cargo module for the Bergen road train — 500-CF and 1,000-CF versions chain behind the command module to make a single train.", extra: "Multifuel/2,000 liters. 1,000 CF cargo module shown; 500-CF version also available." },
 
   // --- Air-Cushion Vehicles (book p.37-40). Skipped (in system): Chrysler-Nissan
   // G12A. Single handling value (no off-road).
-  { name: "Mostrans \"Ivan the Terrible\" KVP-14T", vt: "hovercraft", skill: "hovercraft", h: 4, s: 60, sMax: 180, b: 4, a: 0, sig: 3, p: 1, cargo: 20, cost: 250000, seating: "Twin bucket seats", page: 38,
+  { name: "Mostrans \"Ivan the Terrible\" KVP-14T", vt: "hovercraft", skill: "hovercraft", h: 4, s: 60, sMax: 180, b: 4, a: 0, sig: 3, p: 1, cargo: 3, cost: 250000, seating: "Twin bucket seats", page: 38,
     desc: "A light utility ACV from MosTrans of Moscow, built for severe winter weather and popular across Eastern Europe — a watertight boat-hull model is available.", extra: "Multifuel/250 liters; 2 km/liter. Modules: Passenger (9 seats, +20,000¥), Cargo (500 CF)." },
-  { name: "GMC-Beachcraft \"Vacationer\" ACV", vt: "hovercraft", skill: "hovercraft", h: 4, s: 35, sMax: 105, b: 4, a: 0, sig: 3, p: 3, cargo: 30, cost: 100000, seating: "2 + 4-6 bucket seats", page: 39,
+  { name: "GMC-Beachcraft \"Vacationer\" ACV", vt: "hovercraft", skill: "hovercraft", h: 4, s: 35, sMax: 105, b: 4, a: 0, sig: 3, p: 3, cargo: 2, cost: 100000, seating: "2 + 4-6 bucket seats", page: 39,
     desc: "The most popular civilian ACV in North America — a recreational hovercraft on the Beachcraft Patroller chassis with built-in camping gear (bunks, mini-kitchen, shower).", extra: "IC/250 liters; 2 km/liter. Boat-hull and winterized variants available." },
   { name: "GMC-Nissan Hovertruck", vt: "hovercraft", skill: "hovercraft", h: 4, s: 40, sMax: 120, b: 4, a: 0, sig: 5, p: 1, cargo: 500, cost: 100000, seating: "Twin bucket + 1 folding bench", page: 40,
     desc: "A decade-old cargo hauler for roadless terrain with a water-planing boat hull — popular in Africa and South America where rivers are the only \"highways.\"", extra: "Multifuel/500 liters; 2.5 km/liter. Rear flat accepts a standard 500-CF container." },
@@ -233,11 +236,11 @@ const VEHICLES = [
     desc: "The electric-drive Suzuki Watersport jet bike — quieter and lower-signature than the IC model.", extra: "Electric, 300 PF; 0.5 PF/km." },
   { name: "Zemlya-Poltava Swordsman", vt: "boat", skill: "boat", h: 4, s: 25, sMax: 75, b: 3, a: 0, sig: 3, p: 2, cargo: 40, cost: 30000, seating: "2 bucket + 6 folding bench", page: 42,
     desc: "A classic pleasure craft updated for the 2050s — a 7-meter, partially decked-in runabout with a sun shelter.", extra: "IC/75 liters; 25 km/liter. Optional EuroNav Poseidon outboards (speed 30/90) and electric drive." },
-  { name: "Colorado Craft \"Cigarette\" Hydroconvertible", vt: "boat", skill: "boat", h: 4, s: 25, sMax: 75, b: 2, a: 0, sig: 3, p: 2, cargo: 10, cost: 35000, seating: "2 bucket seats", page: 43,
+  { name: "Colorado Craft \"Cigarette\" Hydroconvertible", vt: "boat", skill: "boat", h: 4, hOff: 5, s: 25, sMax: 75, b: 2, a: 0, sig: 3, p: 2, cargo: 10, cost: 35000, seating: "2 bucket seats", page: 43,
     desc: "A 6-meter convertible hydrofoil — cruise as a high-speed planing craft, then drop the foils at the flick of a switch for the open sea.", extra: "IC/50 liters; 25 km/liter. Foils down: Handling 8, speed 35/105, Sig 1, autopilot disabled, 12 km/liter." },
   { name: "Marine Technologies \"Dolphin II\" Motor Yacht", vt: "boat", skill: "boat", h: 3, s: 15, sMax: 45, b: 3, a: 0, sig: 3, p: 2, cargo: 10, cost: 50000, seating: "5 on deck + cabins", page: 44,
     desc: "A 10-meter state-of-the-art pleasure craft for the corp exec on the way up — lounge/kitchen below decks, a semi-enclosed bridge with flying bridge.", extra: "IC/100 liters; 35 km/liter." },
-  { name: "Harland & Wolff \"Classique\" Motor Yacht", vt: "boat", skill: "boat", h: 5, s: 15, sMax: 45, b: 3, a: 0, sig: 2, p: 4, cargo: 25, cost: 3500000, seating: "12 passengers + crew", page: 45,
+  { name: "Harland & Wolff \"Classique\" Motor Yacht", vt: "boat", skill: "boat", h: 5, s: 15, sMax: 45, b: 6, a: 0, sig: 2, p: 4, cargo: 25, cost: 3500000, seating: "12 passengers + crew", page: 45,
     desc: "The ultimate corp-exec status symbol — a 27-meter luxury yacht with individual cabins for twelve, full galley, owner's suite and a deckhouse with launch davits.", extra: "IC/2,500 liters; 30 km/liter." },
 
   // --- Aircraft (book p.46-51). Skipped (in system): Cessna C750, Lear-Cessna
@@ -245,7 +248,7 @@ const VEHICLES = [
   { name: "Fiat-Fokker \"Cloud Nine\" Amphibian", vt: "aircraft", skill: "aircraft", h: 4, s: 300, sMax: 450, b: 3, a: 0, sig: 3, p: 2, cargo: 10, cost: 175000, seating: "Twin bucket + 6 bench", page: 47,
     desc: "A purpose-built reinforced-boat-hull amphibian — a classic European pleasure craft with STOL (water) / VSTOL (land) capability and a roomy cabin.", extra: "IC/250 liters; 3 km/liter. STOL (water), VSTOL (land)." },
   { name: "Embraer-Dassault Mistral", vt: "aircraft", skill: "aircraft", h: 4, s: 300, sMax: 450, b: 4, a: 0, sig: 3, p: 2, cargo: 10, cost: 375000, seating: "Twin bucket seats", page: 48,
-    desc: "A twin-turboprop VSTOL monoplane serving civilian, security and military needs — enhanced rough-field performance and easy engine access.", extra: "IC/2,000 liters; 2 km/liter; VSTOL. Body variants: Commuter (15 seats), Cargo (60 CF), Security (Sensor +2.5M¥). The Military (armed) variant is a separate actor." },
+    desc: "A twin-turboprop VSTOL monoplane serving civilian, security and military needs — enhanced rough-field performance and easy engine access.", extra: "IC/2,000 liters; 2 km/liter; VSTOL. Body variants: Commuter (15 seats), Executive (6 or 8 seats), Cargo (60 CF), Security (sensor suite 2.5M¥), Military (as Security with military-grade sensors, thought to cost 10M¥ or more). The Float variant is a separate actor." },
   { name: "Lear-Cessna Platinum II", vt: "aircraft", skill: "aircraft", h: 5, s: 800, sMax: 1600, b: 5, a: 1, sig: 3, p: 4, cargo: 5, cost: 1500000, seating: "Twin bucket seats", page: 50,
     desc: "A faster development of the Platinum I executive transport — twin rear-mounted turbofans for the exec in a hurry, STOL-capable.", extra: "IC/750 liters; 1.5 km/liter; STOL. Variants: Luxury/Standard Executive, Commuter (15 seats), Cargo." },
   { name: "Hawker-Siddley HS-895 Skytruck", vt: "aircraft", skill: "aircraft", h: 5, s: 400, sMax: 600, b: 5, a: 0, sig: 3, p: 2, cargo: 5, cost: 2500000, seating: "Twin bucket seats", page: 51,
@@ -257,7 +260,7 @@ const VEHICLES = [
     desc: "A purpose-designed luxury transport chopper with real-leather upholstery, wood paneling and the finest onboard facilities — VTOL site-access for the corp exec.", extra: "IC/1,000 liters; 1.5 km/liter. An armed variant is a separate actor." },
 
   // --- Lighter-Than-Air (book p.57-59). vehicleType aircraft (no LTA type).
-  { name: "Luftschiffbau Zeppelin LZ-2049", vt: "aircraft", skill: "aircraft", h: 3, s: 100, sMax: 250, b: 12, a: 2, sig: 8, p: 3, cargo: 200, cost: 750000, seating: "2 + 2 bench", page: 57,
+  { name: "Luftschiffbau Zeppelin LZ-2049", vt: "aircraft", skill: "aircraft", h: 3, s: 100, sMax: 250, b: 12, a: 2, sig: 8, p: 2, cargo: 200, cost: 750000, seating: "2 + 2 bench", page: 57,
     desc: "The latest SHAPLL (Shaped Airfoil Positive Enhanced Lift) airship from Zeppelinwerke — a modular lifting-body craft, 26 m long with a 65 m wingspan.", extra: "LTA. IC/2,500 liters; 5 km/liter. Modules: passenger (32 seats), cargo (150 CF), assault (80 troops, +50,000¥)." },
   { name: "Goodyear Commuter-47 LTA", vt: "aircraft", skill: "aircraft", h: 3, s: 150, sMax: 300, b: 8, a: 1, sig: 8, p: 2, cargo: 75, cost: 225000, seating: "2 + 1 bench", page: 58,
     desc: "A small SHAPLL airship for personal or executive use — a 25×10 m triangular lifting-body craft with the flight deck and passenger cabin enclosed in the nose.", extra: "LTA. IC/625 liters; 8 km/liter. Passenger bay 50 CF / six bucket seats." },
@@ -269,7 +272,7 @@ const VEHICLES = [
   // Yellowjacket, GMC-Beachcraft Patroller.
   { name: "Ares Mobmaster Riot Control Vehicle", h: 4, hOff: 10, s: 30, sMax: 120, b: 5, a: 5, sig: 2, p: 5, cargo: 500, cost: 3650000, seating: "Twin bucket + 10 folding bench", page: 63,
     desc: "Ares's riot-control sibling of the Citymaster — a Personnel Carrier (ten troops) / Command vehicle with a forward micro-turret (FN-MAG MMGs) and tear-gas grenade launchers, fully gas-sealable.", extra: "IC/500 liters; 10 km/liter; standard load 500 CF." },
-  { name: "General Products COP", h: 4, hOff: 9, s: 30, sMax: 90, b: 1, a: 1, sig: 5, p: 1, cargo: 2, cost: 25000, seating: "1 + 1 single bucket seats", page: 65,
+  { name: "General Products COP", h: 4, hOff: 9, s: 30, sMax: 90, b: 1, a: 1, sig: 4, p: 1, cargo: 2, cost: 25000, seating: "1 + 1 single bucket seats", page: 65,
     desc: "The City Operations Patroller — a cheap electric two-seat patrol car with secure prisoner transport and front-panel space for weapons and equipment.", extra: "Electric, 200 PF; 1 PF/km." },
   { name: "Harley Electraglide-1000 Patrol Cycle", vt: "ground", skill: "bike", h: 3, hOff: 4, s: 95, sMax: 285, b: 3, a: 2, sig: 2, p: 1, cargo: 3, cost: 75000, seating: "1 + 1", page: 66,
     desc: "The ultimate police cycle — the fastest on the road, with runflat tires, off-road suspension, three firmpoints, a light urban comm suite and siren.", extra: "IC/45 liters; 50 km/liter. 2 forward + 1 rear firmpoint (1 CF ammo each)." },
@@ -277,28 +280,28 @@ const VEHICLES = [
     desc: "The harbor equivalent of the Patrol-One — a marine patrol craft with EnviroSeal cabin, remote-controlled spotlight, siren and forward firmpoints.", extra: "IC/100 liters; 25 km/liter." },
   { name: "Blohm & Voss River Commander", vt: "boat", skill: "boat", h: 4, s: 25, sMax: 75, b: 6, a: 3, sig: 3, p: 3, cargo: 20, cost: 300000, seating: "Twin bucket + rear bench", page: 69,
     desc: "A paramilitary river patrol boat used worldwide (Rhine, North/Central/South America) — modular fittings (Police, Security, Assault) and weapon mounts.", extra: "IC/1,000 liters; 15 km/liter. A Military (uparmored) model is a separate actor; seagoing variant 325,000¥." },
-  { name: "CASA J-239 Raven", vt: "aircraft", skill: "aircraft", h: 3, s: 200, sMax: 400, b: 3, a: 0, sig: 1, p: 1, cargo: 5, cost: 175000, seating: "Twin bucket seats", page: 72,
+  { name: "CASA J-239 Raven", vt: "aircraft", skill: "aircraft", h: 3, s: 200, sMax: 400, b: 3, a: 0, sig: 4, p: 1, cargo: 5, cost: 175000, seating: "Twin bucket seats", page: 72,
     desc: "A reinforced glider airframe with twin micro-turbofans, built for low-signature security and surveillance — STOL-capable with a powered/unpowered gliding mode.", extra: "IC/250 liters; 5 km/liter; STOL. Gliding: Handling 5, speed 50/100, Sig 0 (glide ratio 1.3)." },
-  { name: "Moonlight Aerospace Avenger", vt: "aircraft", skill: "aircraft", h: 4, s: 100, sMax: 200, b: 3, a: 3, sig: 3, p: 2, cargo: 3, cost: 250000, seating: "Single bucket seat", page: 73,
+  { name: "Moonlight Aerospace Avenger", vt: "aircraft", skill: "aircraft", h: 4, s: 100, sMax: 200, b: 3, a: 3, sig: 8, p: 2, cargo: 3, cost: 250000, seating: "Single bucket seat", page: 73,
     desc: "An ultralight, multipurpose paramilitary STOL aircraft with a rear-mounted pusher turboprop, minimal signature and a low-radar-reflection composite airframe.", extra: "IC/150 liters; 4 km/liter; STOL/amphibian. Disassembles for transport. Armed: 2 fuselage firmpoints + 1 center hardpoint. (Signature value in the book scan is unclear; read as minimal per the text.)" },
 
   // --- Red Ranger Scout ACV (book p.75, tail of the security section).
-  { name: "Sikorsky-Bell \"Red Ranger\" Scout ACV", vt: "hovercraft", skill: "hovercraft", h: 4, s: 150, sMax: 450, b: 2, a: 2, sig: 3, p: 3, sensor: 1, cargo: 30, cost: 250000, seating: "1 + 1 single bucket seats", page: 75,
+  { name: "Sikorsky-Bell \"Red Ranger\" Scout ACV", vt: "hovercraft", skill: "hovercraft", h: 4, hOff: 6, s: 150, sMax: 450, b: 2, a: 2, sig: 3, p: 3, sensor: 1, cargo: 30, cost: 250000, seating: "1 + 1 single bucket seats", page: 75,
     desc: "A light, ultra-fast two-man scout/recon ACV with dual drive (air-cushion + powered wheels), survey radar, IR/visible-light, sound and motion sensors.", extra: "IC/2,500 liters; 5 km/liter. Wheels engaged: handling 3/5, speed 30/90, Sig 8. 1 small turret (2 CF ammo)." },
 
   // --- Drones (book p.77+). vehicleType drone. Store -> cargo, Sensor Package
   // rating -> sensor. Heavy overlap with Rigger 2 — skipped (in system/Rigger 2):
   // Aztechnology GCR-23C Crawler, Aerodesign Condor LDSD-23, MCT-Nissan Rotodrone,
   // GM-Nissan Spotter (= Spotter Drone).
-  { name: "GAZ-Niki GNRD-71bis Snooper", vt: "drone", skill: "", h: 4, s: 25, sMax: 75, b: 1, a: 0, sig: 5, p: 1, sensor: 1, cargo: 1, cost: 1750, seating: "Drone (rigged)", page: 79,
+  { name: "GAZ-Niki GNRD-71bis Snooper", vt: "drone", skill: "", h: 4, hOff: 3, s: 25, sMax: 75, b: 1, a: 0, sig: 5, p: 1, sensor: 1, cargo: 0, store: 1, cost: 1750, seating: "Drone (rigged)", page: 79,
     desc: "A six-wheeled surveillance drone on electric balloon tires — a Russo-Polish security favorite that climbs to 3 m, takes corners and slips through 5-cm openings.", extra: "Drone. Sensor Standard (1). 6 hours stationary operation; no set-up time." },
-  { name: "Cyberspace Designs Dalmatian Recon Drone", vt: "drone", skill: "", h: 3, s: 35, sMax: 105, b: 2, a: 0, sig: 4, p: 2, sensor: 1, cargo: 6, cost: 15000, seating: "Drone (rigged)", page: 82,
+  { name: "Cyberspace Designs Dalmatian Recon Drone", vt: "drone", skill: "", h: 3, s: 35, sMax: 105, b: 2, a: 0, sig: 4, p: 2, sensor: 1, cargo: 1, store: 6, cost: 15000, seating: "Drone (rigged)", page: 82,
     desc: "A turbofan delta-airfoil surveillance drone with a capacious sensor pod, VTOL capability and a \"stealth\" mode.", extra: "Drone. Sensor Standard (1); VSTOL; 5-min setup. An armed variant is a separate actor." },
-  { name: "Sikorsky-Bell Microskimmer", vt: "drone", skill: "", h: 5, s: 30, sMax: 90, b: 1, a: 0, sig: 5, p: 1, sensor: 1, cargo: 2, cost: 2750, seating: "Drone (rigged)", page: 83,
+  { name: "Sikorsky-Bell Microskimmer", vt: "drone", skill: "", h: 5, s: 30, sMax: 90, b: 1, a: 0, sig: 3, p: 1, sensor: 1, cargo: 0, store: 2, cost: 2750, seating: "Drone (rigged)", page: 83,
     desc: "A trash-can-sized ACV drone carrying a full sensor suite at high speed over any terrain — fully electric and floatable on water.", extra: "Drone. Sensor Standard (1). 8 hours stationary operation." },
-  { name: "CAS \"Wandjina\" RPV", vt: "drone", skill: "", h: 3, s: 250, sMax: 500, b: 5, a: 2, sig: 4, p: 4, sensor: 3, cargo: 50, cost: 75000, seating: "Drone (rigged)", page: 84,
+  { name: "CAS \"Wandjina\" RPV", vt: "drone", skill: "", h: 3, hOff: 5, s: 250, sMax: 500, b: 5, a: 2, sig: 4, p: 4, sensor: 3, cargo: 2, store: 50, cost: 75000, seating: "Drone (rigged)", page: 84,
     desc: "A combat Remotely Piloted Vehicle from Commonwealth Aerospace (Australia) — built for both assault and recon, with a hardened airframe and weapon hardpoints.", extra: "Drone. Sensor Advanced (3); STOL. Armament: Vengeance/Vanquisher minigun + 3 ordnance hardpoints (centerline 2×2 CF, underwing 3 CF). Stealth mode." },
-  { name: "GM-Nissan \"Doberman\" Patrol Vehicle", vt: "drone", skill: "", h: 3, s: 35, sMax: 70, b: 3, a: 2, sig: 3, p: 2, sensor: 3, cargo: 20, cost: 10000, seating: "Drone (rigged)", page: 85,
+  { name: "GM-Nissan \"Doberman\" Patrol Vehicle", vt: "drone", skill: "", h: 3, hOff: 5, s: 35, sMax: 70, b: 3, a: 2, sig: 3, p: 2, sensor: 3, cargo: 1, store: 20, cost: 10000, seating: "Drone (rigged)", page: 85,
     desc: "The classic perimeter-patrol drone — thermographic and motion sensors, heavy armor and a micro-turret, equally effective day or night.", extra: "Drone. Sensor Advanced (3). Micro-turret + forward firmpoint: twin LMG or shotgun (gel/standard); optional Defiance Super Shock taser." },
 
   // --- Military Vehicles (book p.86-95). Skipped (in system): GMC Banshee,
@@ -311,20 +314,20 @@ const VEHICLES = [
 
   // --- Armed / military variants split into their own combat-ready actors (the
   // base, unarmed versions are above; only weapons/armor/sig differ).
-  { name: "Cyberspace Designs Dalmatian Recon Drone (Armed)", vt: "drone", skill: "", h: 3, s: 35, sMax: 105, b: 4, a: 1, sig: 5, p: 2, sensor: 1, cargo: 12, cost: 30000, seating: "Drone (rigged)", page: 82,
+  { name: "Cyberspace Designs Dalmatian Recon Drone (Armed)", vt: "drone", skill: "", h: 3, s: 35, sMax: 105, b: 4, a: 1, sig: 5, p: 3, sensor: 1, cargo: 1, store: 12, cost: 30000, seating: "Drone (rigged)", page: 82,
     desc: "The armed configuration of the Dalmatian recon drone — uprated armor and a higher signature, fitted with two wing firmpoints for ordnance.", extra: "Drone. Sensor Standard (1); VSTOL. Armament: 2 wing firmpoints (2 CF ordnance)." },
   { name: "Agusta-Cierva \"Plutocrat\" Rotorcraft (Armed)", vt: "rotor", skill: "rotorcraft", h: 4, s: 180, sMax: 400, b: 4, a: 2, sig: 4, p: 4, cargo: 15, cost: 1250000, seating: "Twin bucket + 6 bench", page: 56,
     desc: "The armed Plutocrat — a chin turret with a 270° firing arc plus a hardpoint and firmpoint, uparmored and a touch slower than the luxury transport.", extra: "IC/1,000 liters; 1.5 km/liter. Chin turret (270° arc) + 1 hardpoint + 1 firmpoint." },
   { name: "Blohm & Voss River Commander (Military)", vt: "boat", skill: "boat", h: 4, s: 25, sMax: 75, b: 6, a: 4, sig: 3, p: 3, cargo: 20, cost: 300000, seating: "Twin bucket + rear bench", page: 69,
     desc: "The Military configuration of the River Commander river patrol boat — uparmored (Armor 4) and fitted for weapon mounts.", extra: "IC/1,000 liters; 15 km/liter. Weapon mounts. Seagoing variant +25,000¥." },
-  { name: "Embraer-Dassault Mistral (Military)", vt: "aircraft", skill: "aircraft", h: 4, s: 225, sMax: 350, b: 4, a: 0, sig: 3, p: 2, cargo: 10, cost: 400000, seating: "Twin bucket seats", page: 48,
-    desc: "The military Mistral — the VSTOL turboprop airframe fitted with hardpoints and missiles, trading some top speed for a weapons load.", extra: "IC/2,000 liters; 2 km/liter; VSTOL. Armament: hardpoints + missiles." }
+  { name: "Embraer-Dassault Mistral (Float)", idName: "Embraer-Dassault Mistral (Military)", vt: "aircraft", skill: "aircraft", h: 4, s: 225, sMax: 350, b: 4, a: 0, sig: 3, p: 2, cargo: 10, cost: 400000, seating: "Twin bucket seats", page: 48,
+    desc: "The float-equipped Mistral: the VSTOL turboprop on floats, trading some top speed for water landings (it keeps its standard undercarriage, and the floats can be removed).", extra: "IC/2,000 liters; 2 km/liter; VSTOL. Float variant (p.48): Speed 225/350, Cost +25,000¥." }
 ];
 
 let n = 0;
 for (const v of VEHICLES) {
-  const safe = v.name.replace(/[^A-Za-z0-9]+/g, "_").replace(/^_|_$/g, "");
-  writeFileSync(`${DIR}/${safe}_${idFor(v.name)}.json`, JSON.stringify(vehicle(v), null, 2) + "\n");
+  const safe = (v.idName ?? v.name).replace(/[^A-Za-z0-9]+/g, "_").replace(/^_|_$/g, "");
+  writeFileSync(`${DIR}/${safe}_${idFor(v.idName ?? v.name)}.json`, JSON.stringify(vehicle(v), null, 2) + "\n");
   n++;
 }
 console.log(`wrote ${n} vehicles`);

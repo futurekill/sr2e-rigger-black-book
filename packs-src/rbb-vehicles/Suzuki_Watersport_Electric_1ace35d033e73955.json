@@ -7,6 +7,7 @@
     "vehicleType": "boat",
     "skill": "boat",
     "handling": 2,
+    "handlingOffRoad": null,
     "speed": 10,
     "acceleration": 0,
     "body": 1,

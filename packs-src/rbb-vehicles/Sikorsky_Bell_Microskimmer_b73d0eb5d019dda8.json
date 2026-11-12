@@ -7,14 +7,15 @@
     "vehicleType": "drone",
     "skill": "",
     "handling": 5,
+    "handlingOffRoad": null,
     "speed": 30,
     "acceleration": 0,
     "body": 1,
     "armor": 0,
-    "signature": 5,
+    "signature": 3,
     "pilot": 1,
     "sensor": 1,
-    "cargo": 2,
+    "cargo": 0,
     "load": 0,
     "seating": "Drone (rigged)",
     "cost": 2750,
@@ -23,8 +24,8 @@
       "value": 0,
       "max": 10
     },
-    "autonav": 1,
-    "notes": "<p>A trash-can-sized ACV drone carrying a full sensor suite at high speed over any terrain — fully electric and floatable on water.</p><p><em>Max speed 90 m/CT (cruising 30 used for tests). Drone. Sensor Standard (1). 8 hours stationary operation. Rigger Black Book p.83.</em></p>"
+    "autonav": 0,
+    "notes": "<p>A trash-can-sized ACV drone carrying a full sensor suite at high speed over any terrain — fully electric and floatable on water.</p><p><em>Max speed 90 m/CT (cruising 30 used for tests). Drone. Sensor Standard (1). 8 hours stationary operation. Rigger Black Book p.83. Stowing it takes 2 CF of another vehicle's cargo space.</em></p>"
   },
   "prototypeToken": {
     "name": "Sikorsky-Bell Microskimmer",

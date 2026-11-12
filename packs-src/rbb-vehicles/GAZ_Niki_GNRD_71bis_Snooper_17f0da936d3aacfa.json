@@ -7,6 +7,7 @@
     "vehicleType": "drone",
     "skill": "",
     "handling": 4,
+    "handlingOffRoad": null,
     "speed": 25,
     "acceleration": 0,
     "body": 1,
@@ -14,7 +15,7 @@
     "signature": 5,
     "pilot": 1,
     "sensor": 1,
-    "cargo": 1,
+    "cargo": 0,
     "load": 0,
     "seating": "Drone (rigged)",
     "cost": 1750,
@@ -23,8 +24,8 @@
       "value": 0,
       "max": 10
     },
-    "autonav": 1,
-    "notes": "<p>A six-wheeled surveillance drone on electric balloon tires — a Russo-Polish security favorite that climbs to 3 m, takes corners and slips through 5-cm openings.</p><p><em>Max speed 75 m/CT (cruising 25 used for tests). Drone. Sensor Standard (1). 6 hours stationary operation; no set-up time. Rigger Black Book p.79.</em></p>"
+    "autonav": 0,
+    "notes": "<p>A six-wheeled surveillance drone on electric balloon tires — a Russo-Polish security favorite that climbs to 3 m, takes corners and slips through 5-cm openings.</p><p><em>Handling printed 4/3. Max speed 75 m/CT (cruising 25 used for tests). Drone. Sensor Standard (1). 6 hours stationary operation; no set-up time. Rigger Black Book p.79. Stowing it takes 1 CF of another vehicle's cargo space.</em></p>"
   },
   "prototypeToken": {
     "name": "GAZ-Niki GNRD-71bis Snooper",

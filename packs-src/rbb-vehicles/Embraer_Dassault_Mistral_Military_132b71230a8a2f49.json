@@ -1,18 +1,19 @@
 {
   "_id": "132b71230a8a2f49",
-  "name": "Embraer-Dassault Mistral (Military)",
+  "name": "Embraer-Dassault Mistral (Float)",
   "type": "vehicle",
   "img": "modules/sr2e-rigger-black-book/assets/vehicle_portraits/embraer-dassault-mistral-military.webp",
   "system": {
     "vehicleType": "aircraft",
     "skill": "aircraft",
     "handling": 4,
+    "handlingOffRoad": null,
     "speed": 225,
     "acceleration": 0,
     "body": 4,
     "armor": 0,
     "signature": 3,
-    "pilot": 2,
+    "pilot": 0,
     "sensor": 0,
     "cargo": 10,
     "load": 0,
@@ -24,10 +25,10 @@
       "max": 10
     },
     "autonav": 2,
-    "notes": "<p>The military Mistral — the VSTOL turboprop airframe fitted with hardpoints and missiles, trading some top speed for a weapons load.</p><p><em>Max speed 350 m/CT (cruising 225 used for tests). IC/2,000 liters; 2 km/liter; VSTOL. Armament: hardpoints + missiles. Rigger Black Book p.48.</em></p>"
+    "notes": "<p>The float-equipped Mistral: the VSTOL turboprop on floats, trading some top speed for water landings (it keeps its standard undercarriage, and the floats can be removed).</p><p><em>Max speed 350 m/CT (cruising 225 used for tests). IC/2,000 liters; 2 km/liter; VSTOL. Float variant (p.48): Speed 225/350, Cost +25,000¥. Rigger Black Book p.48.</em></p>"
   },
   "prototypeToken": {
-    "name": "Embraer-Dassault Mistral (Military)",
+    "name": "Embraer-Dassault Mistral (Float)",
     "displayName": 20,
     "actorLink": false,
     "width": 8,

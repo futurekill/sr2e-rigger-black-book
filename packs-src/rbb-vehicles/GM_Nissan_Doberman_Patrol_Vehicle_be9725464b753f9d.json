@@ -7,6 +7,7 @@
     "vehicleType": "drone",
     "skill": "",
     "handling": 3,
+    "handlingOffRoad": null,
     "speed": 35,
     "acceleration": 0,
     "body": 3,
@@ -14,7 +15,7 @@
     "signature": 3,
     "pilot": 2,
     "sensor": 3,
-    "cargo": 20,
+    "cargo": 1,
     "load": 0,
     "seating": "Drone (rigged)",
     "cost": 10000,
@@ -23,8 +24,8 @@
       "value": 0,
       "max": 10
     },
-    "autonav": 2,
-    "notes": "<p>The classic perimeter-patrol drone — thermographic and motion sensors, heavy armor and a micro-turret, equally effective day or night.</p><p><em>Max speed 70 m/CT (cruising 35 used for tests). Drone. Sensor Advanced (3). Micro-turret + forward firmpoint: twin LMG or shotgun (gel/standard); optional Defiance Super Shock taser. Rigger Black Book p.85. Armor 2 as printed (SR1) x3 = 6 for SRII, per Sourcebook Updates p.283.</em></p>"
+    "autonav": 0,
+    "notes": "<p>The classic perimeter-patrol drone — thermographic and motion sensors, heavy armor and a micro-turret, equally effective day or night.</p><p><em>Handling printed 3/5. Max speed 70 m/CT (cruising 35 used for tests). Drone. Sensor Advanced (3). Micro-turret + forward firmpoint: twin LMG or shotgun (gel/standard); optional Defiance Super Shock taser. Rigger Black Book p.85. Stowing it takes 20 CF of another vehicle's cargo space. Armor 2 as printed (SR1) x3 = 6 for SRII, per Sourcebook Updates p.283.</em></p>"
   },
   "prototypeToken": {
     "name": "GM-Nissan \"Doberman\" Patrol Vehicle",

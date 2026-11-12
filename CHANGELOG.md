@@ -1,6 +1,17 @@
 # Changelog
 
-## Unreleased
+## 0.6.2 — 2026-11-11
+
+### Fixed
+- **Vehicle stats audit** (system docs/VEHICLE-AUDIT.md): every vehicle checked against its page. Corrected:
+  Tsarina (Multifuel) and Pinto armor 0; 3220 ZX Turbo, Landrover 2046 (Long Wheelbase) and LZ-2049 autopilot; Papoose
+  6,000¥; Signature of the Offroader, Bulldog (Bonded-Courier, also max speed 85), Bergen (Command Module), COP, Raven,
+  Avenger and Microskimmer; Bergen (Cargo Module) armor; Classique Body 6; Ivan and Vacationer cargo; Dalmatian
+  (Armed) autopilot.
+- The "Mistral (Military)" was the **Mistral (Float)** (Speed 225/350, +25,000¥); renamed, same compendium entry.
+- Drones' cargo is their own storage; the "Store" figure (space needed to carry the drone) is in the notes.
+- Ground vehicles' off-road Handling fills the sheet's off-road field; autopilot goes to Autonav on crewed vehicles
+  and Pilot on drones.
 
 ## 0.6.1 — 2026-07-31
 

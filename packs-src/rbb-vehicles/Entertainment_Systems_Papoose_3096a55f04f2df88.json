@@ -7,6 +7,7 @@
     "vehicleType": "ground",
     "skill": "bike",
     "handling": 3,
+    "handlingOffRoad": 6,
     "speed": 30,
     "acceleration": 0,
     "body": 1,
@@ -17,7 +18,7 @@
     "cargo": 1,
     "load": 0,
     "seating": "1",
-    "cost": 4000,
+    "cost": 6000,
     "availability": "",
     "conditionMonitor": {
       "value": 0,

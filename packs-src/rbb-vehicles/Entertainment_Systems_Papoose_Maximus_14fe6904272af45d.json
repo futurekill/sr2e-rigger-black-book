@@ -7,6 +7,7 @@
     "vehicleType": "ground",
     "skill": "bike",
     "handling": 3,
+    "handlingOffRoad": 6,
     "speed": 30,
     "acceleration": 0,
     "body": 2,
