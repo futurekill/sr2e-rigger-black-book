@@ -1,5 +1,5 @@
 // Generate Rigger Black Book vehicles (FASA 7108, SR1) as `vehicle` actors into
-// packs-src/rbb-vehicles. SR1 stat block -> SR2 vehicle field (see docs/PLAN.md):
+// packs-src/rbb-vehicles. SR1 stat block -> SR2 vehicle field (see docs/archive/plans/PLAN.md):
 // handling = on-road (1st of on/off); speed = cruising (1st of cruise/max, which
 // SR1 -> SR2 ARMOR CONVERSION: the core book's Sourcebook Updates section
 // (p.283) says to "multiply the Vehicle Armor Ratings listed for the vehicles in

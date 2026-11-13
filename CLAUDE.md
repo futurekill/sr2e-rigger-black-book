@@ -7,7 +7,7 @@ Edition system** (`sr2e`). Separate package; depends on the system via
 
 ## What this module is
 Just the **vehicle/drone catalog** → `rbb-vehicles` (Actor pack). SR1 vehicle stat
-blocks map onto the SR2 `vehicle` model (see `docs/PLAN.md` for the field mapping).
+blocks map onto the SR2 `vehicle` model (see `docs/archive/plans/PLAN.md` for the field mapping).
 The SR1 rules (ratings glossary, modifications, vehicle combat, sensors/ECM) are
 **out of scope** — the system + Rigger 2 already cover SR2 vehicle rules/design.
 
