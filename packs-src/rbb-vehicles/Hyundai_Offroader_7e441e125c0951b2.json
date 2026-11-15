@@ -25,7 +25,11 @@
       "max": 10
     },
     "autonav": 1,
-    "notes": "<p>Purpose-built for the off-road market — the best rough-terrain handling of any bike, supplied under contract to the Sioux and Ute border patrols.</p><p><em>Off-road handling 2. Max speed 180 m/CT (cruising 60 used for tests). Multifuel/25 liters; 90 km/liter; off-road speed 55/165. Sidecar +1,500¥ (special option only). Rigger Black Book p.18.</em></p>"
+    "notes": "<p>Purpose-built for the off-road market — the best rough-terrain handling of any bike, supplied under contract to the Sioux and Ute border patrols.</p><p><em>Off-road handling 2. Max speed 180 m/CT (cruising 60 used for tests). Multifuel/25 liters; 90 km/liter; off-road speed 55/165. Sidecar +1,500¥ (special option only). Rigger Black Book p.18.</em></p>",
+    "citation": {
+      "book": "rbb",
+      "page": "18"
+    }
   },
   "prototypeToken": {
     "name": "Hyundai Offroader",

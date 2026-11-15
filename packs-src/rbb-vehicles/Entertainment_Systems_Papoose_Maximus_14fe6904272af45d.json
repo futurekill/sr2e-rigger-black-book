@@ -25,7 +25,11 @@
       "max": 10
     },
     "autonav": 0,
-    "notes": "<p>The larger Papoose Maximus — two seats, a tougher hull and an extended range.</p><p><em>Off-road handling 6. Max speed 90 m/CT (cruising 30 used for tests). Electric, 400 PF. Rigger Black Book p.16.</em></p>"
+    "notes": "<p>The larger Papoose Maximus — two seats, a tougher hull and an extended range.</p><p><em>Off-road handling 6. Max speed 90 m/CT (cruising 30 used for tests). Electric, 400 PF. Rigger Black Book p.16.</em></p>",
+    "citation": {
+      "book": "rbb",
+      "page": "16"
+    }
   },
   "prototypeToken": {
     "name": "Entertainment Systems Papoose Maximus",

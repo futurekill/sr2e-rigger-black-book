@@ -25,7 +25,11 @@
       "max": 10
     },
     "autonav": 2,
-    "notes": "<p>The 21st century's DC-3 — a rugged twin-turboprop VSTOL workhorse in worldwide use with airlines, police, security and paramilitary outfits.</p><p><em>Max speed 600 m/CT (cruising 400 used for tests). IC/2,500 liters; 2.5 km/liter; VSTOL. Variants: Standard (40 bench), Commuter (36 seats), Cargo (10+100 CF), Amphibious. Rigger Black Book p.51.</em></p>"
+    "notes": "<p>The 21st century's DC-3 — a rugged twin-turboprop VSTOL workhorse in worldwide use with airlines, police, security and paramilitary outfits.</p><p><em>Max speed 600 m/CT (cruising 400 used for tests). IC/2,500 liters; 2.5 km/liter; VSTOL. Variants: Standard (40 bench), Commuter (36 seats), Cargo (10+100 CF), Amphibious. Rigger Black Book p.51.</em></p>",
+    "citation": {
+      "book": "rbb",
+      "page": "51"
+    }
   },
   "prototypeToken": {
     "name": "Hawker-Siddley HS-895 Skytruck",

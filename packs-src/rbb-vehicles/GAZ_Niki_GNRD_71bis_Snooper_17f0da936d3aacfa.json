@@ -25,7 +25,11 @@
       "max": 10
     },
     "autonav": 0,
-    "notes": "<p>A six-wheeled surveillance drone on electric balloon tires — a Russo-Polish security favorite that climbs to 3 m, takes corners and slips through 5-cm openings.</p><p><em>Handling printed 4/3. Max speed 75 m/CT (cruising 25 used for tests). Drone. Sensor Standard (1). 6 hours stationary operation; no set-up time. Rigger Black Book p.79. Stowing it takes 1 CF of another vehicle's cargo space.</em></p>"
+    "notes": "<p>A six-wheeled surveillance drone on electric balloon tires — a Russo-Polish security favorite that climbs to 3 m, takes corners and slips through 5-cm openings.</p><p><em>Handling printed 4/3. Max speed 75 m/CT (cruising 25 used for tests). Drone. Sensor Standard (1). 6 hours stationary operation; no set-up time. Rigger Black Book p.79. Stowing it takes 1 CF of another vehicle's cargo space.</em></p>",
+    "citation": {
+      "book": "rbb",
+      "page": "79"
+    }
   },
   "prototypeToken": {
     "name": "GAZ-Niki GNRD-71bis Snooper",

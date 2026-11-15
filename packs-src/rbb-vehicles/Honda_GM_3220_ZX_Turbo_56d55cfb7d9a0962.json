@@ -25,7 +25,11 @@
       "max": 10
     },
     "autonav": 2,
-    "notes": "<p>The turbo-boosted 3220 ZX — the engine that won the NorAm Sports Car Circuit Gold Cup. A real handful at top speed.</p><p><em>Off-road handling 8. Max speed 150 m/CT (cruising 50 used for tests). IC/30 liters; 45 km/liter. Rigger Black Book p.12.</em></p>"
+    "notes": "<p>The turbo-boosted 3220 ZX — the engine that won the NorAm Sports Car Circuit Gold Cup. A real handful at top speed.</p><p><em>Off-road handling 8. Max speed 150 m/CT (cruising 50 used for tests). IC/30 liters; 45 km/liter. Rigger Black Book p.12.</em></p>",
+    "citation": {
+      "book": "rbb",
+      "page": "12"
+    }
   },
   "prototypeToken": {
     "name": "Honda-GM 3220 ZX Turbo",

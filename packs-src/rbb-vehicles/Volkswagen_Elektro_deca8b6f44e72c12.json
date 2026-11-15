@@ -25,7 +25,11 @@
       "max": 10
     },
     "autonav": 0,
-    "notes": "<p>A low-slung, battery-powered three-wheel commuter (GridLink/SunCell optional) with a Kevlarplex canopy and underseat luggage space.</p><p><em>Off-road handling 6. Max speed 60 m/CT (cruising 20 used for tests). Electric, 200 PF; economy 2 PF/km. Rigger Black Book p.8.</em></p>"
+    "notes": "<p>A low-slung, battery-powered three-wheel commuter (GridLink/SunCell optional) with a Kevlarplex canopy and underseat luggage space.</p><p><em>Off-road handling 6. Max speed 60 m/CT (cruising 20 used for tests). Electric, 200 PF; economy 2 PF/km. Rigger Black Book p.8.</em></p>",
+    "citation": {
+      "book": "rbb",
+      "page": "8"
+    }
   },
   "prototypeToken": {
     "name": "Volkswagen Elektro",

@@ -25,7 +25,11 @@
       "max": 10
     },
     "autonav": 2,
-    "notes": "<p>An ultralight, multipurpose paramilitary STOL aircraft with a rear-mounted pusher turboprop, minimal signature and a low-radar-reflection composite airframe.</p><p><em>Max speed 200 m/CT (cruising 100 used for tests). IC/150 liters; 4 km/liter; STOL/amphibian. Disassembles for transport. Armed: 2 fuselage firmpoints + 1 center hardpoint. (Signature value in the book scan is unclear; read as minimal per the text.) Rigger Black Book p.73. Armor 3 as printed (SR1) x3 = 9 for SRII, per Sourcebook Updates p.283.</em></p>"
+    "notes": "<p>An ultralight, multipurpose paramilitary STOL aircraft with a rear-mounted pusher turboprop, minimal signature and a low-radar-reflection composite airframe.</p><p><em>Max speed 200 m/CT (cruising 100 used for tests). IC/150 liters; 4 km/liter; STOL/amphibian. Disassembles for transport. Armed: 2 fuselage firmpoints + 1 center hardpoint. (Signature value in the book scan is unclear; read as minimal per the text.) Rigger Black Book p.73. Armor 3 as printed (SR1) x3 = 9 for SRII, per Sourcebook Updates p.283.</em></p>",
+    "citation": {
+      "book": "rbb",
+      "page": "73"
+    }
   },
   "prototypeToken": {
     "name": "Moonlight Aerospace Avenger",

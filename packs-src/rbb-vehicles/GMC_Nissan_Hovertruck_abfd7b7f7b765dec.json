@@ -25,7 +25,11 @@
       "max": 10
     },
     "autonav": 1,
-    "notes": "<p>A decade-old cargo hauler for roadless terrain with a water-planing boat hull — popular in Africa and South America where rivers are the only \"highways.\"</p><p><em>Max speed 120 m/CT (cruising 40 used for tests). Multifuel/500 liters; 2.5 km/liter. Rear flat accepts a standard 500-CF container. Rigger Black Book p.40.</em></p>"
+    "notes": "<p>A decade-old cargo hauler for roadless terrain with a water-planing boat hull — popular in Africa and South America where rivers are the only \"highways.\"</p><p><em>Max speed 120 m/CT (cruising 40 used for tests). Multifuel/500 liters; 2.5 km/liter. Rear flat accepts a standard 500-CF container. Rigger Black Book p.40.</em></p>",
+    "citation": {
+      "book": "rbb",
+      "page": "40"
+    }
   },
   "prototypeToken": {
     "name": "GMC-Nissan Hovertruck",

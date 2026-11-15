@@ -25,7 +25,11 @@
       "max": 10
     },
     "autonav": 2,
-    "notes": "<p>A standard, reliable delivery truck found in most North American sprawls — UCAS Express and Parcel Service use them.</p><p><em>Off-road handling 8. Max speed 85 m/CT (cruising 35 used for tests). Multifuel/150 liters; 16 km/liter. Rigger Black Book p.33. Armor 1 as printed (SR1) x3 = 3 for SRII, per Sourcebook Updates p.283.</em></p>"
+    "notes": "<p>A standard, reliable delivery truck found in most North American sprawls — UCAS Express and Parcel Service use them.</p><p><em>Off-road handling 8. Max speed 85 m/CT (cruising 35 used for tests). Multifuel/150 liters; 16 km/liter. Rigger Black Book p.33. Armor 1 as printed (SR1) x3 = 3 for SRII, per Sourcebook Updates p.283.</em></p>",
+    "citation": {
+      "book": "rbb",
+      "page": "33"
+    }
   },
   "prototypeToken": {
     "name": "GMC Bulldog Step-Van (Multifuel)",

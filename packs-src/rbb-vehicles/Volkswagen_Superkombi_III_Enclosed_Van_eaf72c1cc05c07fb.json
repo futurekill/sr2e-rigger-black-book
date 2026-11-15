@@ -25,7 +25,11 @@
       "max": 10
     },
     "autonav": 3,
-    "notes": "<p>The latest of VW's popular imported van line — reliable and rugged. Shown as the Enclosed-Van; other bodies are available.</p><p><em>Off-road handling 8. Max speed 105 m/CT (cruising 35 used for tests). IC/120 liters; 18 km/liter. Models: Commuter (55,000¥), RV (90,000¥), Flatbed (200 CF, 37,000¥), Pickup (120 CF, 40,000¥). Rigger Black Book p.31. Armor 1 as printed (SR1) x3 = 3 for SRII, per Sourcebook Updates p.283.</em></p>"
+    "notes": "<p>The latest of VW's popular imported van line — reliable and rugged. Shown as the Enclosed-Van; other bodies are available.</p><p><em>Off-road handling 8. Max speed 105 m/CT (cruising 35 used for tests). IC/120 liters; 18 km/liter. Models: Commuter (55,000¥), RV (90,000¥), Flatbed (200 CF, 37,000¥), Pickup (120 CF, 40,000¥). Rigger Black Book p.31. Armor 1 as printed (SR1) x3 = 3 for SRII, per Sourcebook Updates p.283.</em></p>",
+    "citation": {
+      "book": "rbb",
+      "page": "31"
+    }
   },
   "prototypeToken": {
     "name": "Volkswagen Superkombi III (Enclosed-Van)",

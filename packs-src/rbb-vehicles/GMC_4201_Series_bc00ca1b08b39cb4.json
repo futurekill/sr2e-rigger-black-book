@@ -25,7 +25,11 @@
       "max": 10
     },
     "autonav": 2,
-    "notes": "<p>A classic heavy truck — the \"Mechanical Mule\" — that has kept industry and commerce supplied through war and revolution.</p><p><em>Off-road handling 6. Max speed 85 m/CT (cruising 35 used for tests). Multifuel/750 liters; 12 km/liter; standard load 750 CF. Bodies: Rear-Tray (+38,000¥), Van (1,000 CF, +120,000¥), Tanker (37.5 kl, +100,000¥), SURT Citycoach bus (+125,000¥). Rigger Black Book p.34. Armor 1 as printed (SR1) x3 = 3 for SRII, per Sourcebook Updates p.283.</em></p>"
+    "notes": "<p>A classic heavy truck — the \"Mechanical Mule\" — that has kept industry and commerce supplied through war and revolution.</p><p><em>Off-road handling 6. Max speed 85 m/CT (cruising 35 used for tests). Multifuel/750 liters; 12 km/liter; standard load 750 CF. Bodies: Rear-Tray (+38,000¥), Van (1,000 CF, +120,000¥), Tanker (37.5 kl, +100,000¥), SURT Citycoach bus (+125,000¥). Rigger Black Book p.34. Armor 1 as printed (SR1) x3 = 3 for SRII, per Sourcebook Updates p.283.</em></p>",
+    "citation": {
+      "book": "rbb",
+      "page": "34"
+    }
   },
   "prototypeToken": {
     "name": "GMC 4201 Series",

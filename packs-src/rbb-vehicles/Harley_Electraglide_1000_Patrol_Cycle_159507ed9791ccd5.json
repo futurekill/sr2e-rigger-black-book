@@ -25,7 +25,11 @@
       "max": 10
     },
     "autonav": 1,
-    "notes": "<p>The ultimate police cycle — the fastest on the road, with runflat tires, off-road suspension, three firmpoints, a light urban comm suite and siren.</p><p><em>Off-road handling 4. Max speed 285 m/CT (cruising 95 used for tests). IC/45 liters; 50 km/liter. 2 forward + 1 rear firmpoint (1 CF ammo each). Rigger Black Book p.66. Armor 2 as printed (SR1) x3 = 6 for SRII, per Sourcebook Updates p.283.</em></p>"
+    "notes": "<p>The ultimate police cycle — the fastest on the road, with runflat tires, off-road suspension, three firmpoints, a light urban comm suite and siren.</p><p><em>Off-road handling 4. Max speed 285 m/CT (cruising 95 used for tests). IC/45 liters; 50 km/liter. 2 forward + 1 rear firmpoint (1 CF ammo each). Rigger Black Book p.66. Armor 2 as printed (SR1) x3 = 6 for SRII, per Sourcebook Updates p.283.</em></p>",
+    "citation": {
+      "book": "rbb",
+      "page": "66"
+    }
   },
   "prototypeToken": {
     "name": "Harley Electraglide-1000 Patrol Cycle",

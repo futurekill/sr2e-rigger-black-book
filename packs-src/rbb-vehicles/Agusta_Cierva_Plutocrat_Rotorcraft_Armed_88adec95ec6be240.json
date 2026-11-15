@@ -25,7 +25,11 @@
       "max": 10
     },
     "autonav": 4,
-    "notes": "<p>The armed Plutocrat — a chin turret with a 270° firing arc plus a hardpoint and firmpoint, uparmored and a touch slower than the luxury transport.</p><p><em>Max speed 400 m/CT (cruising 180 used for tests). IC/1,000 liters; 1.5 km/liter. Chin turret (270° arc) + 1 hardpoint + 1 firmpoint. Rigger Black Book p.56. Armor 2 as printed (SR1) x3 = 6 for SRII, per Sourcebook Updates p.283.</em></p>"
+    "notes": "<p>The armed Plutocrat — a chin turret with a 270° firing arc plus a hardpoint and firmpoint, uparmored and a touch slower than the luxury transport.</p><p><em>Max speed 400 m/CT (cruising 180 used for tests). IC/1,000 liters; 1.5 km/liter. Chin turret (270° arc) + 1 hardpoint + 1 firmpoint. Rigger Black Book p.56. Armor 2 as printed (SR1) x3 = 6 for SRII, per Sourcebook Updates p.283.</em></p>",
+    "citation": {
+      "book": "rbb",
+      "page": "56"
+    }
   },
   "prototypeToken": {
     "name": "Agusta-Cierva \"Plutocrat\" Rotorcraft (Armed)",

@@ -25,7 +25,11 @@
       "max": 10
     },
     "autonav": 2,
-    "notes": "<p>The long-wheelbase Landrover 2046 — more seating and cargo, same rugged go-anywhere drivetrain.</p><p><em>Max speed 90 m/CT (cruising 30 used for tests). Multifuel/75 liters; 80 km/liter; off-road speed 25/75. Rigger Black Book p.27.</em></p>"
+    "notes": "<p>The long-wheelbase Landrover 2046 — more seating and cargo, same rugged go-anywhere drivetrain.</p><p><em>Max speed 90 m/CT (cruising 30 used for tests). Multifuel/75 liters; 80 km/liter; off-road speed 25/75. Rigger Black Book p.27.</em></p>",
+    "citation": {
+      "book": "rbb",
+      "page": "27"
+    }
   },
   "prototypeToken": {
     "name": "Landrover Model 2046 (Long Wheelbase)",

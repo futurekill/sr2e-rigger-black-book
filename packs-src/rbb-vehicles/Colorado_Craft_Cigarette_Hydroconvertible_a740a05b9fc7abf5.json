@@ -25,7 +25,11 @@
       "max": 10
     },
     "autonav": 2,
-    "notes": "<p>A 6-meter convertible hydrofoil — cruise as a high-speed planing craft, then drop the foils at the flick of a switch for the open sea.</p><p><em>Handling printed 4/5. Max speed 75 m/CT (cruising 25 used for tests). IC/50 liters; 25 km/liter. Foils down: Handling 8, speed 35/105, Sig 1, autopilot disabled, 12 km/liter. Rigger Black Book p.43.</em></p>"
+    "notes": "<p>A 6-meter convertible hydrofoil — cruise as a high-speed planing craft, then drop the foils at the flick of a switch for the open sea.</p><p><em>Handling printed 4/5. Max speed 75 m/CT (cruising 25 used for tests). IC/50 liters; 25 km/liter. Foils down: Handling 8, speed 35/105, Sig 1, autopilot disabled, 12 km/liter. Rigger Black Book p.43.</em></p>",
+    "citation": {
+      "book": "rbb",
+      "page": "43"
+    }
   },
   "prototypeToken": {
     "name": "Colorado Craft \"Cigarette\" Hydroconvertible",

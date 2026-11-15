@@ -25,7 +25,11 @@
       "max": 10
     },
     "autonav": 2,
-    "notes": "<p>A purpose-built reinforced-boat-hull amphibian — a classic European pleasure craft with STOL (water) / VSTOL (land) capability and a roomy cabin.</p><p><em>Max speed 450 m/CT (cruising 300 used for tests). IC/250 liters; 3 km/liter. STOL (water), VSTOL (land). Rigger Black Book p.47.</em></p>"
+    "notes": "<p>A purpose-built reinforced-boat-hull amphibian — a classic European pleasure craft with STOL (water) / VSTOL (land) capability and a roomy cabin.</p><p><em>Max speed 450 m/CT (cruising 300 used for tests). IC/250 liters; 3 km/liter. STOL (water), VSTOL (land). Rigger Black Book p.47.</em></p>",
+    "citation": {
+      "book": "rbb",
+      "page": "47"
+    }
   },
   "prototypeToken": {
     "name": "Fiat-Fokker \"Cloud Nine\" Amphibian",

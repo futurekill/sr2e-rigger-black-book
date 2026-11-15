@@ -25,7 +25,11 @@
       "max": 10
     },
     "autonav": 2,
-    "notes": "<p>A medium-size delivery van, electric chassis — built around a common base that accepts several body types. Shown with the Enclosed-Box cab.</p><p><em>Off-road handling 8. Max speed 75 m/CT (cruising 25 used for tests). Electric, 200 PF; 2 PF/km. Cabs: Minibus (+20,000¥), Enclosed-Box (+15,000¥, 90 CF), Open-Tray (+10,000¥). Chassis 25,000¥. Rigger Black Book p.29.</em></p>"
+    "notes": "<p>A medium-size delivery van, electric chassis — built around a common base that accepts several body types. Shown with the Enclosed-Box cab.</p><p><em>Off-road handling 8. Max speed 75 m/CT (cruising 25 used for tests). Electric, 200 PF; 2 PF/km. Cabs: Minibus (+20,000¥), Enclosed-Box (+15,000¥, 90 CF), Open-Tray (+10,000¥). Chassis 25,000¥. Rigger Black Book p.29.</em></p>",
+    "citation": {
+      "book": "rbb",
+      "page": "29"
+    }
   },
   "prototypeToken": {
     "name": "Leyland-Rover Transport (Electric)",

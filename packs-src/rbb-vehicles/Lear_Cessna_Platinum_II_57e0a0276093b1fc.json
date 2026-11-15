@@ -25,7 +25,11 @@
       "max": 10
     },
     "autonav": 4,
-    "notes": "<p>A faster development of the Platinum I executive transport — twin rear-mounted turbofans for the exec in a hurry, STOL-capable.</p><p><em>Max speed 1600 m/CT (cruising 800 used for tests). IC/750 liters; 1.5 km/liter; STOL. Variants: Luxury/Standard Executive, Commuter (15 seats), Cargo. Rigger Black Book p.50. Armor 1 as printed (SR1) x3 = 3 for SRII, per Sourcebook Updates p.283.</em></p>"
+    "notes": "<p>A faster development of the Platinum I executive transport — twin rear-mounted turbofans for the exec in a hurry, STOL-capable.</p><p><em>Max speed 1600 m/CT (cruising 800 used for tests). IC/750 liters; 1.5 km/liter; STOL. Variants: Luxury/Standard Executive, Commuter (15 seats), Cargo. Rigger Black Book p.50. Armor 1 as printed (SR1) x3 = 3 for SRII, per Sourcebook Updates p.283.</em></p>",
+    "citation": {
+      "book": "rbb",
+      "page": "50"
+    }
   },
   "prototypeToken": {
     "name": "Lear-Cessna Platinum II",

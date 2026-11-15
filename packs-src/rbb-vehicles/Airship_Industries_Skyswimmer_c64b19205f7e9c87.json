@@ -25,7 +25,11 @@
       "max": 10
     },
     "autonav": 2,
-    "notes": "<p>A purely recreational SHAPLL airship — solar-electric, gimbaled ducted fans and a folding wingtip design give it (weather permitting) unlimited flying time.</p><p><em>Max speed 180 m/CT (cruising 90 used for tests). LTA. Solar-electric (zero economy in sun); optional turbofans speed 110/220. Each 30 CF of cargo cuts speed by ~5/15. Rigger Black Book p.59. Armor 1 as printed (SR1) x3 = 3 for SRII, per Sourcebook Updates p.283.</em></p>"
+    "notes": "<p>A purely recreational SHAPLL airship — solar-electric, gimbaled ducted fans and a folding wingtip design give it (weather permitting) unlimited flying time.</p><p><em>Max speed 180 m/CT (cruising 90 used for tests). LTA. Solar-electric (zero economy in sun); optional turbofans speed 110/220. Each 30 CF of cargo cuts speed by ~5/15. Rigger Black Book p.59. Armor 1 as printed (SR1) x3 = 3 for SRII, per Sourcebook Updates p.283.</em></p>",
+    "citation": {
+      "book": "rbb",
+      "page": "59"
+    }
   },
   "prototypeToken": {
     "name": "Airship Industries Skyswimmer",

@@ -25,7 +25,11 @@
       "max": 10
     },
     "autonav": 4,
-    "notes": "<p>The ultimate corp-exec status symbol — a 27-meter luxury yacht with individual cabins for twelve, full galley, owner's suite and a deckhouse with launch davits.</p><p><em>Max speed 45 m/CT (cruising 15 used for tests). IC/2,500 liters; 30 km/liter. Rigger Black Book p.45.</em></p>"
+    "notes": "<p>The ultimate corp-exec status symbol — a 27-meter luxury yacht with individual cabins for twelve, full galley, owner's suite and a deckhouse with launch davits.</p><p><em>Max speed 45 m/CT (cruising 15 used for tests). IC/2,500 liters; 30 km/liter. Rigger Black Book p.45.</em></p>",
+    "citation": {
+      "book": "rbb",
+      "page": "45"
+    }
   },
   "prototypeToken": {
     "name": "Harland & Wolff \"Classique\" Motor Yacht",

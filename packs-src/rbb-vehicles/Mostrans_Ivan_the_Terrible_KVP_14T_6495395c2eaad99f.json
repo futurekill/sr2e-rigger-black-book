@@ -25,7 +25,11 @@
       "max": 10
     },
     "autonav": 1,
-    "notes": "<p>A light utility ACV from MosTrans of Moscow, built for severe winter weather and popular across Eastern Europe — a watertight boat-hull model is available.</p><p><em>Max speed 180 m/CT (cruising 60 used for tests). Multifuel/250 liters; 2 km/liter. Modules: Passenger (9 seats, +20,000¥), Cargo (500 CF). Rigger Black Book p.38.</em></p>"
+    "notes": "<p>A light utility ACV from MosTrans of Moscow, built for severe winter weather and popular across Eastern Europe — a watertight boat-hull model is available.</p><p><em>Max speed 180 m/CT (cruising 60 used for tests). Multifuel/250 liters; 2 km/liter. Modules: Passenger (9 seats, +20,000¥), Cargo (500 CF). Rigger Black Book p.38.</em></p>",
+    "citation": {
+      "book": "rbb",
+      "page": "38"
+    }
   },
   "prototypeToken": {
     "name": "Mostrans \"Ivan the Terrible\" KVP-14T",

@@ -25,7 +25,11 @@
       "max": 10
     },
     "autonav": 3,
-    "notes": "<p>The most popular civilian ACV in North America — a recreational hovercraft on the Beachcraft Patroller chassis with built-in camping gear (bunks, mini-kitchen, shower).</p><p><em>Max speed 105 m/CT (cruising 35 used for tests). IC/250 liters; 2 km/liter. Boat-hull and winterized variants available. Rigger Black Book p.39.</em></p>"
+    "notes": "<p>The most popular civilian ACV in North America — a recreational hovercraft on the Beachcraft Patroller chassis with built-in camping gear (bunks, mini-kitchen, shower).</p><p><em>Max speed 105 m/CT (cruising 35 used for tests). IC/250 liters; 2 km/liter. Boat-hull and winterized variants available. Rigger Black Book p.39.</em></p>",
+    "citation": {
+      "book": "rbb",
+      "page": "39"
+    }
   },
   "prototypeToken": {
     "name": "GMC-Beachcraft \"Vacationer\" ACV",

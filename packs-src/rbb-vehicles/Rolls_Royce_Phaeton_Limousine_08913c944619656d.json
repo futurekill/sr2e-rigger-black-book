@@ -25,7 +25,11 @@
       "max": 10
     },
     "autonav": 4,
-    "notes": "<p>The luxury vehicle for the 2050s: armored seating for six plus three jump seats, APPS, roll bars, full comm/stereo with satellite uplink and a wet bar.</p><p><em>Max speed 180 m/CT (cruising 60 used for tests). IC/300 liters; 12 km/liter; EnviroSeal, active suspension. Rigger Black Book p.15. Armor 2 as printed (SR1) x3 = 6 for SRII, per Sourcebook Updates p.283.</em></p>"
+    "notes": "<p>The luxury vehicle for the 2050s: armored seating for six plus three jump seats, APPS, roll bars, full comm/stereo with satellite uplink and a wet bar.</p><p><em>Max speed 180 m/CT (cruising 60 used for tests). IC/300 liters; 12 km/liter; EnviroSeal, active suspension. Rigger Black Book p.15. Armor 2 as printed (SR1) x3 = 6 for SRII, per Sourcebook Updates p.283.</em></p>",
+    "citation": {
+      "book": "rbb",
+      "page": "15"
+    }
   },
   "prototypeToken": {
     "name": "Rolls Royce \"Phaeton\" Limousine",

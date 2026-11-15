@@ -25,7 +25,11 @@
       "max": 10
     },
     "autonav": 2,
-    "notes": "<p>The Bonded-Courier Bulldog — off-road suspension, runflat dual-purpose tires and turbocharging as standard. Popular with independent couriers.</p><p><em>Off-road handling 6. Max speed 85 m/CT (cruising 35 used for tests). Multifuel/150 liters; 14 km/liter; off-road speed 30/80. Rigger Black Book p.33. Armor 2 as printed (SR1) x3 = 6 for SRII, per Sourcebook Updates p.283.</em></p>"
+    "notes": "<p>The Bonded-Courier Bulldog — off-road suspension, runflat dual-purpose tires and turbocharging as standard. Popular with independent couriers.</p><p><em>Off-road handling 6. Max speed 85 m/CT (cruising 35 used for tests). Multifuel/150 liters; 14 km/liter; off-road speed 30/80. Rigger Black Book p.33. Armor 2 as printed (SR1) x3 = 6 for SRII, per Sourcebook Updates p.283.</em></p>",
+    "citation": {
+      "book": "rbb",
+      "page": "33"
+    }
   },
   "prototypeToken": {
     "name": "GMC Bulldog Step-Van (Bonded-Courier)",

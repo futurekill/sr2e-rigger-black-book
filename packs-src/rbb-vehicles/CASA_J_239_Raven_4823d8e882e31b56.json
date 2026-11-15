@@ -25,7 +25,11 @@
       "max": 10
     },
     "autonav": 1,
-    "notes": "<p>A reinforced glider airframe with twin micro-turbofans, built for low-signature security and surveillance — STOL-capable with a powered/unpowered gliding mode.</p><p><em>Max speed 400 m/CT (cruising 200 used for tests). IC/250 liters; 5 km/liter; STOL. Gliding: Handling 5, speed 50/100, Sig 0 (glide ratio 1.3). Rigger Black Book p.72.</em></p>"
+    "notes": "<p>A reinforced glider airframe with twin micro-turbofans, built for low-signature security and surveillance — STOL-capable with a powered/unpowered gliding mode.</p><p><em>Max speed 400 m/CT (cruising 200 used for tests). IC/250 liters; 5 km/liter; STOL. Gliding: Handling 5, speed 50/100, Sig 0 (glide ratio 1.3). Rigger Black Book p.72.</em></p>",
+    "citation": {
+      "book": "rbb",
+      "page": "72"
+    }
   },
   "prototypeToken": {
     "name": "CASA J-239 Raven",

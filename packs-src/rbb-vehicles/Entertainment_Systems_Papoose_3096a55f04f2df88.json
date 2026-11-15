@@ -25,7 +25,11 @@
       "max": 10
     },
     "autonav": 0,
-    "notes": "<p>A recreational electric bike from a maker better known for racing bicycles — folds into a compact bundle for trunk or roof-rack storage.</p><p><em>Off-road handling 6. Max speed 90 m/CT (cruising 30 used for tests). Electric, 320 PF; 2 PF/km. Rigger Black Book p.16.</em></p>"
+    "notes": "<p>A recreational electric bike from a maker better known for racing bicycles — folds into a compact bundle for trunk or roof-rack storage.</p><p><em>Off-road handling 6. Max speed 90 m/CT (cruising 30 used for tests). Electric, 320 PF; 2 PF/km. Rigger Black Book p.16.</em></p>",
+    "citation": {
+      "book": "rbb",
+      "page": "16"
+    }
   },
   "prototypeToken": {
     "name": "Entertainment Systems Papoose",

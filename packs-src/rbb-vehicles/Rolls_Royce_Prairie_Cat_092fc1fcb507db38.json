@@ -25,7 +25,11 @@
       "max": 10
     },
     "autonav": 3,
-    "notes": "<p>A luxury, amphibious 4WD with the Chevalier Hi-Speed Scout engine — APPS, heavy-duty leather, full comm/stereo with satellite uplink and a mini-bar.</p><p><em>Off-road handling 3. Max speed 120 m/CT (cruising 40 used for tests). Multifuel/75 liters; 30 km/liter; off-road speed 35/105; amphibious. APPS, roll bars. Rigger Black Book p.24. Armor 1 as printed (SR1) x3 = 3 for SRII, per Sourcebook Updates p.283.</em></p>"
+    "notes": "<p>A luxury, amphibious 4WD with the Chevalier Hi-Speed Scout engine — APPS, heavy-duty leather, full comm/stereo with satellite uplink and a mini-bar.</p><p><em>Off-road handling 3. Max speed 120 m/CT (cruising 40 used for tests). Multifuel/75 liters; 30 km/liter; off-road speed 35/105; amphibious. APPS, roll bars. Rigger Black Book p.24. Armor 1 as printed (SR1) x3 = 3 for SRII, per Sourcebook Updates p.283.</em></p>",
+    "citation": {
+      "book": "rbb",
+      "page": "24"
+    }
   },
   "prototypeToken": {
     "name": "Rolls Royce Prairie Cat",

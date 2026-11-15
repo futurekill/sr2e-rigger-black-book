@@ -25,7 +25,11 @@
       "max": 10
     },
     "autonav": 0,
-    "notes": "<p>The most popular water jet bike of the last decade — the 2051 standard model has improved handling and economy.</p><p><em>Max speed 45 m/CT (cruising 15 used for tests). IC/10 liters; 15 km/liter. Rigger Black Book p.41.</em></p>"
+    "notes": "<p>The most popular water jet bike of the last decade — the 2051 standard model has improved handling and economy.</p><p><em>Max speed 45 m/CT (cruising 15 used for tests). IC/10 liters; 15 km/liter. Rigger Black Book p.41.</em></p>",
+    "citation": {
+      "book": "rbb",
+      "page": "41"
+    }
   },
   "prototypeToken": {
     "name": "Suzuki Watersport (Standard)",

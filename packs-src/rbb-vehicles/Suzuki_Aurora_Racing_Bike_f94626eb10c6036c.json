@@ -25,7 +25,11 @@
       "max": 10
     },
     "autonav": 1,
-    "notes": "<p>Winner of the Pan-Pacific Motorcycle Circuit — CompuaGlide-equipped racing bike with massively improved handling and performance.</p><p><em>Off-road handling 4. Max speed 210 m/CT (cruising 70 used for tests). IC/15 liters; 80 km/liter. Rigger Black Book p.17.</em></p>"
+    "notes": "<p>Winner of the Pan-Pacific Motorcycle Circuit — CompuaGlide-equipped racing bike with massively improved handling and performance.</p><p><em>Off-road handling 4. Max speed 210 m/CT (cruising 70 used for tests). IC/15 liters; 80 km/liter. Rigger Black Book p.17.</em></p>",
+    "citation": {
+      "book": "rbb",
+      "page": "17"
+    }
   },
   "prototypeToken": {
     "name": "Suzuki \"Aurora\" Racing Bike",

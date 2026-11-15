@@ -25,7 +25,11 @@
       "max": 10
     },
     "autonav": 1,
-    "notes": "<p>The cheapest sports car on the road — targa top, mag wheels, high-speed suspension and exceptional road-holding.</p><p><em>Off-road handling 8. Max speed 120 m/CT (cruising 40 used for tests). IC/30 liters; 50 km/liter. Rigger Black Book p.12.</em></p>"
+    "notes": "<p>The cheapest sports car on the road — targa top, mag wheels, high-speed suspension and exceptional road-holding.</p><p><em>Off-road handling 8. Max speed 120 m/CT (cruising 40 used for tests). IC/30 liters; 50 km/liter. Rigger Black Book p.12.</em></p>",
+    "citation": {
+      "book": "rbb",
+      "page": "12"
+    }
   },
   "prototypeToken": {
     "name": "Honda-GM 3220 ZX",

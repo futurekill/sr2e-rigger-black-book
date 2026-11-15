@@ -25,7 +25,11 @@
       "max": 10
     },
     "autonav": 2,
-    "notes": "<p>A 10-meter state-of-the-art pleasure craft for the corp exec on the way up — lounge/kitchen below decks, a semi-enclosed bridge with flying bridge.</p><p><em>Max speed 45 m/CT (cruising 15 used for tests). IC/100 liters; 35 km/liter. Rigger Black Book p.44.</em></p>"
+    "notes": "<p>A 10-meter state-of-the-art pleasure craft for the corp exec on the way up — lounge/kitchen below decks, a semi-enclosed bridge with flying bridge.</p><p><em>Max speed 45 m/CT (cruising 15 used for tests). IC/100 liters; 35 km/liter. Rigger Black Book p.44.</em></p>",
+    "citation": {
+      "book": "rbb",
+      "page": "44"
+    }
   },
   "prototypeToken": {
     "name": "Marine Technologies \"Dolphin II\" Motor Yacht",

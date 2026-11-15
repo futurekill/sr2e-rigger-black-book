@@ -25,7 +25,11 @@
       "max": 10
     },
     "autonav": 2,
-    "notes": "<p>A small SHAPLL airship for personal or executive use — a 25×10 m triangular lifting-body craft with the flight deck and passenger cabin enclosed in the nose.</p><p><em>Max speed 300 m/CT (cruising 150 used for tests). LTA. IC/625 liters; 8 km/liter. Passenger bay 50 CF / six bucket seats. Rigger Black Book p.58. Armor 1 as printed (SR1) x3 = 3 for SRII, per Sourcebook Updates p.283.</em></p>"
+    "notes": "<p>A small SHAPLL airship for personal or executive use — a 25×10 m triangular lifting-body craft with the flight deck and passenger cabin enclosed in the nose.</p><p><em>Max speed 300 m/CT (cruising 150 used for tests). LTA. IC/625 liters; 8 km/liter. Passenger bay 50 CF / six bucket seats. Rigger Black Book p.58. Armor 1 as printed (SR1) x3 = 3 for SRII, per Sourcebook Updates p.283.</em></p>",
+    "citation": {
+      "book": "rbb",
+      "page": "58"
+    }
   },
   "prototypeToken": {
     "name": "Goodyear Commuter-47 LTA",

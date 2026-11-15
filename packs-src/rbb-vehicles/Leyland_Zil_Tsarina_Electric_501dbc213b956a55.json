@@ -25,7 +25,11 @@
       "max": 10
     },
     "autonav": 1,
-    "notes": "<p>A roomy L-Z chassis car with an unusual front-high seating layout, full canopy and a rear-deck luggage rack.</p><p><em>Off-road handling 8. Max speed 75 m/CT (cruising 25 used for tests). Electric, 200 PF; 2 CF trunk + 3 CF roof rack. Rigger Black Book p.9.</em></p>"
+    "notes": "<p>A roomy L-Z chassis car with an unusual front-high seating layout, full canopy and a rear-deck luggage rack.</p><p><em>Off-road handling 8. Max speed 75 m/CT (cruising 25 used for tests). Electric, 200 PF; 2 CF trunk + 3 CF roof rack. Rigger Black Book p.9.</em></p>",
+    "citation": {
+      "book": "rbb",
+      "page": "9"
+    }
   },
   "prototypeToken": {
     "name": "Leyland-Zil Tsarina (Electric)",

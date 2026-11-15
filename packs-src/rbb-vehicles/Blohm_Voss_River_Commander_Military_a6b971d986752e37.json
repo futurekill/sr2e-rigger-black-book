@@ -25,7 +25,11 @@
       "max": 10
     },
     "autonav": 3,
-    "notes": "<p>The Military configuration of the River Commander river patrol boat — uparmored (Armor 4) and fitted for weapon mounts.</p><p><em>Max speed 75 m/CT (cruising 25 used for tests). IC/1,000 liters; 15 km/liter. Weapon mounts. Seagoing variant +25,000¥. Rigger Black Book p.69. Armor 4 as printed (SR1) x3 = 12 for SRII, per Sourcebook Updates p.283.</em></p>"
+    "notes": "<p>The Military configuration of the River Commander river patrol boat — uparmored (Armor 4) and fitted for weapon mounts.</p><p><em>Max speed 75 m/CT (cruising 25 used for tests). IC/1,000 liters; 15 km/liter. Weapon mounts. Seagoing variant +25,000¥. Rigger Black Book p.69. Armor 4 as printed (SR1) x3 = 12 for SRII, per Sourcebook Updates p.283.</em></p>",
+    "citation": {
+      "book": "rbb",
+      "page": "69"
+    }
   },
   "prototypeToken": {
     "name": "Blohm & Voss River Commander (Military)",

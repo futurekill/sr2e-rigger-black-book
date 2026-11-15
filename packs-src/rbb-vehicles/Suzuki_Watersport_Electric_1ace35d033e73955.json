@@ -25,7 +25,11 @@
       "max": 10
     },
     "autonav": 0,
-    "notes": "<p>The electric-drive Suzuki Watersport jet bike — quieter and lower-signature than the IC model.</p><p><em>Max speed 30 m/CT (cruising 10 used for tests). Electric, 300 PF; 0.5 PF/km. Rigger Black Book p.41.</em></p>"
+    "notes": "<p>The electric-drive Suzuki Watersport jet bike — quieter and lower-signature than the IC model.</p><p><em>Max speed 30 m/CT (cruising 10 used for tests). Electric, 300 PF; 0.5 PF/km. Rigger Black Book p.41.</em></p>",
+    "citation": {
+      "book": "rbb",
+      "page": "41"
+    }
   },
   "prototypeToken": {
     "name": "Suzuki Watersport (Electric)",

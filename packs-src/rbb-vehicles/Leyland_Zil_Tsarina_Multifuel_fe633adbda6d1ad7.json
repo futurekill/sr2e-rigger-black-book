@@ -25,7 +25,11 @@
       "max": 10
     },
     "autonav": 1,
-    "notes": "<p>The multifuel version of the Tsarina — same body, a tougher hull and a longer-legged drivetrain.</p><p><em>Off-road handling 8. Max speed 90 m/CT (cruising 30 used for tests). Multifuel/25 liters; 90 km/liter; 2 CF trunk + 3 CF roof rack. Rigger Black Book p.9.</em></p>"
+    "notes": "<p>The multifuel version of the Tsarina — same body, a tougher hull and a longer-legged drivetrain.</p><p><em>Off-road handling 8. Max speed 90 m/CT (cruising 30 used for tests). Multifuel/25 liters; 90 km/liter; 2 CF trunk + 3 CF roof rack. Rigger Black Book p.9.</em></p>",
+    "citation": {
+      "book": "rbb",
+      "page": "9"
+    }
   },
   "prototypeToken": {
     "name": "Leyland-Zil Tsarina (Multifuel)",

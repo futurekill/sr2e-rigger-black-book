@@ -25,7 +25,11 @@
       "max": 10
     },
     "autonav": 2,
-    "notes": "<p>A supercycle with reinforced seating for troll-sized riders as standard, and extra-heavy construction that boosts durability and rider protection.</p><p><em>Off-road handling 5. Max speed 150 m/CT (cruising 50 used for tests). IC/35 liters; 30 km/liter. Rigger Black Book p.23. Armor 1 as printed (SR1) x3 = 3 for SRII, per Sourcebook Updates p.283.</em></p>"
+    "notes": "<p>A supercycle with reinforced seating for troll-sized riders as standard, and extra-heavy construction that boosts durability and rider protection.</p><p><em>Off-road handling 5. Max speed 150 m/CT (cruising 50 used for tests). IC/35 liters; 30 km/liter. Rigger Black Book p.23. Armor 1 as printed (SR1) x3 = 3 for SRII, per Sourcebook Updates p.283.</em></p>",
+    "citation": {
+      "book": "rbb",
+      "page": "23"
+    }
   },
   "prototypeToken": {
     "name": "Honda \"Viking\" Supercycle",

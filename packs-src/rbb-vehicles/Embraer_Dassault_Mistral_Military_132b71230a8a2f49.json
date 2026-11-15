@@ -25,7 +25,11 @@
       "max": 10
     },
     "autonav": 2,
-    "notes": "<p>The float-equipped Mistral: the VSTOL turboprop on floats, trading some top speed for water landings (it keeps its standard undercarriage, and the floats can be removed).</p><p><em>Max speed 350 m/CT (cruising 225 used for tests). IC/2,000 liters; 2 km/liter; VSTOL. Float variant (p.48): Speed 225/350, Cost +25,000¥. Rigger Black Book p.48.</em></p>"
+    "notes": "<p>The float-equipped Mistral: the VSTOL turboprop on floats, trading some top speed for water landings (it keeps its standard undercarriage, and the floats can be removed).</p><p><em>Max speed 350 m/CT (cruising 225 used for tests). IC/2,000 liters; 2 km/liter; VSTOL. Float variant (p.48): Speed 225/350, Cost +25,000¥. Rigger Black Book p.48.</em></p>",
+    "citation": {
+      "book": "rbb",
+      "page": "48"
+    }
   },
   "prototypeToken": {
     "name": "Embraer-Dassault Mistral (Float)",

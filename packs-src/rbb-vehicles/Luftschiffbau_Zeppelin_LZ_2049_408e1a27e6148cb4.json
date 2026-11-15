@@ -25,7 +25,11 @@
       "max": 10
     },
     "autonav": 2,
-    "notes": "<p>The latest SHAPLL (Shaped Airfoil Positive Enhanced Lift) airship from Zeppelinwerke — a modular lifting-body craft, 26 m long with a 65 m wingspan.</p><p><em>Max speed 250 m/CT (cruising 100 used for tests). LTA. IC/2,500 liters; 5 km/liter. Modules: passenger (32 seats), cargo (150 CF), assault (80 troops, +50,000¥). Rigger Black Book p.57. Armor 2 as printed (SR1) x3 = 6 for SRII, per Sourcebook Updates p.283.</em></p>"
+    "notes": "<p>The latest SHAPLL (Shaped Airfoil Positive Enhanced Lift) airship from Zeppelinwerke — a modular lifting-body craft, 26 m long with a 65 m wingspan.</p><p><em>Max speed 250 m/CT (cruising 100 used for tests). LTA. IC/2,500 liters; 5 km/liter. Modules: passenger (32 seats), cargo (150 CF), assault (80 troops, +50,000¥). Rigger Black Book p.57. Armor 2 as printed (SR1) x3 = 6 for SRII, per Sourcebook Updates p.283.</em></p>",
+    "citation": {
+      "book": "rbb",
+      "page": "57"
+    }
   },
   "prototypeToken": {
     "name": "Luftschiffbau Zeppelin LZ-2049",

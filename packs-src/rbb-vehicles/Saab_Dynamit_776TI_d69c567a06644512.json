@@ -25,7 +25,11 @@
       "max": 10
     },
     "autonav": 3,
-    "notes": "<p>A state-of-the-art turbocharged speedfreak's sports car — roll bars, improved suspension, APPS and a convertible top. Winner of the Euro-Rally Production Sports Circuit.</p><p><em>Off-road handling 8. Max speed 250 m/CT (cruising 80 used for tests). IC/150 liters; 40 km/liter; APPS, rollbars. Rigger Black Book p.13. Armor 1 as printed (SR1) x3 = 3 for SRII, per Sourcebook Updates p.283.</em></p>"
+    "notes": "<p>A state-of-the-art turbocharged speedfreak's sports car — roll bars, improved suspension, APPS and a convertible top. Winner of the Euro-Rally Production Sports Circuit.</p><p><em>Off-road handling 8. Max speed 250 m/CT (cruising 80 used for tests). IC/150 liters; 40 km/liter; APPS, rollbars. Rigger Black Book p.13. Armor 1 as printed (SR1) x3 = 3 for SRII, per Sourcebook Updates p.283.</em></p>",
+    "citation": {
+      "book": "rbb",
+      "page": "13"
+    }
   },
   "prototypeToken": {
     "name": "Saab \"Dynamit\" 776TI",

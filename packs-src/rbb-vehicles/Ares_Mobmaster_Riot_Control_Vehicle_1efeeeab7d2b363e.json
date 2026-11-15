@@ -25,7 +25,11 @@
       "max": 10
     },
     "autonav": 5,
-    "notes": "<p>Ares's riot-control sibling of the Citymaster — a Personnel Carrier (ten troops) / Command vehicle with a forward micro-turret (FN-MAG MMGs) and tear-gas grenade launchers, fully gas-sealable.</p><p><em>Off-road handling 10. Max speed 120 m/CT (cruising 30 used for tests). IC/500 liters; 10 km/liter; standard load 500 CF. Rigger Black Book p.63. Armor 5 as printed (SR1) x3 = 15 for SRII, per Sourcebook Updates p.283.</em></p>"
+    "notes": "<p>Ares's riot-control sibling of the Citymaster — a Personnel Carrier (ten troops) / Command vehicle with a forward micro-turret (FN-MAG MMGs) and tear-gas grenade launchers, fully gas-sealable.</p><p><em>Off-road handling 10. Max speed 120 m/CT (cruising 30 used for tests). IC/500 liters; 10 km/liter; standard load 500 CF. Rigger Black Book p.63. Armor 5 as printed (SR1) x3 = 15 for SRII, per Sourcebook Updates p.283.</em></p>",
+    "citation": {
+      "book": "rbb",
+      "page": "63"
+    }
   },
   "prototypeToken": {
     "name": "Ares Mobmaster Riot Control Vehicle",
