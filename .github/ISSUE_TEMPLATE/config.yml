@@ -7,3 +7,6 @@ contact_links:
     url: https://github.com/futurekill/sr2e-foundryvtt/wiki
     about: How-to guides for the system and its modules.
 
+  - name: 📋 QA Test Plan
+    url: https://github.com/futurekill/sr2e-rigger-black-book/blob/main/docs/QA-PLAN.md
+    about: The checklist to test this module against before filing a bug.
